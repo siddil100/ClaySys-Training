@@ -1,0 +1,193 @@
+<!-- ClaySys Training Task :1  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Volunteer Registration</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- form header  -->
+    <div class="form-container">
+
+        <div class="con">
+            <div class=" consed">
+                <h1>Volunteer Registration</h1>
+            </div>
+            <div class="imgcon">
+                <img src="logo.png">
+            </div>
+            <div class=" conthird"></div>
+        </div>
+
+        <!-- form contents  -->
+        <form>
+            <div class="form-group">
+                <div class="form-row-inline">
+                    <label  class = "lab_con">Your Name</label>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" class="wide-input2">
+                            <span class="caption">First Name</span>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="wide-input2">
+                            <span class="caption">Last Name</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="form-row-inline">
+                    <label  class = "lab_con">Phone Number</label>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" class="wide-input">
+                            <span class="caption">Phone Number</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="form-row-inline">
+                    <label  class = "lab_con">Email</label>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="email"  class="wide-input">
+                            <span class="caption">example@example.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="form-row-inline">
+                    <label  class = "lab_con">Event Location</label>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" class="wide-input">
+                            <span class="caption">Street Address</span>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="wide-input2">
+                            <span class="caption">City</span>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="wide-input2">
+                            <span class="caption">State/Province</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="form-row-inline">
+                    <label  class = "lab_con">Source of Discovery</label>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" class="wide-input">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="form-row-inline radio-pad">
+                    <label  class = "lab_con">Legal Age</label>
+                    <div class="form-row radio-container">
+                        <label class="lablecheck"><input type="radio" name="legal-age" value="yes"> Yes</label>
+                        <label class="lablecheck"><input type="radio" name="legal-age" value="no"> No</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="form-row-inline radio-pad">
+                    <label  class = "lab_con">Volunteer Inquiry</label>
+                    <div class="form-row radio-container">
+                        <label class="lablecheck"><input type="radio" name="volunteer-inquiry" value="yes"> Yes</label>
+                        <label class="lablecheck"><input type="radio" name="volunteer-inquiry" value="no"> No</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="form-row-inline">
+                    <label  class = "lab_con">Company/Organization</label>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" class="wide-input">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="form-row-inline radio-pad">
+                    <label  class = "lab_con">Members</label>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" class="wide-input">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="form-row-inline">
+                    <label  class = "lab_con">Volunteer Hotspot</label>
+                    <div class="checkbox-grid">
+                        <div class="checkbox-item">
+                            <input type="checkbox" name="hotspot" value="gate"> Gate/Door
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" name="hotspot" value="retail"> Retail/Sales
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" name="hotspot" value="raffle"> Raffle Area
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" name="hotspot" value="ground"> Ground
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" name="hotspot" value="capture"> Capture Everywhere
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="form-row-inline radio-pad">
+                    <label  class = "lab_con">Special Instructions</label>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <textarea id="special-instruction"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sperate">
+            <div class="form-group date-signature">
+                <div class="date-container">
+                    <span class="bold">Date:</span>
+                    <span class="date-value">Oct 20, 2030</span>
+                </div>
+                
+                <div class="signature">
+                    <img src="sign.png">
+                    <hr>
+                    <span style="margin-left: 20px;">(Dorinda Bet)</span>
+                </div>
+            </div>
+        </div>
+        </form>
+        <!-- form footer -->
+        <div class="bottom">
+        <div class="btm_right"></div>
+        </div>
+    </div>
+</body>
+</html>
