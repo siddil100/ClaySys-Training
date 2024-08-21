@@ -1,0 +1,298 @@
+/* the body  */
+#b10 {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* heading inside the banner  */
+#top-heading{
+    color:#fff
+}
+
+/* form outer container  */
+.form-container {
+    max-width: 700px;
+    margin: 30px auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+}
+/* main form container  */
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 5px;
+}
+
+.form-row-inline {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding-right: 20px;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 70%;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 0;
+    display: block;
+    margin-right: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #e0e0e0;
+    
+    
+}
+textarea.error-border {
+    border: 2px solid red;
+}
+
+/* Valid border style */
+textarea.valid-border {
+    border: 2px solid rgb(77, 231, 77);
+}
+
+
+
+/* Styling for larger text area  */
+#special-instruction {
+    height: 60px;
+    width: 400px;
+}
+/* Styling the captions  */
+span.caption {
+    font-size: 12px;
+    color: #666;
+    margin-top: 3px;
+    display: block;
+    font-style: italic;
+    color: black;
+}
+
+/* Input with wide text box  */
+.wide-input {
+    width: 400px;
+    
+}
+
+.wide-input.error-border {
+    box-shadow: inset 0 0 0 2px red;
+}
+
+/* Green border for valid input for wide textboxes */
+.wide-input.valid-border {
+    box-shadow: inset 0 0 0 2px rgb(78, 237, 78);
+}
+
+/* short input text boxes  */
+.wide-input2 {
+    width: 185px;
+    
+}
+
+.wide-input2.error-border {
+    box-shadow: inset 0 0 0 2px red;
+}
+
+/* Green border for valid input for short textboxes*/
+.wide-input2.valid-border {
+    box-shadow: inset 0 0 0 2px rgb(78, 237, 78);
+}
+
+
+/* Adjust gap between radio buttons  */
+.radio-container {
+    display: flex;
+    gap: 100px;
+}
+/* radio button padding  */
+.radio-pad{
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.radio-container .lablecheck {
+    font-weight: normal; 
+    
+}
+
+/* Grid Layout for checkboxes  */
+.checkbox-grid {
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    font-size: 12px;
+    
+    
+}
+/* To align items in checkbox with the box  */
+.checkbox-item {
+    display: flex;
+    align-items: center;
+}
+
+
+
+/* Container for date and sign  */
+.date-signature {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.signature{
+    margin-right: 40px;
+    margin-top: -30px;
+}
+
+
+
+/* Container in header for white portion in between */
+.con{
+    background-color: #ffffff;
+    width: 100%;
+    height: 100px;
+    display: block;
+    color: white;
+   
+}
+/* Container in header to contain the text  */
+.consed{
+    background-color: #464646;
+    width: 60%;
+    height: 100px;
+    border-top-right-radius: 300px;
+    float: left;
+    display: flex;
+    justify-content: center; 
+    align-items: center;  
+    text-align: center;
+    
+
+}
+/* Container in header for the last portion  */
+.conthird{
+    background-color: #464646;
+    width: 10%;
+    height: 50%;
+  
+    border-bottom-left-radius:100%;
+    float: right;
+}
+/* Container in header to contain the Logo  */
+.imgcon{
+    display: flex;
+    justify-content: center; 
+    align-items: center;  
+    width: 10%;
+    height: 100px;
+    float: left;
+    padding-left: 15%;
+}
+
+/* Container for labels  */
+.lab_con{
+    width: 30%;
+}
+
+/* separate container for date and signature  */
+.sperate{
+   
+    padding-top: 1px;
+    padding-bottom: 10px;
+}
+
+/* Container for form footer  */
+.bottom{
+    width: 100%;
+    height: 50px;
+}
+/* Container for right footer shape  */
+.btm_right{
+    width: 400px;
+    height: 50px;
+    background-color:  #464646;
+    float: right;
+    border-top-left-radius: 300px;
+}
+/* To style the select boxes  */
+.lablecheck{
+    font-size: 13px;
+    
+}
+
+
+/* Container for date  */
+.date-container {
+    display: inline-block;
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #e0e0e0;
+}
+
+.date-container .bold {
+    font-weight: bold;
+    margin-right: 5px; 
+}
+
+.date-container .date-value {
+    font-size: 14px;
+}
+
+
+
+/* submit button styles  */
+
+/* Style for the button container */
+.button-container {
+    text-align: center; /* Center-align the button */
+    margin-top: 20px; /* Add some space above the button */
+}
+
+/* Style for the submit button */
+.submit-button {
+    background-color: #cccccc;
+    color: #333333; 
+    border: none; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    border-radius: 4px; 
+    transition: background-color 0.3s; 
+    margin-left: 290px;
+}
+
+/* Hover effect for the button */
+.submit-button:hover {
+    background-color: #b3b3b3; 
+}
+
+
+/* validation css  */
+.error {
+    color: red;
+    font-size: 0.9em;
+    display: none; /* Hide error by default */
+}

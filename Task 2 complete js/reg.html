@@ -1,0 +1,217 @@
+<!-- ClaySys Training Task :1  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Volunteer Registration</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body id ="b10">
+    <!-- form header  -->
+    <div class="form-container">
+
+        <div class="con">
+            <div class=" consed">
+                <h1 id="top-heading">Volunteer Registration</h1>
+            </div>
+            <div class="imgcon">
+                <img src="logo.png">
+            </div>
+            <div class=" conthird"></div>
+        </div>
+        <!-- form contents  -->
+        <form>
+            <div class="form-group">
+                <div class="form-row-inline">
+                    <label  class = "lab_con">Your Name</label>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" class="wide-input2" id="firstName" oninput="validateFirstName()">
+                            <span class="caption">First Name</span>
+                            <span class="error" id="firstNameError"></span>
+                        </div>                        
+                        <div class="form-group">
+                            <input type="text" class="wide-input2" id="lastName" oninput="validateLastName()">
+                            <span class="caption">Last Name</span>
+                            <span class="error" id="lastNameError"></span>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="form-row-inline">
+                    <label  class = "lab_con">Phone Number</label>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" class="wide-input" id="phoneNumber" oninput="validatePhoneNumber()">
+                            <span class="caption">Phone Number</span>
+                            <span class="error" id="phoneNumberError"></span>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="form-row-inline">
+                    <label  class = "lab_con">Email</label>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="email" class="wide-input" id="email" oninput="validateEmail()">
+                            <span class="caption">example@example.com</span>
+                            <span class="error" id="emailError"></span>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="form-row-inline">
+                    <label  class = "lab_con">Event Location</label>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" class="wide-input" id="streetAddress" oninput="validateStreetAddress()">
+                            <span class="caption">Street Address</span>
+                            <span class="error" id="streetAddressError"></span>
+                        </div>                        
+                        <div class="form-group">
+                            <input type="text" class="wide-input2" id="city" oninput="validateCity()">
+                            <span class="caption">City</span>
+                            <span class="error" id="cityError"></span>
+                        </div>                        
+                        <div class="form-group">
+                            <input type="text" class="wide-input2" id="state" oninput="validateState()">
+                            <span class="caption">State/Province</span>
+                            <span class="error" id="stateError"></span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="form-row-inline">
+                    <label  class = "lab_con">Source of Discovery</label>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" class="wide-input" id="sourceOfDiscovery" oninput="validateSourceOfDiscovery()">
+                            <span class="error" id="sourceOfDiscoveryError"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="form-row-inline radio-pad">
+                    <label  class = "lab_con">Legal Age</label>
+                    <div class="form-row radio-container">
+                        <label class="lablecheck"><input type="radio" name="legal-age" value="yes" required> Yes</label>
+                        <label class="lablecheck"><input type="radio" name="legal-age" value="no" required> No</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="form-row-inline radio-pad">
+                    <label  class = "lab_con">Volunteer Inquiry</label>
+                    <div class="form-row radio-container">
+                        <label class="lablecheck"><input type="radio" name="volunteer-inquiry" value="yes" required> Yes</label>
+                        <label class="lablecheck"><input type="radio" name="volunteer-inquiry" value="no" required> No</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="form-row-inline">
+                    <label  class = "lab_con">Company/Organization</label>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" class="wide-input" id="company" oninput="validateCompany()">
+                            <span class="error" id="companyError"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="form-row-inline radio-pad">
+                    <label  class = "lab_con">Members</label>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" class="wide-input" id="members" oninput="validateMembers()">
+                            <span class="error" id="membersError"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="form-row-inline">
+                    <label  class = "lab_con">Volunteer Hotspot</label>
+                    <div class="checkbox-grid">
+                        <div class="checkbox-item">
+                            <input type="checkbox" name="hotspot" value="gate" class="hotspot-checkbox"> Gate/Door
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" name="hotspot" value="retail" class="hotspot-checkbox"> Retail/Sales
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" name="hotspot" value="raffle" class="hotspot-checkbox"> Raffle Area
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" name="hotspot" value="ground" class="hotspot-checkbox"> Ground
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" name="hotspot" value="capture"> Capture Everywhere
+                        </div>
+                    </div>
+                </div>
+                <span class="error" id="hotspotError" style="margin-left: 320px;"></span>
+            </div>
+            
+
+            <div class="form-group">
+                <div class="form-row-inline radio-pad">
+                    <label  class = "lab_con">Special Instructions</label>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <textarea id="special-instruction" oninput="validateSpecialInstructions()"></textarea>
+                            <span class="error" id="specialInstructionError"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-row-inline">
+                    <div class="form-row">
+                        <div class="form-group button-container">
+                            <button type="submit" class="submit-button">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="sperate">
+            <div class="form-group date-signature">
+                <div class="date-container">
+                    <span class="bold">Date:</span>
+                    <span class="date-value">Oct 20, 2030</span>
+                </div>
+                
+                <div class="signature">
+                    <img src="sign.png">
+                    <hr>
+                    <span style="margin-left: 20px;">(Dorinda Bet)</span>
+                </div>
+            </div>
+        </div>
+        </form>
+        <!-- form footer -->
+        <div class="bottom">
+        <div class="btm_right"></div>
+        </div>
+    </div>
+<script src="reg.js"></script>
+</body>
+</html>
