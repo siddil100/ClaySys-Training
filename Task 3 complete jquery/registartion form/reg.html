@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="reg.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+</head>
+<body id="b10">
+    <div class="login-container">
+        <!-- form header  -->
+        <h2 class="welcome-heading">Create Your Account</h2>
+        <h2 class="welcome-heading">Sign Up Below</h2>
+
+        <!-- form body  -->
+        <form id="signupForm">
+            <!-- Personal Information -->
+            <div class="input-group">
+                <input type="text" id="firstname" name="firstname">
+                <label for="firstname">First name</label>
+                <span id="firstname-error" class="error-message"></span>
+            </div>
+            
+            <div class="input-group">
+                <input type="text" id="lastname" name="lastname">
+                <label for="lastname">Last name</label>
+                <span id="lastname-error" class="error-message"></span>
+            </div>
+            <div class="input-group">
+                <label for="dob">Date of Birth</label>
+                <input type="text" id="dob" name="dob">
+                <span class="error-message" id="dob-error">Please select Date of Birth</span>
+            </div>
+            
+
+            <!-- Gender Information -->
+            <div class="input-group">
+                <div class="gender-container">
+                    <label for="gender" id="gender-label">Gender</label>
+                    <div class="radio-group">
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="other">Other</label>
+                    </div>
+                </div>
+                <span class="error-message" id="gender-error">Please select one</span>
+            </div>
+            
+            <!-- Contact Information -->
+            <div class="input-group">
+                <input type="tel" id="phone" name="phone">
+                <label for="phone">Phone number</label>
+                <span class="error-message" id="phone-error">Please enter a valid phone number starting with 6, 7, 8, or 9</span>
+            </div>
+            
+            <div class="input-group">
+                <input type="email" id="email" name="email">
+                <label for="email">Email</label>
+                <span id="emailError" class="error-message">No spaces allowed. Please enter a valid email address.</span>
+            </div>
+            
+            <!-- Address Information -->
+            <div class="input-group">
+                <textarea id="address" name="address" rows="4" cols="40"></textarea>
+                <label for="address">Address</label>
+                <span id="address-error" class="error-message"></span>
+            </div>
+            
+            <div class="input-group">
+                <select id="state" name="state" style="text-indent: 50px;"required>
+                    <option value="">Select state</option>
+                    <option value="kerala">Kerala</option>
+                    <option value="tamil_nadu">Tamil Nadu</option>
+                </select>
+                <label for="state">State</label>
+            </div>
+            
+            <div class="input-group">
+                <select id="city" name="city" style="text-indent: 50px;" disabled required>
+                    <option value="">Select city</option>
+                </select>
+                <label for="city">City</label>
+            </div>
+            
+            <!-- Account Information -->
+            <div class="input-group">
+                <input type="text" id="username" name="username" class="form-input">
+                <label for="username">Username</label>
+                <span id="usernameError" class="error-message"></span>
+            </div>
+            
+            <div class="input-group">
+                <input type="password" id="password" name="password" class="form-input">
+                <label for="password">Password</label>
+                <span id="passwordError" class="error-message"></span>
+            </div>
+            
+            <div class="input-group">
+                <input type="password" id="confirm-password" name="confirm-password" class="form-input">
+                <label for="confirm-password">Confirm password</label>
+                <span id="confirmPasswordError" class="error-message"></span>
+            </div>
+
+            <!-- Buttons -->
+            <div class="button-container">
+                <button type="button" class="back-button">Back</button>
+                <button type="submit" class="login-button">Sign up</button>
+            </div>
+
+            <!-- form footer  -->
+            <p class="signup">Already have an account? <a href="../login.html">Login</a></p>
+        </form>
+    </div>
+</body>
+</html>
