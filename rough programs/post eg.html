@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX POST Example</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+<h1>Create a New Post</h1>
+<form id="post-form">
+    <input type="text" id="title" placeholder="Title" required><br>
+    <textarea id="body" placeholder="Body" required></textarea><br>
+    <button type="submit">Submit</button>
+</form>
+
+<p id="response"></p>
+
+<script>
+$(document).ready(function() {
+    // Handle form submission
+    $('#post-form').on('submit', function(event) {
+        event.preventDefault(); // Prevent the form from submitting the traditional way
+
+        // Collect form data
+        var postData = {
+            title: $('#title').val(),
+            body: $('#body').val(),
+            userId: 1 
+        };
+
+        // Perform a POST request to create a new post
+        $.ajax({
+            url: 'https://jsonplaceholder.typicode.com/posts',
+            type: 'POST',
+            data: JSON.stringify(postData),
+            contentType: 'application/json; charset=UTF-8',
+            success: function(response) {
+                // Display the response from the server
+                $('#response').text('Post created successfully with ID: ' + response.id);
+                console.log('Response:', response);
+            },
+            error: function(error) {
+                // Handle errors
+                console.error('Error creating post:', error);
+            }
+        });
+    });
+});
+</script>
+
+</body>
+</html>

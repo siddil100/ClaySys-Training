@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple jsTree Example</title>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- jsTree CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.3.12/themes/default/style.min.css" />
+
+    <!-- jsTree JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.3.12/jstree.min.js"></script>
+
+    <style>
+        #jstree_demo {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Simple jsTree Example</h1>
+
+    <!-- jsTree container -->
+    <div id="jstree_demo"></div>
+
+    <script>
+        $(function() {
+            $('#jstree_demo').jstree({
+                'core' : {
+                    'data' : [
+                        {
+                            "text" : "Root node",
+                            "children" : [
+                                { "text" : "Child node 1" },
+                                { "text" : "Child node 2" }
+                            ]
+                        }
+                    ]
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

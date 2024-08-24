@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Show and Hide</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        #myElement {
+            width: 200px;
+            height: 100px;
+            background-color: lightcoral;
+            display: none; /* Initially hidden */
+        }
+    </style>
+</head>
+<body>
+
+<button id="showBtn">Show</button>
+<button id="hideBtn">Hide</button>
+<button id="fadeInBtn">Fade In</button>
+<button id="fadeOutBtn">Fade Out</button>
+<button id="slideDownBtn">Slide Down</button>
+<button id="slideUpBtn">Slide Up</button>
+
+<div id="myElement">Hello, I'm here!</div>
+
+<script>
+    $(document).ready(function() {
+        // Show element
+        $('#showBtn').click(function() {
+            $('#myElement').show();
+        });
+
+        // Hide element
+        $('#hideBtn').click(function() {
+            $('#myElement').hide();
+        });
+
+        // Fade In
+        $('#fadeInBtn').click(function() {
+            $('#myElement').fadeIn();
+        });
+
+        // Fade Out
+        $('#fadeOutBtn').click(function() {
+            $('#myElement').fadeOut();
+        });
+
+        // Slide Down
+        $('#slideDownBtn').click(function() {
+            $('#myElement').slideDown();
+        });
+
+        // Slide Up
+        $('#slideUpBtn').click(function() {
+            $('#myElement').slideUp();
+        });
+    });
+</script>
+
+</body>
+</html>

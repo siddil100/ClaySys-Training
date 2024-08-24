@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Animate Example</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        #box {
+            width: 100px;
+            height: 200px;
+            background-color: rgb(29, 251, 88);
+            position: absolute;
+            top: 50px;
+            left: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<button id="animateBtn">start animation</button>
+<div id="box"></div>
+
+<script>
+    $(document).ready(function() {
+        $('#animateBtn').click(function() {
+            $('#box').animate({
+                width: "800px",
+                height: "200px",
+                left: "300px",
+                top: "300px",
+                opacity: 0.5
+            }, {
+                duration: 2000, // 2 seconds
+                easing: "swing", // Easing function
+                complete: function() {
+                    alert('Animation complete!');
+                }
+            });
+        });
+    });
+</script>
+
+</body>
+</html>

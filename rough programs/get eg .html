@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX GET Example</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+<h1>get request to fetch Posts</h1>
+<ul id="post-list"></ul>
+
+<script>
+$(document).ready(function() {
+    // Perform a GET request to fetch posts
+    $.ajax({
+        url: 'https://jsonplaceholder.typicode.com/posts',
+        type: 'GET',
+        success: function(posts) {
+            // Loop through the posts and display them
+            posts.forEach(function(post) {
+                $('#post-list').append('<li><strong>' + post.title + '</strong>: ' + post.body + '</li>');
+            });
+        },
+        error: function(error) {
+            // Handle errors
+            console.error('Error fetching posts:', error);
+        }
+    });
+});
+</script>
+
+</body>
+</html>
