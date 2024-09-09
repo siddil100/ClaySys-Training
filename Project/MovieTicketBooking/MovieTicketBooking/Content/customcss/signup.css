@@ -1,0 +1,92 @@
+﻿/* Style for the signup form */
+.signup-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+    
+
+    /* Style for form-group */
+    .signup-form .form-group {
+        margin-bottom: 20px;
+    }
+
+    /* Style for form controls */
+    .signup-form .form-control {
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    /* Label styling */
+    .signup-form label {
+        font-weight: bold;
+        margin-bottom: 5px;
+        display: inline-block;
+        color: #555;
+    }
+
+    /* Radio button styling */
+    .signup-form input[type="radio"] {
+        margin-right: 5px;
+    }
+
+    /* Style for error messages */
+    .signup-form .text-danger {
+        color: #e74c3c;
+        font-size: 12px;
+    }
+
+    /* Submit button styling */
+    .signup-form button[type="submit"] {
+        width: 100%;
+        padding: 12px;
+        background-color: #007bff;
+        border: none;
+        color: white;
+        font-size: 16px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+        /* Submit button hover effect */
+        .signup-form button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+    /* Already have an account text */
+    .signup-form .mt-3 {
+        text-align: center;
+    }
+
+        /* Link for login */
+        .signup-form .mt-3 a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+            /* Hover effect for login link */
+            .signup-form .mt-3 a:hover {
+                text-decoration: underline;
+            }
+
+
+
+/* Error state */
+.input-error {
+    border: 2px solid red;
+}
+
+/* Success state */
+.input-success {
+    border: 2px solid green;
+}
+.text-danger {
+    color: red; 
+}

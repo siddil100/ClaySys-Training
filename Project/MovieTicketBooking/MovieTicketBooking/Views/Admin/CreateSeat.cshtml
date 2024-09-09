@@ -1,0 +1,82 @@
+﻿@model MovieTicketBooking.ViewModels.SeatViewModel
+
+@{
+    ViewBag.Title = "Create seats";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+<link href="~/Content/customcss/Createseats.css" rel="stylesheet" />
+<h2>Create seats</h2>
+
+@using (Html.BeginForm("CreateSeat", "Admin", FormMethod.Post, new { @class = "form-container" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Seat.RowNumber)
+        @Html.DropDownListFor(m => m.Seat.RowNumber, new SelectList(new[] { "A", "B", "C", "D", "E", "F", "G", "H" }), "Select Row", new { @class = "form-control", @id = "RowNumber" })
+        @Html.ValidationMessageFor(m => m.Seat.RowNumber)
+    </div>
+
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Seat.ColumnNumber)
+        @Html.TextBoxFor(m => m.Seat.ColumnNumber, new { @class = "form-control", @id = "ColumnNumber" })
+        @Html.ValidationMessageFor(m => m.Seat.ColumnNumber)
+    </div>
+
+    <div class="form-group">
+        @Html.Label("SeatTypeId", "Seat type")
+        @Html.DropDownListFor(m => m.Seat.SeatTypeId, new SelectList(Model.SeatTypes, "SeatTypeId", "SeatTypeName"), "Select seat type", new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Seat.SeatTypeId)
+    </div>
+
+    <button type="submit" class="btn btn-primary" id="submitButton">Create Seat</button>
+}
+@section Scripts {
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function () {
+        
+        function checkSeatExists() {
+            var rowNumber = $('#RowNumber').val();
+            var columnNumber = $('#ColumnNumber').val();
+            var $submitButton = $('#submitButton'); 
+
+            if (rowNumber && columnNumber) {
+                $.ajax({
+                    url: '@Url.Action("CheckSeatExists", "Admin")',
+                    type: 'GET',
+                    data: { rowNumber: rowNumber, columnNumber: columnNumber },
+                    success: function (response) {
+                        if (response.exists) {
+                            $('#seatCheckResult').text('Seat already exists!').css('color', 'red');
+                            $submitButton.prop('disabled', true); // Disable submit button
+                        } else {
+                            $('#seatCheckResult').text('Seat is available.').css('color', 'green');
+                            $submitButton.prop('disabled', false); // Enable submit button
+                        }
+                    },
+                    error: function () {
+                        $('#seatCheckResult').text('Error checking seat availability.').css('color', 'red');
+                        $submitButton.prop('disabled', true); 
+                    }
+                });
+            } else {
+                $('#seatCheckResult').text('Please select both row and column.').css('color', 'red');
+                $submitButton.prop('disabled', true); // Disable submit button
+            }
+        }
+
+        
+        $('#RowNumber, #ColumnNumber').on('change', checkSeatExists);
+
+        
+        $('<span id="seatCheckResult" class="error-message"></span>').insertAfter('#ColumnNumber');
+
+        // Disable the submit button initially
+        $('#submitButton').prop('disabled', true);
+    });
+    </script>
+
+}
+

@@ -1,0 +1,102 @@
+﻿
+.movie-list ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 cards per row */
+    gap: 15px;
+    padding: 0;
+    list-style: none;
+}
+
+.movie-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 450px; /* Ensure the card has enough height */
+    width: 220px;
+    margin: 0 auto;
+}
+
+/* Image Styling */
+.card-image {
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .card-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+/* Movie Name Styling (below image, bold) */
+.card-header {
+    padding: 8px;
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+}
+
+/* Details Styling (Genre, Language, Duration) */
+.card-body {
+    padding: 8px;
+    text-align: center;
+    font-size: 14px;
+    flex: 1; /* Allow the body to expand as needed */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+}
+
+/* Footer Styling */
+.card-footer {
+    padding: 8px;
+    background-color: #f1f1f1;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    display: flex;
+    justify-content: space-around; /* Space out buttons */
+}
+
+/* Button Styling */
+.btn {
+    padding: 5px 10px;
+    margin: 5px; /* Add space between buttons */
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+    display: inline-block;
+}
+
+/* Primary Button (Book Now) */
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+}
+
+    .btn-primary:hover {
+        background-color: #0056b3;
+    }
+
+/* Secondary Button (View Details) */
+.btn-secondary {
+    background-color: #6c757d;
+    color: white;
+}
+
+    .btn-secondary:hover {
+        background-color: #565e64;
+    }
+
+/* Hover Effect: Zoom the entire card */
+.movie-card:hover {
+    transform: scale(1.05);
+}
+

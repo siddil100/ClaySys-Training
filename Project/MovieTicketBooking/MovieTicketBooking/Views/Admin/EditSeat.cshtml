@@ -1,0 +1,106 @@
+﻿@model MovieTicketBooking.Models.Seat
+@{
+    ViewBag.Title = "Edit seat";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+
+   
+    var seatTypes = new List<SelectListItem>
+{
+        new SelectListItem { Value = "1", Text = "Silver" },
+        new SelectListItem { Value = "2", Text = "Gold" },
+        new SelectListItem { Value = "3", Text = "Platinum" }
+    };
+}
+<link href="~/Content/customcss/Editseat.css" rel="stylesheet" />
+
+<h2>EditSeat</h2>
+
+@using (Html.BeginForm("EditSeat", "Admin", FormMethod.Post, new { @class = "form-container" }))
+{
+    @Html.HiddenFor(model => model.SeatId)
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.RowNumber, "Row Number")
+        @Html.DropDownListFor(model => model.RowNumber, new SelectList(new[] { "A", "B", "C", "D", "E", "F", "G", "H" }), "Select Row", new { @class = "form-control", @id = "RowNumber" })
+        @Html.ValidationMessageFor(model => model.RowNumber, "", new { @class = "error-message" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.ColumnNumber, "Column Number")
+        @Html.TextBoxFor(model => model.ColumnNumber, new { @class = "form-control", @id = "ColumnNumber" })
+        @Html.ValidationMessageFor(model => model.ColumnNumber, "", new { @class = "error-message" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.SeatTypeId, "Seat Type")
+        @Html.DropDownListFor(model => model.SeatTypeId, seatTypes, new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.SeatTypeId, "", new { @class = "error-message" })
+    </div>
+
+    <button type="submit" class="btn btn-primary" id="buttonSubmit">Save Changes</button>
+}
+@section Scripts {
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function () {
+
+        function checkSeatExists(callback) {
+            var rowNumber = $('#RowNumber').val();
+            var columnNumber = $('#ColumnNumber').val();
+            var $submitButton = $('#submitButton');
+
+            if (rowNumber && columnNumber) {
+                $.ajax({
+                    url: '@Url.Action("CheckSeatExists", "Admin")',
+                    type: 'GET',
+                    data: { rowNumber: rowNumber, columnNumber: columnNumber },
+                    success: function (response) {
+                        if (response.exists) {
+                            $('#seatCheckResult').text('Seat already exists!').css('color', 'red');
+                            $submitButton.prop('disabled', true); // Disable submit button
+                            if (callback) callback(false); // Pass false to callback to prevent submission
+                        } else {
+                            $('#seatCheckResult').text('Seat is available.').css('color', 'green');
+                            $submitButton.prop('disabled', false); // Enable submit button
+                            if (callback) callback(true); // Pass true to callback to allow submission
+                        }
+                    },
+                    error: function () {
+                        $('#seatCheckResult').text('Error checking seat availability.').css('color', 'red');
+                        $submitButton.prop('disabled', true); // Disable submit button
+                        if (callback) callback(false); // Pass false to callback to prevent submission
+                    }
+                });
+            } else {
+                $('#seatCheckResult').text('Please select both row and column.').css('color', 'red');
+                $submitButton.prop('disabled', true); // Disable submit button
+                if (callback) callback(false); // Pass false to callback to prevent submission
+            }
+        }
+
+        $('#RowNumber, #ColumnNumber').on('change', function () {
+            checkSeatExists();
+        });
+
+        $('<span id="seatCheckResult" class="error-message"></span>').insertAfter('#ColumnNumber');
+
+        // Disable submit button initially
+        $('#submitButton').prop('disabled', true);
+
+        // Form submit event handler
+        $('form').on('submit', function (e) {
+           
+            e.preventDefault();
+
+            
+            checkSeatExists(function (canSubmit) {
+                if (canSubmit) {
+                    $('form').off('submit').submit(); // Unbind the submit event handler and submit 
+                }
+            });
+        });
+
+    });
+    </script>
+
+}

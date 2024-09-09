@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Cine Tickets</title>
+    <link rel="stylesheet" type="text/css" href="~/Content/site.css" />
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="branding">
+                <img src="@Url.Content("~/Content/images/index/logo.png")" alt="Logo" class="logo" />
+                <a href="#" class="navbar-brand">CineTickets</a>
+
+
+            </div>
+            <div class="navbar-links">
+                <a href="@Url.Action("Index", "Home")">Home</a>
+                <a href="@Url.Action("About", "Home")">About us</a>
+                <a href="@Url.Action("Login", "Account")">Sign in</a>
+                <a href="@Url.Action("SignUp", "Account")">Sign up</a>
+                <a href="@Url.Action("ContactUs", "Home")">Contact us</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-content">
+        <div class="body-content">
+            @RenderBody()
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; @DateTime.Now.Year - CineTicket</p>
+        <p>All Rights Reserved | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/" target="_blank">
+                <img src="~/Content/images/footerlogo/128px-Facebook_Logo_2023.png" alt="Facebook" />
+            </a>
+            <a href="https://www.twitter.com/" target="_blank">
+                <img src="~/Content/images/footerlogo/Logo_Twitter.png" alt="Twitter">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="~/Content/images/footerlogo/128px-Instagram-Icon.png" alt="Instagram">
+            </a>
+        </div>
+    </footer>
+
+    @Scripts.Render("~/bundles/jquery")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,74 @@
+﻿@model List<MovieTicketBooking.Models.Seat>
+@{
+    ViewBag.Title = "View Seats";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+<!-- Link custom CSS -->
+<link href="~/Content/customcss/viewSeatsAdmin.css" rel="stylesheet" />
+
+<h2>View Seats</h2>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Seat iD</th>
+            <th>Row</th>
+            <th>Column</th>
+            <th>Seat type</th>
+            <th>Actions</th> <!-- Actions column -->
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var seat in Model)
+        {
+            <tr>
+                <td>@seat.SeatId</td>
+                <td>@seat.RowNumber</td>
+                <td>@seat.ColumnNumber</td>
+                <td>
+                    @{
+                        string seatType = "";
+                        switch (seat.SeatTypeId)
+                        {
+                            case 1:
+                                seatType = "Silver";
+                                break;
+                            case 2:
+                                seatType = "Gold";
+                                break;
+                            case 3:
+                                seatType = "Platinum";
+                                break;
+                            default:
+                                seatType = "Unknown";
+                                break;
+                        }
+                    }
+                    @seatType
+                </td>
+                <td>
+                    <!-- Action buttons in the same row with reduced gap -->
+                    <div class="action-buttons">
+                        <!-- Edit Button -->
+                        <a href="@Url.Action("EditSeat", "Admin", new { id = seat.SeatId })" class="btn btn-warning btn-sm">
+                            Edit
+                        </a>
+
+                        <!-- Delete Form -->
+                        @using (Html.BeginForm("DeleteSeat", "Admin", FormMethod.Post))
+                        {
+                            @Html.AntiForgeryToken()
+                            @Html.Hidden("id", seat.SeatId)
+                            <input type="submit" value="Delete" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure you want to delete this seat?');" />
+                        }
+                    </div>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<p>
+    <a href="@Url.Action("CreateSeat", "Admin")" class="btn btn-primary">Create New Seat</a>
+</p>

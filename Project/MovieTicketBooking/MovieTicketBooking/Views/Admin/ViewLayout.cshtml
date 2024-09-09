@@ -1,0 +1,118 @@
+﻿@model List<MovieTicketBooking.Models.Seat>
+@{
+    ViewBag.Title = "View Seats";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+<h2 class="text-center">Seats Layout</h2>
+
+<!-- Embedded CSS for styling -->
+<style>
+    /* Container for the seat grid */
+    .seat-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        background-color: #f8f9fa;
+        border: 2px solid #dee2e6;
+        border-radius: 10px;
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+    /* Style for each row of seats */
+    .myrow {
+        display: flex;
+        gap: 5px; 
+        margin-bottom: 5px; 
+    }
+
+    /* Style for individual seat buttons */
+    .seatbutton {
+        width: 40px; 
+        height: 40px; 
+        font-size: 12px; 
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        border: 2px solid #6c757d; 
+        border-radius: 5px; 
+        color: #000; 
+        user-select: none; 
+        cursor: default;
+    }
+
+        /* Seat type colors */
+        .seatbutton.silver {
+            background-color: #6c757d; /* Dark gray for Silver */
+        }
+
+        .seatbutton.gold {
+            background-color: #ffd700; /* Yellow for Gold */
+        }
+
+        .seatbutton.platinum {
+            background-color: #add8e6; /* Light blue for Platinum */
+        }
+
+        /* Seat when hovered over */
+        .seatbutton:hover {
+            background-color: #19ff26;
+        }
+
+    /* Styling for screen indicator */
+    .screen {
+        background-color: #343a40;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        width: 100%;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        font-size: 14px;
+        letter-spacing: 1px;
+        font-weight: bold;
+    }
+</style>
+
+<!-- Screen display -->
+<div class="screen">SCREEN THIS WAY</div>
+
+<!-- Container for the seat grid -->
+<div class="seat-grid">
+    @* Render each row of seats *@
+    @for (char row = 'A'; row <= 'H'; row++) // Adjust rows as needed
+    {
+        <div class="myrow">
+            @foreach (var seat in Model.Where(s => s.RowNumber == row.ToString())) // Render seats by row
+            {
+                string seatTypeClass = "";
+
+               
+                switch (seat.SeatTypeId)
+                {
+                    case 1: 
+                        seatTypeClass = "silver";
+                        break;
+                    case 2: 
+                        seatTypeClass = "gold";
+                        break;
+                    case 3: 
+                        seatTypeClass = "platinum";
+                        break;
+                    default:
+                        seatTypeClass = "silver"; 
+                        break;
+                }
+
+                <button class="seatbutton @(seatTypeClass)"
+                        data-seatid="@seat.SeatId"
+                        data-row="@seat.RowNumber"
+                        data-column="@seat.ColumnNumber">
+                    @seat.RowNumber @seat.ColumnNumber
+                </button>
+            }
+        </div>
+    }
+</div>

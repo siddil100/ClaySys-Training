@@ -1,0 +1,80 @@
+﻿/* UserLayout.css */
+
+/* Reset browser styles */
+body, h1, p, div {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.branding {
+    display: flex;
+    align-items: center;
+    margin-left: -130px;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+    transition: color 0.3s ease;
+    
+    right: 10px;
+}
+
+    .navbar-links a:hover {
+        color: #ddd;
+    }
+
+
+
+
+#logout-button {
+    background-color: #333;
+    color: #ef2121;
+    border: #c01f49;
+    border: none;
+    /* padding: 5px 15px; */
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 30px;
+    transition: background-color 0.3s ease;
+    position: absolute;
+}
+
+    #logout-button:hover {
+        background-color: #444; 
+    }

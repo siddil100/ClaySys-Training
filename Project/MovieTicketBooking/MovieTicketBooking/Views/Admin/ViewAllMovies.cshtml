@@ -1,0 +1,68 @@
+﻿@model IEnumerable<MovieTicketBooking.Models.Movie>
+
+@{
+    ViewBag.Title = "View All Movies";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+<link href="~/Content/customcss/viewMoviesAdmin.css" rel="stylesheet" />
+<h2>All movies</h2>
+
+@if (Model.Any())
+{
+    <div class="movie-container">
+        <table class="table table-striped table-hover">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Movie name</th>
+                    <th>Description</th>
+                    <th>Duration</th>
+                    <th>Genre</th>
+                    <th>Release date</th>
+                    <th>Language</th>
+                    <th>Movie poster</th>
+                    <th>Actor</th>
+                    <th>Actress</th>
+                    <th>Director</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var movie in Model)
+                {
+                    <tr>
+                        <td>@movie.MovieName</td>
+                        <td>@movie.Description</td>
+                        <td>@movie.Duration</td>
+                        <td>@movie.Genre</td>
+                        <td>@movie.ReleaseDate.ToString("dd-MM-yyyy")</td>
+                        <td>@movie.Language</td>
+                        <td>
+                            @if (!string.IsNullOrEmpty(movie.MoviePoster))
+                            {
+                                <img src="data:image/jpeg;base64,@movie.MoviePoster" alt="Movie Poster" class="movie-poster" />
+                            }
+                        </td>
+                        <td>@movie.Actor</td>
+                        <td>@movie.Actress</td>
+                        <td>@movie.Director</td>
+                        <td>
+                            <div class="action-buttons">
+                                @Html.ActionLink("Edit", "EditMovie", new { id = movie.MovieId }, new { @class = "btn btn-primary btn-sm" })
+                                @using (Html.BeginForm("DeleteMovie", "Admin", FormMethod.Post))
+                                {
+                                    @Html.AntiForgeryToken()
+                                    @Html.Hidden("id", movie.MovieId)
+                                    <input type="submit" value="Delete" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure you want to delete this movie?');" />
+                                }
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+}
+else
+{
+    <p class="no-movies">No movies available.</p>
+}

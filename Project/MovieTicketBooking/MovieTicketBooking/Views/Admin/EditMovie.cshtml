@@ -1,0 +1,103 @@
+﻿@model MovieTicketBooking.Models.Movie
+@{
+    ViewBag.Title = "Edit movie";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+<link href="~/Content/customcss/Editmovie.css" rel="stylesheet" />
+<h2>Edit movie</h2>
+
+@using (Html.BeginForm("EditMovie", "Admin", FormMethod.Post, new { enctype = "multipart/form-data", id = "editMovieForm", @class = "form-container" }))
+{
+    @Html.HiddenFor(m => m.MovieId)
+    <div class="form-group">
+        @Html.LabelFor(m => m.MovieName)
+        @Html.TextBoxFor(m => m.MovieName, new { @class = "form-control", @id = "MovieName", @oninput = "validateMovieName()" })
+        <span class="error-message" id="errorMovieName"></span>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Description)
+        @Html.TextAreaFor(m => m.Description, new { @class = "form-control", @id = "Description", @oninput = "validateDescription()" })
+        <span class="error-message" id="errorDescription"></span>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Duration)
+        @Html.TextBoxFor(m => m.Duration, new { @class = "form-control", @id = "Duration", @oninput = "validateDuration()" })
+        <span class="error-message" id="errorDuration"></span>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Genre)
+        @Html.DropDownListFor(m => m.Genre,
+            new List<SelectListItem>
+            {
+                new SelectListItem { Text = "Action", Value = "Action" },
+                new SelectListItem { Text = "Comedy", Value = "Comedy"},
+                new SelectListItem { Text = "Drama", Value = "Drama" },
+                new SelectListItem { Text = "Horror", Value = "Horror" },
+                new SelectListItem { Text = "Romance", Value = "Romance" },
+                new SelectListItem { Text = "Sci-Fi", Value = "Sci-Fi" },
+                new SelectListItem { Text = "Thriller", Value = "Thriller" }
+            },
+            "-- Select Genre --",
+            new { @class = "form-control", @id = "Genre", @onchange = "validateGenre()" })
+        <span class="error-message" id="errorGenre"></span>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.ReleaseDate)
+        @Html.TextBoxFor(m => m.ReleaseDate, "{0:yyyy-MM-dd}", new { @class = "form-control", @id = "ReleaseDate", @type = "date" })
+        <span class="error-message" id="errorReleaseDate"></span>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Language)
+        @Html.DropDownListFor(
+            m => m.Language,
+            new List<SelectListItem>
+            {
+               new SelectListItem { Text = "English", Value = "English" },
+                        new SelectListItem { Text = "Hindi", Value = "Hindi" },
+                        new SelectListItem { Text = "Tamil", Value = "Tamil" },
+                        new SelectListItem { Text = "Telugu", Value = "Telugu" },
+                        new SelectListItem { Text = "Kannada", Value = "Kannada" },
+                        new SelectListItem { Text = "Malayalam", Value = "Malayalam"}
+
+                        },
+            "-- Select Language --",
+            new { @class = "form-control", @id = "Language" }
+        )
+        <span class="error-message" id="errorLanguage"></span>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.MoviePoster)
+        <input type="file" id="MoviePoster" name="MoviePoster" accept="image/*" class="form-control-file" />
+        @if (!string.IsNullOrEmpty(Model.MoviePoster))
+        {
+            <img src="data:image/jpeg;base64,@Model.MoviePoster" alt="Movie Poster" style="width: 100px; height: auto; display: block; margin-top: 10px;" />
+        }
+        <span class="error-message" id="errorMoviePoster"></span>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Actor)
+        @Html.TextBoxFor(m => m.Actor, new { @class = "form-control", @id = "Actor", @oninput = "validateActor()" })
+        <span class="error-message" id="errorActor"></span>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Actress)
+        @Html.TextBoxFor(m => m.Actress, new { @class = "form-control", @id = "Actress", @oninput = "validateActress()" })
+        <span class="error-message" id="errorActress"></span>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Director)
+        @Html.TextBoxFor(m => m.Director, new { @class = "form-control", @id = "Director", @oninput = "validateDirector()" })
+        <span class="error-message" id="errorDirector"></span>
+    </div>
+    <input type="submit" value="Update Movie" class="btn-primary" />
+}
+@section Scripts {
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="~/Scripts/customjs/Editmovie.js"></script>
+
+}

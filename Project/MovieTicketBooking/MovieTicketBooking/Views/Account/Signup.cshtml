@@ -1,0 +1,110 @@
+﻿@model MovieTicketBooking.ViewModels.RegisterViewModel
+
+@{
+    ViewBag.Title = "Signup";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 align="center" style="padding: 10px; color: blue;">Signup</h2>
+
+<link href="~/Content/customcss/signup.css" rel="stylesheet" />
+
+@using (Html.BeginForm("Register", "Account", FormMethod.Post, new { id = "signupForm" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="signup-form">
+        <div class="form-group">
+            @Html.LabelFor(m => m.UserDetails.FirstName)
+            @Html.TextBoxFor(m => m.UserDetails.FirstName, new { @class = "form-control", placeholder = "Enter first name", @id = "UserDetails_FirstName", @oninput = "validateFirstName()" })
+            @Html.ValidationMessageFor(m => m.UserDetails.FirstName, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.UserDetails.LastName)
+            @Html.TextBoxFor(m => m.UserDetails.LastName, new { @class = "form-control", placeholder = "Enter last name", @id = "UserDetails_LastName", @oninput = "validateLastName()" })
+            @Html.ValidationMessageFor(m => m.UserDetails.LastName, "", new { @class = "text-danger" })
+        </div>
+
+
+
+        <div class="form-group">
+            @Html.Label("Dob", "Date of birth")
+            @Html.TextBoxFor(m => m.UserDetails.Dob, new { @class = "form-control", @id = "UserDetails_Dob", placeholder = "Enter date of birth" })
+            @Html.ValidationMessageFor(m => m.UserDetails.Dob, "", new { @class = "text-danger" })
+        </div>
+
+
+
+        <div class="form-group">
+            @Html.Label("Gender", "Gender")
+            @Html.RadioButtonFor(m => m.UserDetails.Gender, "Male") Male
+            @Html.RadioButtonFor(m => m.UserDetails.Gender, "Female") Female
+            <span id="genderError" class="text-danger" style="display:none;">Please select a gender.</span>
+        </div>
+
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.UserDetails.PhoneNumber)
+            @Html.TextBoxFor(m => m.UserDetails.PhoneNumber, new { @class = "form-control", placeholder = "Enter phone number", id = "UserDetails_PhoneNumber", @oninput = "validatePhoneNumber()" })
+            @Html.ValidationMessageFor(m => m.UserDetails.PhoneNumber, "", new { @class = "text-danger" })
+        </div>
+
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.UserDetails.Address)
+            @Html.TextBoxFor(m => m.UserDetails.Address, new { @class = "form-control", placeholder = "Enter address", id = "UserDetails_Address", @oninput = "validateAddress()" })
+            @Html.ValidationMessageFor(m => m.UserDetails.Address, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="form-group">
+            @Html.Label("StateId", "State")
+            @Html.DropDownListFor(m => m.UserDetails.StateId, ViewBag.States as List<SelectListItem>, "Select State", new { @class = "form-control", @id = "StateDropdown" })
+            @Html.ValidationMessageFor(m => m.UserDetails.StateId, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="form-group">
+            @Html.Label("CityId", "City")
+            @Html.DropDownListFor(m => m.UserDetails.CityId, new List<SelectListItem>(), "Select City", new { @class = "form-control", @id = "CityDropdown", data_get_cities_url = Url.Action("GetCities", "Account") })
+            @Html.ValidationMessageFor(m => m.UserDetails.CityId, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.User.Email)
+            @Html.TextBoxFor(m => m.User.Email, new { @class = "form-control", placeholder = "Enter email", @id = "User_Email", @oninput = "validateEmail()" })
+            @Html.ValidationMessageFor(m => m.User.Email, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.User.Password)
+            @Html.PasswordFor(m => m.User.Password, new { @class = "form-control", placeholder = "Enter password", @id = "User_Password", @oninput = "validatePassword()" })
+            @Html.ValidationMessageFor(m => m.User.Password, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="form-group">
+            <label for="ConfirmPassword">Confirm Password</label>
+            <input type="password" class="form-control" id="ConfirmPassword" name="ConfirmPassword" placeholder="Confirm password" oninput="validateConfirmPassword()" />
+            <span class="text-danger" id="ConfirmPasswordError"></span>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Sign up</button>
+
+        <div class="mt-3">
+            <p>
+                Already have an account?
+                @Html.ActionLink("Login here", "Login", "Account", null, new { @class = "text-primary" })
+            </p>
+        </div>
+    </div>
+}
+
+@section Scripts {
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="~/Scripts/customjs/citydropdown.js"></script>
+    <script src="~/Scripts/customjs/signupvalidation.js"></script>
+    <script type="text/javascript">
+    var checkEmailUrl = '@Url.Action("CheckEmailExists", "Account")';
+    </script>
+}

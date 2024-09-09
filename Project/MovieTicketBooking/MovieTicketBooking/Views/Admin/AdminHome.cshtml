@@ -1,0 +1,43 @@
+﻿
+@{
+    ViewBag.Title = "AdminHome";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+<h2>Admin home</h2>
+
+@{
+    ViewBag.Title = "Admin Home";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+<link href="~/Content/customcss/Adminhome.css" rel="stylesheet" />
+
+
+<p>Welcome to the Cine Tickets admin dashboard! Here you can manage various aspects of the movie ticket booking system.</p>
+
+<div class="dashboard-summary">
+    <div class="dashboard-item">
+        <h3>Add movies</h3>
+        <p>Add new movies to the system as new movies arrive.</p>
+        <a href="@Url.Action("AddMovie", "Admin")" class="btn btn-primary">View Bookings</a>
+    </div>
+    <div class="dashboard-item">
+        <h3>Manage movies</h3>
+        <p>Edit, or remove movies from the system.</p>
+        <a href="@Url.Action("ViewAllMovies", "Admin")" class="btn btn-primary">Manage Movies</a>
+    </div>
+    <div class="dashboard-item">
+        <h3>Add seats</h3>
+        <p>Configure seat arrangements and add new seats to theatre.</p>
+        <a href="@Url.Action("CreateSeat", "Admin")" class="btn btn-primary">Manage Seats</a>
+    </div>
+    <div class="dashboard-item">
+        <h3>Manage Seats</h3>
+        <p>Configure added seats to the theatre and change type if needed.</p>
+        <a href="@Url.Action("ViewSeats", "Admin")" class="btn btn-primary">Manage Seats</a>
+    </div>
+</div>
+
+
+
+

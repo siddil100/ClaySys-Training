@@ -1,0 +1,45 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title - User</title>
+    <link href="~/Content/customcss/UserLayout.css" rel="stylesheet" />
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <div class="branding">
+                <img src="@Url.Content("~/Content/images/index/logo.png")" alt="Logo" class="logo" />
+                @Html.ActionLink("CineTickets", "UserHome", "User", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-links">
+
+                <a href="@Url.Action("UserHome", "User")">Home</a>
+                <a href="@Url.Action("UpdatePassword", "User")">Update Password</a>
+
+
+                <a href="@Url.Action("Edit", "User", new { id = (int)Session["UserId"] })">Edit Profile</a>
+                @if (Session["FirstName"] != null)
+                {
+                    <span id="name-span">Welcome, @Session["Firstname"]</span>
+                }
+                <form action="@Url.Action("Logout", "Account")" method="post" style="display:inline;">
+                    <button type="submit" id="logout-button">Logout</button>
+                </form>
+
+
+            </div>
+        </div>
+    </nav>
+
+    <div>
+        @RenderBody()
+    </div>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

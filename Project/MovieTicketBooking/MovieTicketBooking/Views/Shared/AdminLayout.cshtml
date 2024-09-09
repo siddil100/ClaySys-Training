@@ -1,0 +1,133 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewBag.Title - Admin</title>
+    <style>
+        .custom-body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .navbar {
+            background-color: #343a40; 
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+            .navbar .navbar-brand {
+                margin-right: 120px;
+                color: white;
+            }
+
+            .navbar a {
+                color: white;
+                text-decoration: none;
+                margin: 0 10px;
+            }
+
+            .navbar .nav-left {
+                display: flex;
+                align-items: center;
+                margin-left:740px;
+            }
+
+            .navbar .logout {
+                margin-left: auto;
+            }
+
+        .wrapper {
+            display: flex;
+            flex: 1;
+        }
+
+        .sidebar {
+            width: 250px;
+            background-color: #343a40; 
+            color: white;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+            .sidebar h4 {
+                margin-top: 0;
+            }
+
+            .sidebar a {
+                color: white;
+                display: block;
+                padding: 10px 0;
+                text-decoration: none;
+                margin-bottom: 5px;
+            }
+
+                .sidebar a:hover {
+                    background-color: #495057;
+                    padding-left: 15px;
+                    transition: padding-left 0.3s;
+                }
+
+        .content {
+            flex: 1;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: #f8f9fa;
+        }
+
+        #logout-button {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+            #logout-button:hover {
+                color: darkred;
+                text-decoration: underline;
+                cursor: pointer;
+            }
+
+        
+    </style>
+</head>
+<body class="custom-body">
+    <div class="navbar">
+        <div class="navbar-brand">Admin Dashboard</div>
+        <div class="nav-left">
+            <a href="@Url.Action("AdminHome", "Admin")">Admin home</a>
+            <a href="@Url.Action("AddMovie", "Admin")">Add movie</a>
+            <a href="@Url.Action("ViewAllMovies", "Admin")">View movies</a>
+            <a href="@Url.Action("CreateShowtime", "Admin")">Add showtimes</a>
+            <a href="@Url.Action("ViewShowtimes", "Admin")">View showtimes</a>
+            <a href="@Url.Action("ViewLayout", "Admin")">View layout</a>
+        </div>
+        <div class="logout">
+            <form action="@Url.Action("Logout", "Account")" method="post">
+                <button type="submit" id="logout-button">Logout</button>
+            </form>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="sidebar">
+            <h4>Menu</h4>
+            <a href="@Url.Action("AdminHome", "Admin")">Dashboard</a>
+            <a href="#">Users</a>
+            <a href="@Url.Action("CreateSeat", "Admin")">Create seats</a>
+            <a href="@Url.Action("ViewSeats", "Admin")">View seats</a>
+            <a href="#">Help</a>
+        </div>
+        <div class="content">
+            @RenderBody()
+        </div>
+    </div>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

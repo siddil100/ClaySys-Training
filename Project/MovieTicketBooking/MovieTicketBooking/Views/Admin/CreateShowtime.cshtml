@@ -1,0 +1,48 @@
+﻿@model MovieTicketBooking.Models.ShowTime
+@{
+    ViewBag.Title = "Create showtimes";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+<link href="~/Content/customcss/createshowtimes.css" rel="stylesheet" />
+<h2>Create showtimes</h2>
+@using (Html.BeginForm("CreateShowtime", "Admin", FormMethod.Post, new { @class = "form-horizontal form-container", id = "showtimeForm" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.MovieId, "Movie", new { @class = "control-label col-md-2", @id = "labelMovieId" })
+        <div class="col-md-10">
+            @Html.DropDownListFor(model => model.MovieId, ViewBag.Movies as SelectList, "-- Select Movie --", new { @class = "form-control", @id = "MovieId" })
+            <span class="error-message" id="errorMovieId"></span>
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.ShowDate, new { @class = "control-label col-md-2", @id = "labelShowDate" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(model => model.ShowDate, "{0:yyyy-MM-dd}", new { @class = "form-control", @id = "ShowDate", type = "date" })
+            <span class="error-message" id="errorShowDate"></span>
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.StartTime, new { @class = "control-label col-md-2", @id = "labelStartTime" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(model => model.StartTime, "{0:hh\\:mm}", new { @class = "form-control", @id = "StartTime", type = "time" })
+            <span class="error-message" id="errorStartTime"></span>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Create Showtime" class="btn btn-primary" />
+        </div>
+    </div>
+}
+
+@section Scripts {
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="~/Scripts/customjs/Createshowtime.js"></script>
+ }

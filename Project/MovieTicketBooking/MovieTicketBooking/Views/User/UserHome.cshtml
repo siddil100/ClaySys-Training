@@ -1,0 +1,67 @@
+﻿@model List<MovieTicketBooking.Models.Movie>
+
+@{
+    ViewBag.Title = "UserHome";
+    Layout = "~/Views/Shared/UserLayout.cshtml";
+}
+<link href="~/Content/customcss/userHome.css" rel="stylesheet" />
+<h2>Movies list</h2>
+
+<div class="movie-list">
+    @if (Model != null && Model.Count > 0)
+    {
+        <ul>
+            @foreach (var movie in Model)
+            {
+                <li class="movie-card">
+                    <!-- Card Image -->
+                    <div class="card-image">
+                        <img src="data:image/jpeg;base64,@movie.MoviePoster" alt="@movie.MovieName" />
+                    </div>
+
+                   
+                    <div class="card-header">
+                        <h3>@movie.MovieName</h3>
+                    </div>
+
+                    <!-- Movie Details (Genre, Language, Duration) -->
+                    <div class="card-body">
+                        <p><strong>Genre:</strong> @movie.Genre</p>
+                        <p><strong>Language:</strong> @movie.Language</p>
+                        <p><strong>Duration:</strong> @movie.Duration minutes</p>
+                    </div>
+
+                    <!-- Buttons: View Details and Book Now -->
+                    <div class="card-footer">
+                        <!-- View Details Button -->
+                        @using (Html.BeginForm("ViewMovieDetailsUser", "User", FormMethod.Get))
+                        {
+                            @Html.AntiForgeryToken()
+                            @Html.Hidden("movieId", movie.MovieId)
+                            <button type="submit" class="btn btn-secondary">
+                                View Details
+                            </button>
+                        }
+
+                        <!-- Book Now Button -->
+                        @using (Html.BeginForm("SeeShowtimes", "User", FormMethod.Get))
+                        {
+                            @Html.AntiForgeryToken()
+                            @Html.Hidden("movieId", movie.MovieId)
+                            <button type="submit" class="btn btn-primary" onclick="return confirm('Are you sure you want to view the showtimes for this movie?');">
+                                View Showtimes
+                            </button>
+                        }
+
+                    </div>
+                </li>
+            }
+        </ul>
+    }
+    else
+    {
+        <p>No movies available at the moment.</p>
+    }
+</div>
+
+

@@ -1,0 +1,114 @@
+﻿@model MovieTicketBooking.Models.Movie
+
+@{
+    ViewBag.Title = "Movie Details";
+    Layout = "~/Views/Shared/UserLayout.cshtml";
+}
+
+<div class="movie-card">
+    <h2>@Model.MovieName</h2>
+
+    <div class="movie-details-container">
+        <!-- Movie Poster -->
+        <div class="movie-poster">
+            <img src="data:image/jpeg;base64,@Model.MoviePoster" alt="@Model.MovieName" />
+        </div>
+
+        <!-- Movie Info -->
+        <div class="movie-info">
+            <p><strong>Description:</strong> @Model.Description</p>
+            <p><strong>Duration:</strong> @Model.Duration minutes</p>
+            <p><strong>Genre:</strong> @Model.Genre</p>
+            <p><strong>Release Date:</strong> @Model.ReleaseDate.ToString("dd-MM-yyyy")</p>
+            <p><strong>Language:</strong> @Model.Language</p>
+            <p><strong>Actor:</strong> @Model.Actor</p>
+            <p><strong>Actress:</strong> @Model.Actress</p>
+            <p><strong>Director:</strong> @Model.Director</p>
+        </div>
+    </div>
+
+    <!-- Buttons -->
+    <div class="movie-buttons">
+        @using (Html.BeginForm("SeeShowtimes", "User", FormMethod.Get))
+        {
+            @Html.AntiForgeryToken()
+            @Html.Hidden("movieId", Model.MovieId)
+            <button type="submit" class="btn btn-primary" onclick="return confirm('Are you sure you want to view the showtimes for this movie?');">
+                View Showtimes
+            </button>
+        }
+
+        <a href="@Url.Action("Index", "User")" class="btn btn-secondary">
+            Back to List
+        </a>
+    </div>
+</div>
+
+<!-- Style for Movie Details -->
+<style>
+    .movie-card {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+    }
+
+        .movie-card h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+    .movie-details-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .movie-poster img {
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        max-width: 100%;
+        height:500px;
+    }
+
+    .movie-info {
+        text-align: center;
+    }
+
+        .movie-info p {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+    .movie-buttons {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        gap: 10px;
+    }
+
+        .movie-buttons .btn {
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+    .btn-primary {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+    }
+
+    .btn-secondary {
+        background-color: #6c757d;
+        color: #fff;
+        border: none;
+    }
+</style>

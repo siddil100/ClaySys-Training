@@ -1,0 +1,119 @@
+﻿@model MovieTicketBooking.ViewModels.UserDetailsViewModel
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/UserLayout.cshtml";
+}
+<link href="~/Content/customcss/Editprofile.css" rel="stylesheet" />
+
+
+
+<div class="form-container">
+    <h2>Edit User Details</h2>
+
+    @using (Html.BeginForm("Edit", "User", FormMethod.Post, new { id = "editForm" }))
+    {
+        @Html.HiddenFor(m => m.UserId)
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.FirstName, "First name")
+            @Html.TextBoxFor(m => m.FirstName, new { @class = "form-control", @id = "FirstName", @oninput = "validateFirstName()" })
+            <span class="error-message" id="errorFirstName">First name is required</span>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.LastName, "Last name")
+            @Html.TextBoxFor(m => m.LastName, new { @class = "form-control", @id = "LastName", @oninput = "validateLastName()" })
+            <span class="error-message" id="errorLastName">Last name is required</span>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.DateOfBirth, "Date of birth")
+            @Html.TextBoxFor(m => m.DateOfBirth, "{0:yyyy-MM-dd}", new { @class = "form-control", @id = "DateOfBirth", @type = "date" })
+            <span class="error-message" id="errorDateOfBirth">Please select a valid date</span>
+        </div>
+
+
+        <div class="form-group gender-group">
+            @Html.LabelFor(m => m.Gender, "Gender", new { @class = "gender-label" })
+            <div class="gender-options">
+                @Html.RadioButtonFor(m => m.Gender, "Male") Male
+                @Html.RadioButtonFor(m => m.Gender, "Female") Female
+            </div>
+            <span class="error-message" id="errorGender">Please select a gender</span>
+        </div>
+
+
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.PhoneNumber, "Phone number")
+            @Html.TextBoxFor(m => m.PhoneNumber, new { @class = "form-control", @id = "PhoneNumber", @oninput = "validatePhoneNumber()" })
+            <span class="error-message" id="errorPhoneNumber">Phone number must be 10 digits long, starting with 6, 7, 8, or 9.</span>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.Address, "Address")
+            @Html.TextBoxFor(m => m.Address, new { @class = "form-control", @id = "Address", @oninput = "validateAddress()" })
+            <span class="error-message" id="errorAddress">Address is required</span>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.StateId, "State")
+            @Html.DropDownListFor(m => m.StateId, (IEnumerable<SelectListItem>)ViewBag.States, "Select State", new { @class = "form-control" })
+            <span class="error-message" id="errorState">Please select a state</span>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.CityId, "City")
+            @Html.DropDownListFor(m => m.CityId, (IEnumerable<SelectListItem>)ViewBag.Cities, "Select City", new { @class = "form-control" })
+            <span class="error-message" id="errorCity">Please select a city</span>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Edit</button>
+    }
+</div>
+
+@section Scripts {
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="~/Scripts/customjs/Editprofile.js"></script>
+    <script>
+        $(document).ready(function () {
+    $('#StateId').change(function () {
+        var stateId = $(this).val();
+
+        if (stateId) {
+            // If a state is selected, make an AJAX request to get the corresponding cities
+            $.ajax({
+                url: '@Url.Action("GetCities_Ajax", "User")', // Action method URL
+                type: 'GET',
+                data: { stateId: stateId }, // Pass the selected state ID to the server
+                success: function (data) {
+                    // On success, populate the city dropdown with the received data
+                    var cityDropdown = $('#CityId');
+                    cityDropdown.empty(); // Clear existing options
+                    cityDropdown.append('<option value="">Select City</option>'); // Add default option
+
+                    // Add each city to the dropdown
+                    $.each(data, function (index, item) {
+                        cityDropdown.append($('<option>', {
+                            value: item.Value,
+                            text: item.Text
+                        }));
+                    });
+                },
+                error: function () {
+                    // Handle errors
+                    alert("Error loading cities. Please try again.");
+                }
+            });
+        } else {
+            // If no state is selected, clear the city dropdown
+            $('#CityId').empty();
+            $('#CityId').append('<option value="">Select City</option>');
+        }
+    });
+});
+
+    </script>
+}
