@@ -7,21 +7,21 @@
     var tenDaysFromTomorrow = new Date();
     tenDaysFromTomorrow.setDate(tomorrow.getDate() + 10); // 10 days from day after tommorrow
 
-    var minDate = tomorrow.toISOString().split('T')[0]; // Format: YYYY-MM-DD
+    var minDate = tomorrow.toISOString().split('T')[0]; 
     var maxDate = tenDaysFromTomorrow.toISOString().split('T')[0]; // Format: YYYY-MM-DD
 
     $('#ShowDate').attr('min', minDate);
     $('#ShowDate').attr('max', maxDate);
 
-    // Start Time Validation
+    // Time Validation
     $('#StartTime').on('change', function () {
         var startTime = $(this).val();
         var hours = parseInt(startTime.split(':')[0], 10);
 
         // Disable invalid start times
-        if (startTime === "00:00" || (hours >= 0 && hours < 4)) {
+        if (startTime === "00:00") {
             $(this).val(""); // Reset to empty
-            $('#errorStartTime').text("Start time cannot be 00:00 and hours from 12:00 to 03:59 am are not allowed.").show();
+            $('#errorStartTime').text("Start time cannot be 00:00.").show();
         } else {
             $('#errorStartTime').text("").hide();
         }
@@ -46,7 +46,7 @@
         }
 
         if (!isStartTimeValid) {
-            $('#errorStartTime').text("Please select a valid start time between 04:00 am and 12:00.").show();
+            $('#errorStartTime').text("Please select a valid start time").show();
         } else {
             $('#errorStartTime').text("").hide();
         }

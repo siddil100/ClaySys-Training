@@ -49,12 +49,16 @@
       <HintPath>..\packages\BCrypt.Net-Next.4.0.3\lib\net472\BCrypt.Net-Next.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NLog.5.3.4\lib\net46\NLog.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
     </Reference>
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Compression" />
     <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
     </Reference>
@@ -143,6 +147,8 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="LoggingHelper.cs" />
+    <Compile Include="Models\Booking.cs" />
     <Compile Include="Models\City.cs" />
     <Compile Include="Models\ContactUs.cs" />
     <Compile Include="Models\Movie.cs" />
@@ -151,6 +157,7 @@
     <Compile Include="Models\ShowTime.cs" />
     <Compile Include="Models\State.cs" />
     <Compile Include="Models\User.cs" />
+    <Compile Include="Models\UserBookings.cs" />
     <Compile Include="Models\UserDetails.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\AccountRepository.cs" />
@@ -158,6 +165,7 @@
     <Compile Include="Repositories\HomeRepository.cs" />
     <Compile Include="Repositories\IUserRepository.cs" />
     <Compile Include="Repositories\UserRepository.cs" />
+    <Compile Include="ViewModels\BookingViewModel.cs" />
     <Compile Include="ViewModels\LoginViewModel.cs" />
     <Compile Include="ViewModels\RegisterViewModel.cs" />
     <Compile Include="ViewModels\SeatViewModel.cs" />
@@ -184,6 +192,7 @@
     <Content Include="Content\customcss\aboutus.css" />
     <Content Include="Content\customcss\Addmovie.css" />
     <Content Include="Content\customcss\Adminhome.css" />
+    <Content Include="Content\customcss\BookingConfirmation.css" />
     <Content Include="Content\customcss\contact.css" />
     <Content Include="Content\customcss\Createseats.css" />
     <Content Include="Content\customcss\createshowtimes.css" />
@@ -193,13 +202,17 @@
     <Content Include="Content\customcss\Editshowtimes.css" />
     <Content Include="Content\customcss\index.css" />
     <Content Include="Content\customcss\Login.css" />
+    <Content Include="Content\customcss\myBookings.css" />
+    <Content Include="Content\customcss\searchFilerUserHome.css" />
     <Content Include="Content\customcss\signup.css" />
     <Content Include="Content\customcss\updatePassword.css" />
     <Content Include="Content\customcss\userHome.css" />
     <Content Include="Content\customcss\UserLayout.css" />
+    <Content Include="Content\customcss\viewBookingsAdmin.css" />
     <Content Include="Content\customcss\viewMoviesAdmin.css" />
     <Content Include="Content\customcss\viewSeatsAdmin.css" />
     <Content Include="Content\customcss\viewShowtimesAdmin.css" />
+    <Content Include="Content\customcss\viewUserDetails.css" />
     <Content Include="Content\images\aboutus\man-working-laptop.jpg" />
     <Content Include="Content\images\footerlogo\128px-Facebook_Logo_2023.png" />
     <Content Include="Content\images\footerlogo\128px-Instagram-Icon.png" />
@@ -218,6 +231,10 @@
     <Content Include="Scripts\bootstrap.esm.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="NLog.config" />
+    <None Include="NLog.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Scripts\jquery-3.7.0.intellisense.js" />
     <Content Include="Scripts\customjs\Addmovie.js" />
     <Content Include="Scripts\customjs\carousel.js" />
@@ -273,9 +290,17 @@
     <Content Include="Views\Admin\EditSeat.cshtml" />
     <Content Include="Views\User\SeeShowtimes.cshtml" />
     <Content Include="Views\User\ViewMovieDetailsUser.cshtml" />
+    <Content Include="Views\User\SelectSeats.cshtml" />
+    <Content Include="Views\User\BookingConfirmation.cshtml" />
+    <Content Include="Views\Admin\ListUsers.cshtml" />
+    <Content Include="Views\Admin\ViewUserDetails.cshtml" />
+    <Content Include="Views\User\_MovieListPartial.cshtml" />
+    <Content Include="Views\User\MyBookings.cshtml" />
+    <Content Include="Views\Admin\ViewBookings.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Logs\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />

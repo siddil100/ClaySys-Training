@@ -70,7 +70,7 @@ namespace MovieTicketBooking.Repositories
         }
 
 
-        
+
         /// <summary>
         /// Used for login
         /// </summary>
@@ -91,6 +91,15 @@ namespace MovieTicketBooking.Repositories
                     {
                         if (reader.Read())
                         {
+                            bool isActive = (bool)reader["isActive"];
+                            if (!isActive)
+                            {
+                                return new User
+                                {
+                                    IsActive = false
+                                };
+                            }
+
                             string hashedPassword = (string)reader["password"];
 
                             // Verify the password against the hashed password
@@ -127,7 +136,8 @@ namespace MovieTicketBooking.Repositories
                                 {
                                     UserId = userId,
                                     Email = emailAddress,
-                                    Role = role
+                                    Role = role,
+                                    IsActive = true
                                 };
                             }
                         }
@@ -136,7 +146,8 @@ namespace MovieTicketBooking.Repositories
             }
             return null;
         }
-    
+
+
 
         /// <summary>
         /// Used to get cities in edit profile

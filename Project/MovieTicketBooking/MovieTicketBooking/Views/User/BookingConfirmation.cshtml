@@ -1,0 +1,35 @@
+﻿@model MovieTicketBooking.Models.Booking
+
+@{
+    ViewBag.Title = "Booking Confirmation";
+    Layout = "~/Views/Shared/UserLayout.cshtml";
+}
+
+<h2 align="center">Booking Confirmation</h2>
+<link href="~/Content/customcss/BookingConfirmation.css" rel="stylesheet" />
+<div class="booking-confirmation">
+    @if (Model != null)
+    {
+        <div class="congratulations-message">
+            <p><strong>Congratulations on booking your ticket!</strong> Enjoy the show with CineTicket.</p>
+        </div>
+
+        <div class="booking-details-box">
+            <div class="booking-details">
+                <p><strong>Booking ID:</strong> @Model.BookingId</p>
+                <p><strong>Showtime ID:</strong> @Model.ShowtimeId</p>
+                <p><strong>Total Amount:</strong> ₹@Model.TotalAmount</p>
+                <p><strong>Booking Date:</strong> @Model.BookingDate.ToString("dd-MM-yyyy")</p>
+                <p><strong>Seats Booked:</strong> @Model.SeatDescriptions</p>
+            </div>
+
+            <div class="booking-actions">
+                <a href="@Url.Action("UserHome", "User")" class="btn btn-primary">Back to Home</a>
+            </div>
+        </div>
+    }
+    else
+    {
+        <p>No booking details available.</p>
+    }
+</div>

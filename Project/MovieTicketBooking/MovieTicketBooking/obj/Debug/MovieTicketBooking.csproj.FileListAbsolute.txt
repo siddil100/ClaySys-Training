@@ -87,3 +87,5 @@ C:\Users\ACER\source\repos\MovieTicketBooking\MovieTicketBooking\bin\System.Buff
 C:\Users\ACER\source\repos\MovieTicketBooking\MovieTicketBooking\bin\System.Memory.xml
 C:\Users\ACER\source\repos\MovieTicketBooking\MovieTicketBooking\bin\System.Numerics.Vectors.xml
 C:\Users\ACER\source\repos\MovieTicketBooking\MovieTicketBooking\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\ACER\source\repos\MovieTicketBooking\MovieTicketBooking\bin\NLog.dll
+C:\Users\ACER\source\repos\MovieTicketBooking\MovieTicketBooking\bin\NLog.xml

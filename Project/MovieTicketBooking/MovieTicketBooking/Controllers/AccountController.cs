@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
+using System.Linq;
+using System.Web;
 using System.Web.Mvc;
 using System.Web.Security;
 using MovieTicketBooking.Models;
@@ -36,7 +38,7 @@ namespace MovieTicketBooking.Controllers
             }
             catch (Exception ex)
             {
-                // Log exception and return error view
+                
                 System.Diagnostics.Debug.WriteLine(ex.Message);
                 ViewBag.ErrorMessage = "An error occurred while loading the states.";
                 return View("Error");
@@ -61,7 +63,7 @@ namespace MovieTicketBooking.Controllers
             }
             catch (Exception ex)
             {
-                // Log error
+                
                 System.Diagnostics.Debug.WriteLine(ex.Message);
                 return Json(new { success = false, message = "Error loading cities." }, JsonRequestBehavior.AllowGet);
             }
@@ -126,6 +128,11 @@ namespace MovieTicketBooking.Controllers
             return View();
         }
 
+        /// <summary>
+        /// Used to authenticate the user when logging in
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
         [HttpPost]
         public ActionResult Login(LoginViewModel model)
         {
@@ -133,11 +140,19 @@ namespace MovieTicketBooking.Controllers
             {
                 try
                 {
-                    var repository = new AccountRepository();
-                    var user = repository.AuthenticateUser(model.Email, model.Password);
+                    ;
+                    var user = _accountRepository.AuthenticateUser(model.Email, model.Password);
 
                     if (user != null)
                     {
+                        if (!user.IsActive)
+                        {
+                            
+
+                            ModelState.AddModelError("", "Your account is not active.");
+                            return View(model); 
+                        }
+
                         FormsAuthentication.SetAuthCookie(user.Email, false);
                         Session["UserId"] = user.UserId;
                         Session["Email"] = user.Email;
@@ -154,18 +169,20 @@ namespace MovieTicketBooking.Controllers
                     else
                     {
                         ModelState.AddModelError("", "Incorrect credentials, please try again.");
+                        return View(model); 
                     }
                 }
                 catch (Exception ex)
                 {
-                    // Log error
                     System.Diagnostics.Debug.WriteLine(ex.Message);
                     ViewBag.ErrorMessage = "An error occurred during login.";
                 }
             }
 
-            return View(model);
+            return View(model); 
         }
+
+
         /// <summary>
         /// Used for logging out user
         /// </summary>
@@ -178,6 +195,9 @@ namespace MovieTicketBooking.Controllers
                 FormsAuthentication.SignOut();
                 Session.Clear();
                 Session.Abandon();
+                Response.Cache.SetExpires(DateTime.UtcNow.AddMinutes(-1));
+                Response.Cache.SetCacheability(HttpCacheability.NoCache);
+                Response.Cache.SetNoStore();
             }
             catch (Exception ex)
             {
@@ -187,5 +207,8 @@ namespace MovieTicketBooking.Controllers
 
             return RedirectToAction("Login", "Account");
         }
+
+
+
     }
 }

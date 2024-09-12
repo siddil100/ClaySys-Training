@@ -15,13 +15,18 @@
                 <li>
                     <div class="showtime-card">
                         <p><strong>Date:</strong> @showtime.ShowDate.ToShortDateString()</p>
-                        <p><strong>Start Time:</strong> @showtime.StartTime</p>
+                        <p><strong>Start Time:</strong> @(DateTime.Today.Add(showtime.StartTime).ToString("hh:mm tt"))</p>
                         <p><strong>Screen:</strong> Screen @showtime.ScreenNumber</p>
 
-                        <form action="/Booking/Create" method="post">
-                            <input type="hidden" name="showtimeId" value="@showtime.ShowtimeId" />
-                            <button type="submit" class="btn btn-primary">Book Tickets</button>
-                        </form>
+                        @using (Html.BeginForm("SelectSeats", "User", FormMethod.Post))
+                        {
+                            @Html.AntiForgeryToken()
+                            @Html.Hidden("showtimeId", showtime.ShowtimeId)
+                            <button type="submit" class="btn btn-primary" onclick="return confirm('Are you sure you want to book tickets for this showtime?');">
+                                Book Tickets
+                            </button>
+                        }
+
                     </div>
                 </li>
             }

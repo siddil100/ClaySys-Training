@@ -385,6 +385,235 @@ namespace MovieTicketBooking.Repositories
             }
             return null;
         }
+        /// <summary>
+        /// Used to get the seats by specific showtime
+        /// </summary>
+        /// <param name="showtimeId"></param>
+        /// <returns>The seats for booking the show</returns>
+        public List<Seat> GetAllSeatsByShowtimeId(int showtimeId)
+        {
+            using (var connection = new SqlConnection(_connectionString))
+            {
+                var command = new SqlCommand("SPS_GetAllSeatsByShowtimeId", connection);
+                command.CommandType = CommandType.StoredProcedure;
+                command.Parameters.AddWithValue("@showtimeId", showtimeId);
+
+                connection.Open();
+                var reader = command.ExecuteReader();
+
+                var seats = new List<Seat>();
+                while (reader.Read())
+                {
+                    var seat = new Seat
+                    {
+                        SeatId = (int)reader["seatId"],
+                        RowNumber = (string)reader["rowNumber"],
+                        ColumnNumber = (int)reader["columnNumber"],
+                        SeatTypeId = (int)reader["seatTypeId"],
+                        ScreenNumber = (int)reader["screenNumber"],
+                        IsBooked = (bool)reader["isBooked"]
+                    };
+                    seats.Add(seat);
+                }
+                return seats;
+            }
+
+        }
+
+        /// <summary>
+        /// To fetch prices based on seat types
+        /// </summary>
+        /// <returns></returns>
+        public List<SeatType> GetSeatPrices()
+        {
+            using (var connection = new SqlConnection(_connectionString))
+            {
+                var seatPrices = new List<SeatType>();
+
+                using (var command = new SqlCommand("SPS_GetSeatPrices", connection))
+                {
+                    command.CommandType = CommandType.StoredProcedure;
+
+                    connection.Open();
+                    using (var reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            seatPrices.Add(new SeatType
+                            {
+                                SeatTypeId = reader.GetInt32(0),
+                                SeatTypeName = reader.GetString(1),
+                                Price = reader.GetDecimal(2)
+                            });
+                        }
+                    }
+                }
+
+                return seatPrices;
+            }
+        }
+        /// <summary>
+        /// Used to book the show
+        /// </summary>
+        /// <param name="userId"></param>
+        /// <param name="showtimeId"></param>
+        /// <param name="totalAmount"></param>
+        /// <param name="seatIds"></param>
+        public void InsertBooking(int userId, int showtimeId, decimal totalAmount, string seatIds)
+        {
+            using (var connection = new SqlConnection(_connectionString))
+            {
+                connection.Open();
+                var command = new SqlCommand("SPI_InsertBooking", connection)
+                {
+                    CommandType = CommandType.StoredProcedure
+                };
+                command.Parameters.AddWithValue("@UserId", userId);
+                command.Parameters.AddWithValue("@ShowtimeId", showtimeId);
+                command.Parameters.AddWithValue("@TotalAmount", totalAmount);
+                command.Parameters.AddWithValue("@PaymentStatus", "Paid");
+                command.Parameters.AddWithValue("@CancellationStatus", 0);
+                command.Parameters.AddWithValue("@SeatIds", seatIds);
+
+                command.ExecuteNonQuery();
+            }
+        }
+
+        /// <summary>
+        /// Used to show the info of currently booked tickets
+        /// </summary>
+        /// <param name="userId"></param>
+        /// <returns></returns>
+        public Booking GetLatestBookingForUser(int userId)
+        {
+            using (SqlConnection conn = new SqlConnection(_connectionString))
+            {
+                using (SqlCommand cmd = new SqlCommand("SPS_GetLatestBookingForUser", conn))
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.AddWithValue("@userId", userId);
+
+                    conn.Open();
+
+                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        Booking booking = null;
+                        List<string> seatDescriptions = new List<string>();
+
+                        if (reader.Read()) // Read booking details
+                        {
+                            booking = new Booking
+                            {
+                                BookingId = (int)reader["bookingId"],
+                                UserId = (int)reader["userId"],
+                                ShowtimeId = (int)reader["showtimeId"],
+                                TotalAmount = (decimal)reader["totalAmount"],
+                                BookingDate = (DateTime)reader["bookingDate"]
+                            };
+                        }
+
+                        // Move to the next result set
+                        if (reader.NextResult())
+                        {
+                            while (reader.Read()) // Reading seat details
+                            {
+                                string rowNumber = reader["rowNumber"].ToString();
+                                int columnNumber = (int)reader["columnNumber"];
+                                seatDescriptions.Add($"{rowNumber}{columnNumber}");
+                            }
+                        }
+
+                        // Convert list to a comma-separated string
+                        if (booking != null)
+                        {
+                            booking.SeatDescriptions = string.Join(", ", seatDescriptions);
+                        }
+
+                        return booking;
+                    }
+                }
+            }
+        }
+
+
+        public async Task<List<Movie>> GetFilteredMoviesAsync(string language, string genre)
+        {
+            var movies = new List<Movie>();
+
+            using (var connection = new SqlConnection(_connectionString))
+            {
+                using (var command = new SqlCommand("SPS_FilterMovies", connection))
+                {
+                    command.CommandType = CommandType.StoredProcedure;
+                    command.Parameters.AddWithValue("@language", language ?? string.Empty);
+                    command.Parameters.AddWithValue("@genre", genre ?? string.Empty);
+
+                    connection.Open();
+                    using (var reader = await command.ExecuteReaderAsync())
+                    {
+                        while (await reader.ReadAsync())
+                        {
+                            movies.Add(new Movie
+                            {
+                                MovieId = reader.GetInt32(0),
+                                MovieName = reader.GetString(1),
+                                Genre = reader.GetString(2),
+                                Description = reader.GetString(3),
+                                Duration = reader.GetInt32(4),
+                                ReleaseDate = reader.GetDateTime(5),
+                                Language = reader.GetString(6),
+                                MoviePoster = reader.GetString(7)
+                            });
+                        }
+                    }
+                }
+            }
+
+            return movies;
+        }
+
+
+        public IEnumerable<UserBookings> GetUserBookings(int userId)
+        {
+            var bookings = new List<UserBookings>();
+
+            using (var connection = new SqlConnection(_connectionString))
+            {
+                connection.Open();
+
+                var command = new SqlCommand("SPS_GetUserBookings", connection)
+                {
+                    CommandType = CommandType.StoredProcedure
+                };
+                command.Parameters.AddWithValue("@userId", userId);
+
+                using (var reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        bookings.Add(new UserBookings
+                        {
+                            BookingId = reader.GetInt32(0),
+                            MovieName = reader.GetString(1),
+                            ShowDate = reader.GetDateTime(2),
+                            StartTime = reader.GetTimeSpan(3),
+                            SeatNames = reader.GetString(4), 
+                            TotalAmount = reader.GetDecimal(5)
+                        });
+                    }
+                }
+            }
+
+            return bookings;
+        }
+
+
+
+
+
+
 
     }
 }
+
+        

@@ -1,0 +1,227 @@
+﻿@model List<MovieTicketBooking.Models.Seat>
+@{
+    ViewBag.Title = "Select seats";
+    Layout = "~/Views/Shared/UserLayout.cshtml";
+}
+
+<h2 class="text-center">Select seats</h2>
+
+<!-- Embedded CSS for styling -->
+<style>
+    /* Container for the seat grid */
+    .seat-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        background-color: #f8f9fa;
+        border: 2px solid #dee2e6;
+        border-radius: 10px;
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+    /*for each row of seats */
+    .myrow {
+        display: flex;
+        gap: 5px; /* Space between seats */
+        margin-bottom: 5px; /* Space between rows*/
+    }
+
+    /* Style for individual seat buttons */
+    .seatbutton {
+        width: 40px; 
+        height: 40px; 
+        font-size: 12px; 
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        border: 2px solid #6c757d; 
+        border-radius: 5px; 
+        color: #000; 
+        user-select: none; 
+        cursor: pointer; 
+        transition: background-color 0.3s ease; 
+    }
+
+        /* Seat that is unavailable */
+        .seatbutton.unavailable {
+            background-color: #dee2e6; 
+            border-color: #adb5bd; 
+            color: #6c757d; 
+            cursor: not-allowed; 
+        }
+
+        /* Seat type colors */
+        .seatbutton.silver {
+            background-color: #6c757d; 
+        }
+
+        .seatbutton.gold {
+            background-color: #ffd700; 
+        }
+
+        .seatbutton.platinum {
+            background-color: #add8e6; 
+        }
+
+        /* Seat when selected (turn green) */
+        .seatbutton.selected {
+            background-color: #28a745; 
+            border-color: #28a745; 
+            color: white; 
+        }
+
+        /*when hovered over */
+        .seatbutton:hover {
+            background-color: #e9ecef; 
+        }
+
+    /* Styling for screen indicator */
+    .screen {
+        background-color: #343a40;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        width: 98%;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        font-size: 14px;
+        letter-spacing: 1px;
+        font-weight: bold;
+    }
+</style>
+
+<!-- Screen display -->
+<div class="screen">SCREEN THIS WAY</div>
+
+@using (Html.BeginForm("ConfirmBooking", "User", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    @Html.Hidden("showtimeId", Session["ShowtimeId"])
+    @Html.Hidden("totalAmount", "", new { id = "totalAmountInput" })
+    @Html.Hidden("selectedSeats", "", new { id = "selectedSeatsInput" })
+
+    <!-- Container for the seat grid -->
+    <div class="seat-grid">
+        @for (char row = 'A'; row <= 'H'; row++) 
+        {
+            <div class="myrow">
+                @foreach (var seat in Model.Where(s => s.RowNumber == row.ToString())) // seats by row
+                {
+                    string seatTypeClass = "";
+
+                    
+                    switch (seat.SeatTypeId)
+                    {
+                        case 1:
+                            seatTypeClass = "silver";
+                            break;
+                        case 2:
+                            seatTypeClass = "gold";
+                            break;
+                        case 3:
+                            seatTypeClass = "platinum";
+                            break;
+                        default:
+                            seatTypeClass = "silver";
+                            break;
+                    }
+
+                    <label class="seatbutton seat @(seat.IsBooked ? "unavailable" : seatTypeClass)"
+                           data-seatid="@seat.SeatId" data-seattypeid="@seat.SeatTypeId">
+                        <input type="checkbox" style="display: none;" @(seat.IsBooked ? "disabled" : "") />
+                        @seat.RowNumber @seat.ColumnNumber
+                    </label>
+                }
+            </div>
+        }
+    </div>
+
+    <!-- Submit button -->
+    <div class="text-center mt-3">
+        <button type="submit" class="btn btn-primary">Confirm Selection</button>
+    </div>
+}
+<div id="totalAmount">Total: ₹ 0.00</div>
+@section Scripts {
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function() {
+    // Fetch seat prices on page load
+    $.ajax({
+        url: '@Url.Action("GetSeatPrices", "User")',
+        type: 'GET',
+        success: function(data) {
+            window.seatPrices = data;
+            console.log(window.seatPrices); 
+        },
+        error: function() {
+            alert('Failed to load seat prices.');
+        }
+    });
+
+    // Event listener for seat selection
+    $(".seatbutton").on("click", function() {
+        if (!$(this).hasClass("unavailable")) {
+            $(this).toggleClass("selected");
+            updateSelectedSeats();
+        }
+    });
+
+    // Update the total amount and selected seats when seats are selected
+    function updateSelectedSeats() {
+        var selectedSeats = $(".seatbutton.selected");
+        var totalAmount = 0;
+        var selectedSeatIds = [];
+
+        selectedSeats.each(function() {
+            var seatId = $(this).data("seatid");
+            var seatTypeId = $(this).data("seattypeid");
+            var seatPrice = window.seatPrices.find(price => price.SeatTypeId === seatTypeId);
+            if (seatPrice) {
+                totalAmount += seatPrice.Price;
+            }
+            selectedSeatIds.push(seatId); // Collect selected seat IDs
+        });
+
+        $("#totalAmount").text("Total: ₹" + totalAmount.toFixed(2));
+        $("#totalAmountInput").val(totalAmount.toFixed(2)); // Update hidden input field for total amount
+
+        // Update the hidden input field for selected seat IDs
+        $("#selectedSeatsInput").val(selectedSeatIds.join(","));
+
+        // Disable/enable the submit button based on seat selection
+        if (selectedSeats.length === 0) {
+            $("button[type='submit']").prop("disabled", true); // Disable if no seats are selected
+        } else {
+            $("button[type='submit']").prop("disabled", false); // Enable if seats are selected
+        }
+    }
+
+    // Ensure the submit button is disabled on page load
+    $("button[type='submit']").prop("disabled", true);
+
+    // Initialize seat checkbox change event
+    document.querySelectorAll('.seatbutton input[type="checkbox"]').forEach(function(seatCheckbox) {
+        seatCheckbox.addEventListener('change', function() {
+            // Get the parent seat button (label)
+            var seatButton = this.parentElement;
+
+            // Toggle the 'selected' class when the seat is checked or unchecked
+            if (this.checked) {
+                seatButton.classList.add('selected');
+            } else {
+                seatButton.classList.remove('selected');
+            }
+
+            
+            updateSelectedSeats();
+        });
+    });
+});
+
+
+    </script>
+}
+

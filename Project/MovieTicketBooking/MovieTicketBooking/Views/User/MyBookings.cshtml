@@ -1,0 +1,40 @@
+﻿@model IEnumerable<MovieTicketBooking.Models.UserBookings>
+@{
+    ViewBag.Title = "MyBookings";
+    Layout = "~/Views/Shared/UserLayout.cshtml";
+}
+
+<h2>MyBookings</h2>
+
+@if (Model != null && Model.Any())
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Movie Name</th>
+                <th>Show Date</th>
+                <th>Start Time</th>
+                <th>Seat(s)</th>
+                <th>Total Amount</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var booking in Model)
+            {
+                <tr>
+                    <td>@booking.MovieName</td>
+                    <td>@booking.ShowDate.ToString("dd-MM-yyyy")</td> <!-- Date in dd-MM-yyyy format -->
+                    <td>@(new DateTime(booking.StartTime.Ticks).ToString("hh:mm tt"))</td> <!-- Convert TimeSpan to DateTime for AM/PM format -->
+                    <td>@booking.SeatNames</td>
+                    <td>@booking.TotalAmount.ToString("C")</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>You have no bookings at the moment.</p>
+}
+
+

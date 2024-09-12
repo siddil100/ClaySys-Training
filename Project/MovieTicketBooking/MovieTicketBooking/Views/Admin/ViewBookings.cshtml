@@ -1,0 +1,43 @@
+﻿@model IEnumerable<MovieTicketBooking.ViewModels.BookingViewModel>
+
+@{
+    ViewBag.Title = "ViewBookings";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+<link href="~/Content/customcss/viewBookingsAdmin.css" rel="stylesheet" />
+
+<h2>View bookings</h2>
+
+@if (Model != null && Model.Any())
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>First name</th>
+                <th>Last name</th>
+                <th>Email</th>
+                <th>Movie name</th>
+                <th>Seats</th>
+                <th>Total amount</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var booking in Model)
+            {
+                <tr>
+                    <td>@booking.FirstName</td>
+                    <td>@booking.LastName</td>
+                    <td>@booking.Email</td>
+                    <td>@booking.MovieName</td>
+                    <td>@booking.SeatNames</td>
+                    <td>@booking.TotalAmount.ToString("C")</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p class="no-bookings-message">No bookings so far.</p>
+}

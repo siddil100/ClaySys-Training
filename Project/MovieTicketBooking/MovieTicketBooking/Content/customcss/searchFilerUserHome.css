@@ -1,0 +1,32 @@
+﻿/* search and filters*/
+
+.search-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#search-box {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.filter-container {
+    margin: 20px 0;
+    text-align: center;
+}
+
+    .filter-container label {
+        margin-right: 10px;
+        font-size: 16px;
+    }
+
+    .filter-container select {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+    }

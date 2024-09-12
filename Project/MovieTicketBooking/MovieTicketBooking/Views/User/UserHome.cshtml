@@ -1,13 +1,43 @@
 ﻿@model List<MovieTicketBooking.Models.Movie>
 
 @{
-    ViewBag.Title = "UserHome";
+    ViewBag.Title = "Userhome";
     Layout = "~/Views/Shared/UserLayout.cshtml";
 }
 <link href="~/Content/customcss/userHome.css" rel="stylesheet" />
-<h2>Movies list</h2>
+<link href="~/Content/customcss/searchFilerUserHome.css" rel="stylesheet" />
 
-<div class="movie-list">
+
+<!-- Search box -->
+<div class="search-container">
+    <input type="text" id="search-box" placeholder="Search movies..." onkeyup="searchMovies()" />
+</div>
+
+<!-- Filter by Language dropdown -->
+<div class="filter-container">
+    <label for="language-filter">Filter by language:</label>
+    <select id="language-filter" onchange="filterMovies()">
+        <option value="">All languages</option>
+        @foreach (var lang in Model.Select(m => m.Language).Distinct())
+        {
+            <option value="@lang">@lang</option>
+        }
+    </select>
+    <!-- Filter by Genre dropdown -->
+    <div class="filter-container">
+        <label for="genre-filter">Filter by genre:</label>
+        <select id="genre-filter" onchange="filterMovies()">
+            <option value="">All genres</option>
+            @foreach (var genre in Model.Select(m => m.Genre).Distinct())
+            {
+                <option value="@genre">@genre</option>
+            }
+        </select>
+    </div>
+</div>
+
+<!-- Movie List -->
+<div class="movie-list" id="movie-list">
     @if (Model != null && Model.Count > 0)
     {
         <ul>
@@ -19,7 +49,6 @@
                         <img src="data:image/jpeg;base64,@movie.MoviePoster" alt="@movie.MovieName" />
                     </div>
 
-                   
                     <div class="card-header">
                         <h3>@movie.MovieName</h3>
                     </div>
@@ -31,16 +60,13 @@
                         <p><strong>Duration:</strong> @movie.Duration minutes</p>
                     </div>
 
-                    <!-- Buttons: View Details and Book Now -->
                     <div class="card-footer">
                         <!-- View Details Button -->
                         @using (Html.BeginForm("ViewMovieDetailsUser", "User", FormMethod.Get))
                         {
                             @Html.AntiForgeryToken()
                             @Html.Hidden("movieId", movie.MovieId)
-                            <button type="submit" class="btn btn-secondary">
-                                View Details
-                            </button>
+                            <button type="submit" class="btn btn-secondary">View Details</button>
                         }
 
                         <!-- Book Now Button -->
@@ -48,11 +74,8 @@
                         {
                             @Html.AntiForgeryToken()
                             @Html.Hidden("movieId", movie.MovieId)
-                            <button type="submit" class="btn btn-primary" onclick="return confirm('Are you sure you want to view the showtimes for this movie?');">
-                                View Showtimes
-                            </button>
+                            <button type="submit" class="btn btn-primary">View Showtimes</button>
                         }
-
                     </div>
                 </li>
             }
@@ -64,4 +87,42 @@
     }
 </div>
 
+<!-- AJAX scripts for search and filter -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript">
+    // Search by movie name
+    function searchMovies() {
+        var query = $('#search-box').val();
+
+        $.ajax({
+            url: '@Url.Action("SearchMovies", "User")',
+            type: 'GET',
+            data: { searchTerm: query },
+            success: function (result) {
+                $('#movie-list').html(result);
+            },
+            error: function () {
+                alert("Error fetching movie data.");
+            }
+        });
+    }
+
+    // Filter by genre and language
+    function filterMovies() {
+        var genre = $('#genre-filter').val();
+        var language = $('#language-filter').val();
+
+        $.ajax({
+            url: '@Url.Action("FilterMovies", "User")',
+            type: 'GET',
+            data: { language: language, genre: genre },
+            success: function (result) {
+                $('#movie-list').html(result);
+            },
+            error: function () {
+                alert("Error fetching movie data.");
+            }
+        });
+    }
+</script>
 

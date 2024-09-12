@@ -35,7 +35,7 @@
 
     <div class="form-group">
         <div class="col-md-offset-2 col-md-10">
-            <input type="submit" value="Create Showtime" class="btn btn-primary" />
+            <input type="submit" value="Create showtime" class="btn btn-primary" />
         </div>
     </div>
 }
@@ -45,4 +45,37 @@
 <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="~/Scripts/customjs/Createshowtime.js"></script>
+
+<script>
+        $(document).ready(function () {
+    // Form Submission Validation
+    $('#showtimeForm').on('submit', function (event) {
+        event.preventDefault();  // Prevent form submission until check is complete
+
+        var showDate = $('#ShowDate').val();
+        var startTime = $('#StartTime').val();
+
+        $.ajax({
+            url: '@Url.Action("CheckShowtimeExists", "Admin")',  // Replace with your controller name
+            type: 'POST',
+            data: {
+                showDate: showDate,
+                startTime: startTime
+            },
+            success: function (response) {
+                if (!response.isAvailable) {
+                    $('#errorStartTime').text("Showtime already exists. Please choose a different start time.").show();
+                } else {
+                    $('#errorStartTime').text("").hide();
+                    $('#showtimeForm')[0].submit();  // If valid, submit the form
+                }
+            },
+            error: function () {
+                alert('Error checking showtime availability.');
+            }
+        });
+    });
+});
+
+</script>
  }

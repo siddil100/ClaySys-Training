@@ -1,0 +1,60 @@
+﻿@model MovieTicketBooking.ViewModels.UserDetailsViewModel
+@{
+    ViewBag.Title = "View user details";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+<link href="~/Content/customcss/viewUserDetails.css" rel="stylesheet" />
+
+<div class="user-details-container">
+    <div class="user-card">
+        <div class="user-card-header">
+            <h2>User details</h2>
+        </div>
+        <div class="user-card-body">
+            <table class="user-details-table">
+                <tbody>
+                    <tr>
+                        <th>Full name</th>
+                        <td>@Model.FullName</td>
+                    </tr>
+                    <tr>
+                        <th>Email</th>
+                        <td>@Model.Email</td>
+                    </tr>
+                    <tr>
+                        <th>Date of birth</th>
+                        <td>@(Model.DateOfBirth?.ToString("MM/dd/yyyy"))</td>
+                    </tr>
+                    <tr>
+                        <th>Gender</th>
+                        <td>@Model.Gender</td>
+                    </tr>
+                    <tr>
+                        <th>Phone number</th>
+                        <td>@Model.PhoneNumber</td>
+                    </tr>
+                    <tr>
+                        <th>Address</th>
+                        <td>@Model.Address</td>
+                    </tr>
+                    <tr>
+                        <th>State</th>
+                        <td>@Model.StateName</td>
+                    </tr>
+                    <tr>
+                        <th>City</th>
+                        <td>@Model.CityName</td>
+                    </tr>
+                    <!-- Back button row -->
+                    <tr>
+                        <th colspan="2" class="back-button">
+                            <a href="@Url.Action("ListUsers", "Admin")" class="back-link">Back </a>
+                        </th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+

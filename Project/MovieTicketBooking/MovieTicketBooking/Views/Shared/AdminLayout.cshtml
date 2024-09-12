@@ -1,5 +1,7 @@
 ﻿@{
     Layout = null;
+    var currentController = ViewContext.RouteData.Values["controller"]?.ToString();
+    var currentAction = ViewContext.RouteData.Values["action"]?.ToString();
 }
 
 <!DOCTYPE html>
@@ -17,7 +19,7 @@
         }
 
         .navbar {
-            background-color: #343a40; 
+            background-color: #343a40;
             padding: 15px;
             display: flex;
             justify-content: space-between;
@@ -38,11 +40,17 @@
             .navbar .nav-left {
                 display: flex;
                 align-items: center;
-                margin-left:740px;
+                margin-left: 740px;
             }
 
             .navbar .logout {
                 margin-left: auto;
+            }
+
+            .navbar a.active {
+                font-weight: bold;
+                color:yellow;
+               /* border-bottom: 2px solid white;*/
             }
 
         .wrapper {
@@ -52,7 +60,7 @@
 
         .sidebar {
             width: 250px;
-            background-color: #343a40; 
+            background-color: #343a40;
             color: white;
             padding: 20px;
             box-sizing: border-box;
@@ -70,7 +78,7 @@
                 margin-bottom: 5px;
             }
 
-                .sidebar a:hover {
+                .sidebar a:hover, .sidebar a.active {
                     background-color: #495057;
                     padding-left: 15px;
                     transition: padding-left 0.3s;
@@ -94,20 +102,18 @@
                 text-decoration: underline;
                 cursor: pointer;
             }
-
-        
     </style>
 </head>
 <body class="custom-body">
     <div class="navbar">
         <div class="navbar-brand">Admin Dashboard</div>
         <div class="nav-left">
-            <a href="@Url.Action("AdminHome", "Admin")">Admin home</a>
-            <a href="@Url.Action("AddMovie", "Admin")">Add movie</a>
-            <a href="@Url.Action("ViewAllMovies", "Admin")">View movies</a>
-            <a href="@Url.Action("CreateShowtime", "Admin")">Add showtimes</a>
-            <a href="@Url.Action("ViewShowtimes", "Admin")">View showtimes</a>
-            <a href="@Url.Action("ViewLayout", "Admin")">View layout</a>
+            <a href="@Url.Action("AdminHome", "Admin")" class="@(currentAction == "AdminHome" ? "active" : "")">Admin home</a>
+            <a href="@Url.Action("AddMovie", "Admin")" class="@(currentAction == "AddMovie" ? "active" : "")">Add movie</a>
+            <a href="@Url.Action("ViewAllMovies", "Admin")" class="@(currentAction == "ViewAllMovies" ? "active" : "")">View movies</a>
+            <a href="@Url.Action("CreateShowtime", "Admin")" class="@(currentAction == "CreateShowtime" ? "active" : "")">Add showtimes</a>
+            <a href="@Url.Action("ViewShowtimes", "Admin")" class="@(currentAction == "ViewShowtimes" ? "active" : "")">View showtimes</a>
+            <a href="@Url.Action("ViewLayout", "Admin")" class="@(currentAction == "ViewLayout" ? "active" : "")">View layout</a>
         </div>
         <div class="logout">
             <form action="@Url.Action("Logout", "Account")" method="post">
@@ -118,10 +124,10 @@
     <div class="wrapper">
         <div class="sidebar">
             <h4>Menu</h4>
-            <a href="@Url.Action("AdminHome", "Admin")">Dashboard</a>
-            <a href="#">Users</a>
-            <a href="@Url.Action("CreateSeat", "Admin")">Create seats</a>
-            <a href="@Url.Action("ViewSeats", "Admin")">View seats</a>
+            <a href="@Url.Action("AdminHome", "Admin")" class="@(currentAction == "AdminHome" ? "active" : "")">Dashboard</a>
+            <a href="@Url.Action("ListUsers", "Admin")" class="@(currentAction == "ListUsers" ? "active" : "")">Manage users</a>
+            <a href="@Url.Action("CreateSeat", "Admin")" class="@(currentAction == "CreateSeat" ? "active" : "")">Create seats</a>
+            <a href="@Url.Action("ViewSeats", "Admin")" class="@(currentAction == "ViewSeats" ? "active" : "")">View seats</a>
             <a href="#">Help</a>
         </div>
         <div class="content">

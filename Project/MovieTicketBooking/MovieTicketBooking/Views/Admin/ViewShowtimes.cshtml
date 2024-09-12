@@ -28,6 +28,8 @@
                     <td>
                         <div class="action-buttons">
                             @Html.ActionLink("Edit", "EditShowtime", new { id = showtime.ShowtimeId }, new { @class = "btn btn-primary" })
+                            @Html.ActionLink("View Bookings", "ViewBookings", new { showtimeId = showtime.ShowtimeId }, new { @class = "btn btn-primary" })
+
                             @using (Html.BeginForm("DeleteShowtime", "Admin", FormMethod.Post))
                             {
                                 @Html.AntiForgeryToken()

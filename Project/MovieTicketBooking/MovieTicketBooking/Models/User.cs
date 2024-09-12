@@ -17,5 +17,6 @@ namespace MovieTicketBooking.Models
 
         [StringLength(10)]
         public string Role { get; set; } = "user";
+        public bool IsActive { get; set; } = true;
     }
 }

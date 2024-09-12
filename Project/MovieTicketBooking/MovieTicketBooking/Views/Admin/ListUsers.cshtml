@@ -1,0 +1,139 @@
+﻿@model List<MovieTicketBooking.ViewModels.UserDetailsViewModel>
+@{
+    ViewBag.Title = "Manage users";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+<div class="user-list-container">
+    <h2>Manage users</h2>
+
+    <table class="user-table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone number</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var user in Model)
+            {
+                <tr>
+                    <td>@user.FullName</td>
+                    <td>@user.Email</td>
+                    <td>@user.PhoneNumber</td>
+                    <td>
+                        @if (user.IsActive)
+                        {
+                            <span class="status-badge active">Active</span>
+                        }
+                        else
+                        {
+                            <span class="status-badge inactive">Inactive</span>
+                        }
+                    </td>
+                    <td>
+                        <a href="@Url.Action("ViewUserDetails", "Admin", new { id = user.UserId })" class="btn view-btn">View More</a>
+                        <a href="@Url.Action("ToggleUserStatus", "Admin", new { id = user.UserId })" class="btn toggle-btn">
+                            @(user.IsActive ? "Disable" : "Enable")
+                        </a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<style>
+    /* Container styling */
+    .user-list-container {
+        max-width: 1000px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #f5f5f5;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+        font-size: 24px;
+        text-align: center;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    /* Table styling */
+    .user-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+    }
+
+        .user-table th,
+        .user-table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .user-table th {
+            background-color: #4CAF50;
+            color: white;
+            font-weight: bold;
+        }
+
+        .user-table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .user-table tr:hover {
+            background-color: #f1f1f1;
+        }
+
+    /* Badge styling */
+    .status-badge {
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+        .status-badge.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .status-badge.inactive {
+            background-color: #f44336;
+            color: white;
+        }
+
+    /* Button styling */
+    .btn {
+        padding: 8px 12px;
+        margin-right: 5px;
+        text-decoration: none;
+        color: white;
+        border-radius: 5px;
+        display: inline-block;
+        font-size: 14px;
+    }
+
+    .view-btn {
+        background-color: #2196F3;
+    }
+
+        .view-btn:hover {
+            background-color: #1976D2;
+        }
+
+    .toggle-btn {
+        background-color: #f0ad4e;
+    }
+
+        .toggle-btn:hover {
+            background-color: #ec971f;
+        }
+</style>

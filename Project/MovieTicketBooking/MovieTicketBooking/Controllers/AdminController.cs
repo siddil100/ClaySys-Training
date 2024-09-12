@@ -28,6 +28,7 @@ namespace MovieTicketBooking.Controllers
         /// Used to load admin home page
         /// </summary>
         /// <returns></returns>
+        [Authorize]
         [HttpGet]
         public ActionResult AdminHome()
         {
@@ -169,6 +170,7 @@ namespace MovieTicketBooking.Controllers
             }
             catch (Exception ex)
             {
+                System.Diagnostics.Debug.WriteLine(ex.Message);
                 // Handle the error (log it, show an error message, etc.)
                 ViewBag.ErrorMessage = "An error occurred while trying to delete the movie.";
                 return View("Error");
@@ -394,6 +396,46 @@ namespace MovieTicketBooking.Controllers
             bool seatExists = _adminRepository.CheckSeatExists(rowNumber, columnNumber);
             return Json(new { exists = seatExists }, JsonRequestBehavior.AllowGet);
         }
+
+
+        public ActionResult ListUsers()
+        {
+            var users = _adminRepository.GetUsers();
+            return View(users);
+        }
+
+
+        public ActionResult ToggleUserStatus(int id)
+        {
+            bool isToggled = _adminRepository.ToggleUserStatus(id);
+
+            return RedirectToAction("ListUsers");
+        }
+
+        public ActionResult ViewUserDetails(int id)
+        {
+            UserDetailsViewModel user = _adminRepository.GetUserDetails(id);
+            if (user == null)
+            {
+                return HttpNotFound(); 
+            }
+            return View(user);
+        }
+
+        public ActionResult ViewBookings(int showtimeId)
+        {
+            var bookings = _adminRepository.GetBookingsByShowtime(showtimeId);
+            return View(bookings);
+        }
+
+
+        [HttpPost]
+        public JsonResult CheckShowtimeExists(DateTime showDate, TimeSpan startTime)
+        {
+            var showtimeExists = _adminRepository.CheckShowtimeExists(showDate, startTime);
+            return Json(new { isAvailable = !showtimeExists });  // Return false if the showtime exists, meaning it's not available
+        }
+
 
 
     }

@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-
+using MovieTicketBooking.ViewModels;
 namespace MovieTicketBooking
 {
     public class AdminRepository
@@ -524,6 +524,145 @@ namespace MovieTicketBooking
                 return Convert.ToInt32(result) == 1;
             }
         }
+
+
+        /// <summary>
+        /// Used to check whether showtime exists
+        /// </summary>
+        /// <param name="showDate"></param>
+        /// <param name="startTime"></param>
+        /// <returns>True or false</returns>
+        public bool CheckShowtimeExists(DateTime showDate, TimeSpan startTime)
+        {
+            using (var connection = new SqlConnection(_connectionString))
+            {
+                var command = new SqlCommand("SPS_CheckShowtimeExists", connection)
+                {
+                    CommandType = CommandType.StoredProcedure
+                };
+                command.Parameters.AddWithValue("@ShowDate", showDate);
+                command.Parameters.AddWithValue("@StartTime", startTime);
+
+                connection.Open();
+                var result = command.ExecuteScalar();
+                return Convert.ToInt32(result) == 1;  // Return true if exists, false otherwise
+            }
+        }
+
+
+
+        public List<UserDetailsViewModel> GetUsers()
+        {
+            var users = new List<UserDetailsViewModel>();
+
+            using (var connection = new SqlConnection(_connectionString))
+            {
+                connection.Open();
+                using (var command = new SqlCommand("SPS_GetUsers", connection))
+                {
+                    command.CommandType = CommandType.StoredProcedure;
+
+                    using (var reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            users.Add(new UserDetailsViewModel
+                            {
+                                UserId = Convert.ToInt32(reader["user_id"]),
+                                FullName = reader["full_name"].ToString(),
+                                Email = reader["email"].ToString(),
+                                PhoneNumber = reader["phone_number"].ToString(),
+                                IsActive = Convert.ToBoolean(reader["isActive"])
+                            });
+                        }
+                    }
+                }
+            }
+
+            return users;
+        }
+
+        public bool ToggleUserStatus(int userId)
+        {
+            using (var connection = new SqlConnection(_connectionString))
+            {
+                connection.Open();
+                using (var command = new SqlCommand("SPU_ToggleUserStatus", connection))
+                {
+                    command.CommandType = CommandType.StoredProcedure;
+                    command.Parameters.AddWithValue("@user_id", userId);
+                    return command.ExecuteNonQuery() > 0;
+                }
+            }
+        }
+
+        public UserDetailsViewModel GetUserDetails(int userId)
+        {
+            UserDetailsViewModel user = null;
+
+            using (SqlConnection con = new SqlConnection(_connectionString))
+            {
+                SqlCommand cmd = new SqlCommand("SPS_ViewUserDetails", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@UserId", userId);
+
+                con.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+                if (reader.Read())
+                {
+                    user = new UserDetailsViewModel
+                    {
+                        FullName = reader["full_name"].ToString(),
+                        Email = reader["email"].ToString(),
+                        DateOfBirth = Convert.ToDateTime(reader["dob"]),
+                        Gender = reader["gender"].ToString(),
+                        PhoneNumber = reader["phone_number"].ToString(),
+                        Address = reader["address"].ToString(),
+                        StateName = reader["state_name"].ToString(),
+                        CityName = reader["city_name"].ToString()
+                    };
+                }
+                con.Close();
+            }
+
+            return user;
+        }
+
+
+        public List<BookingViewModel> GetBookingsByShowtime(int showtimeId)
+        {
+            List<BookingViewModel> bookings = new List<BookingViewModel>();
+
+            using (var connection = new SqlConnection(_connectionString))
+            {
+                connection.Open();
+                var command = new SqlCommand("SPS_GetBookingsForShowtime", connection)
+                {
+                    CommandType = CommandType.StoredProcedure
+                };
+                command.Parameters.AddWithValue("@ShowtimeId", showtimeId);
+
+                using (var reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        bookings.Add(new BookingViewModel
+                        {
+                            FirstName = reader.GetString(0),
+                            LastName = reader.GetString(1),
+                            Email = reader.GetString(2),
+                            MovieName = reader.GetString(3),
+                            SeatNames = reader.GetString(4),
+                            TotalAmount = reader.GetDecimal(5)
+                        });
+                    }
+                }
+            }
+
+            return bookings;
+        }
+
+
 
 
 

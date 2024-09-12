@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|c:\\users\\acer\\source\\repos\\movieticketbooking\\movieticketbooking\\nlog.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\nlog.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|c:\\users\\acer\\source\\repos\\movieticketbooking\\movieticketbooking\\views\\user\\viewmoviedetailsuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\views\\user\\viewmoviedetailsuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|c:\\users\\acer\\source\\repos\\movieticketbooking\\movieticketbooking\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|c:\\users\\acer\\source\\repos\\movieticketbooking\\movieticketbooking\\logginghelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\logginghelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -19,55 +31,203 @@
       "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\repositories\\homerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\repositories\\homerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\views\\user\\userhome.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\views\\user\\userhome.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\models\\contactus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\models\\contactus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\views\\shared\\userlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\views\\shared\\userlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\views\\shared\\adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\views\\shared\\adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|c:\\users\\acer\\source\\repos\\movieticketbooking\\movieticketbooking\\content\\customcss\\userhome.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\content\\customcss\\userhome.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\views\\user\\updatepassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\views\\user\\updatepassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\viewmodels\\updatepasswordviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\viewmodels\\updatepasswordviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|c:\\users\\acer\\source\\repos\\movieticketbooking\\movieticketbooking\\content\\customcss\\updatepassword.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\content\\customcss\\updatepassword.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\views\\user\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\views\\user\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\content\\customcss\\editprofile.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\content\\customcss\\editprofile.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\views\\user\\userhome.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\views\\user\\userhome.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|c:\\users\\acer\\source\\repos\\movieticketbooking\\movieticketbooking\\content\\customcss\\viewseatsadmin.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\views\\admin\\createshowtime.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\views\\admin\\createshowtime.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\scripts\\customjs\\createshowtime.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\scripts\\customjs\\createshowtime.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\repositories\\adminrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\repositories\\adminrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\repositories\\accountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\repositories\\accountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\views\\admin\\viewbookings.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\views\\admin\\viewbookings.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\views\\admin\\viewshowtimes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\views\\admin\\viewshowtimes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\content\\customcss\\viewbookingsadmin.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\content\\customcss\\viewbookingsadmin.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\content\\customcss\\mybookings.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\content\\customcss\\mybookings.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\views\\user\\mybookings.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\views\\user\\mybookings.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\viewmodels\\bookingviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\viewmodels\\bookingviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\models\\userbookings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\models\\userbookings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\content\\customcss\\searchfileruserhome.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\content\\customcss\\searchfileruserhome.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\content\\customcss\\userhome.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\content\\customcss\\userhome.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\views\\user\\_movielistpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\views\\user\\_movielistpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\views\\shared\\adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\views\\shared\\adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\content\\customcss\\viewuserdetails.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\content\\customcss\\viewuserdetails.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\views\\admin\\viewuserdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\views\\admin\\viewuserdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\viewmodels\\userdetailsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\viewmodels\\userdetailsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\views\\user\\selectseats.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\views\\user\\selectseats.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\scripts\\customjs\\citydropdown.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\scripts\\customjs\\citydropdown.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\scripts\\customjs\\carousel.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\scripts\\customjs\\carousel.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\scripts\\customjs\\addmovie.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\scripts\\customjs\\addmovie.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\views\\admin\\viewlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\views\\admin\\viewlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\scripts\\customjs\\editprofile.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\scripts\\customjs\\editprofile.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\views\\user\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\views\\user\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\app_start\\bundleconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\app_start\\bundleconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\views\\user\\seeshowtimes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\views\\user\\seeshowtimes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\views\\admin\\adminhome.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\views\\admin\\adminhome.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\views\\user\\viewmoviedetailsuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\views\\user\\viewmoviedetailsuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\content\\customcss\\bookingconfirmation.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\content\\customcss\\bookingconfirmation.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\views\\user\\bookingconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\views\\user\\bookingconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\models\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\models\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\views\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\views\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\models\\seattype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\models\\seattype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\views\\account\\signup.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\views\\account\\signup.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\models\\seat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\models\\seat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\models\\contactus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\models\\contactus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\viewmodels\\updatepasswordviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\viewmodels\\updatepasswordviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\content\\customcss\\updatepassword.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\content\\customcss\\updatepassword.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\content\\customcss\\editprofile.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\content\\customcss\\editprofile.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\content\\customcss\\viewseatsadmin.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\content\\customcss\\viewseatsadmin.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
@@ -75,7 +235,7 @@
       "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\views\\admin\\viewseats.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|c:\\users\\acer\\source\\repos\\movieticketbooking\\movieticketbooking\\content\\customcss\\viewmoviesadmin.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\content\\customcss\\viewmoviesadmin.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\content\\customcss\\viewmoviesadmin.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
@@ -83,36 +243,20 @@
       "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\views\\admin\\viewallmovies.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|c:\\users\\acer\\source\\repos\\movieticketbooking\\movieticketbooking\\content\\customcss\\viewshowtimesadmin.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\content\\customcss\\viewshowtimesadmin.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\content\\customcss\\viewshowtimesadmin.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\views\\admin\\viewshowtimes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\views\\admin\\viewshowtimes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\views\\admin\\editshowtime.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\views\\admin\\editshowtime.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|c:\\users\\acer\\source\\repos\\movieticketbooking\\movieticketbooking\\models\\showtime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\models\\showtime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\models\\showtime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\views\\admin\\viewlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\views\\admin\\viewlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|c:\\users\\acer\\source\\repos\\movieticketbooking\\movieticketbooking\\views\\admin\\editmovie.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\views\\admin\\editmovie.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\views\\admin\\editmovie.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|c:\\users\\acer\\source\\repos\\movieticketbooking\\movieticketbooking\\views\\admin\\createshowtime.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\views\\admin\\createshowtime.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\views\\admin\\adminhome.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\views\\admin\\adminhome.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\views\\admin\\addmovie.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -127,27 +271,27 @@
       "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\content\\customcss\\addmovie.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|c:\\users\\acer\\source\\repos\\movieticketbooking\\movieticketbooking\\content\\customcss\\adminhome.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\content\\customcss\\adminhome.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\content\\customcss\\adminhome.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|c:\\users\\acer\\source\\repos\\movieticketbooking\\movieticketbooking\\content\\customcss\\contact.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\content\\customcss\\contact.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\content\\customcss\\contact.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|c:\\users\\acer\\source\\repos\\movieticketbooking\\movieticketbooking\\content\\customcss\\createshowtimes.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\content\\customcss\\createshowtimes.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\content\\customcss\\createshowtimes.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|c:\\users\\acer\\source\\repos\\movieticketbooking\\movieticketbooking\\content\\customcss\\editmovie.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\content\\customcss\\editmovie.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\content\\customcss\\editmovie.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|c:\\users\\acer\\source\\repos\\movieticketbooking\\movieticketbooking\\content\\customcss\\editseat.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\content\\customcss\\editseat.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\content\\customcss\\editseat.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|c:\\users\\acer\\source\\repos\\movieticketbooking\\movieticketbooking\\content\\customcss\\editshowtimes.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\content\\customcss\\editshowtimes.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\content\\customcss\\editshowtimes.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
@@ -171,60 +315,12 @@
       "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\scripts\\customjs\\signupvalidation.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|c:\\users\\acer\\source\\repos\\movieticketbooking\\movieticketbooking\\scripts\\customjs\\editshowtime.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\scripts\\customjs\\editshowtime.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\scripts\\customjs\\editshowtime.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\scripts\\customjs\\editprofile.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\scripts\\customjs\\editprofile.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|c:\\users\\acer\\source\\repos\\movieticketbooking\\movieticketbooking\\scripts\\customjs\\editmovie.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\scripts\\customjs\\editmovie.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\scripts\\customjs\\editmovie.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|c:\\users\\acer\\source\\repos\\movieticketbooking\\movieticketbooking\\scripts\\customjs\\createshowtime.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\scripts\\customjs\\createshowtime.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\scripts\\customjs\\citydropdown.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\scripts\\customjs\\citydropdown.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\scripts\\customjs\\carousel.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\scripts\\customjs\\carousel.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|c:\\users\\acer\\source\\repos\\movieticketbooking\\movieticketbooking\\scripts\\customjs\\addmovie.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\scripts\\customjs\\addmovie.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\repositories\\homerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\repositories\\homerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|c:\\users\\acer\\source\\repos\\movieticketbooking\\movieticketbooking\\repositories\\adminrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\repositories\\adminrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\repositories\\accountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\repositories\\accountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\views\\account\\signup.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\views\\account\\signup.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\models\\seat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\models\\seat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\viewmodels\\seatviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -235,24 +331,8 @@
       "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\models\\movie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\models\\seattype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\models\\seattype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\models\\userdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\models\\userdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\viewmodels\\userdetailsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\viewmodels\\userdetailsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\viewmodels\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -271,16 +351,8 @@
       "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\views\\home\\contactus.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\views\\user\\seeshowtimes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\views\\user\\seeshowtimes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\views\\home\\feedbacksuccess.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -293,14 +365,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\models\\city.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\models\\city.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\movieticketbooking\\views\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{A045AA1C-D1B2-4BD7-9560-399758284BBD}|MovieTicketBooking\\MovieTicketBooking.csproj|solutionrelative:movieticketbooking\\views\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ACER\\AppData\\Local\\Temp\\.vsdbgsrc\\6e7adcdcf2a0e47ac8c10b0a2828bfb989914162e8bf8efc61ba25bcc2ce08dc\\AccountController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -317,649 +381,77 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "UpdatePassword.cshtml",
-              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\User\\UpdatePassword.cshtml",
-              "RelativeDocumentMoniker": "MovieTicketBooking\\Views\\User\\UpdatePassword.cshtml",
-              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\User\\UpdatePassword.cshtml",
-              "RelativeToolTip": "MovieTicketBooking\\Views\\User\\UpdatePassword.cshtml",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAADEAAAAFAAAA",
+              "DocumentIndex": 1,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "MovieTicketBooking\\Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "MovieTicketBooking\\Views\\Account\\Login.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-04T16:43:58.827Z",
+              "WhenOpened": "2024-09-03T05:15:09.276Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IUserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Repositories\\IUserRepository.cs",
-              "RelativeDocumentMoniker": "MovieTicketBooking\\Repositories\\IUserRepository.cs",
-              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Repositories\\IUserRepository.cs",
-              "RelativeToolTip": "MovieTicketBooking\\Repositories\\IUserRepository.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAEwBUAAAAOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-03T14:58:32.933Z",
+              "DocumentIndex": 0,
+              "Title": "NLog.config",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\NLog.config",
+              "RelativeDocumentMoniker": "MovieTicketBooking\\NLog.config",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\NLog.config",
+              "RelativeToolTip": "MovieTicketBooking\\NLog.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-09-12T18:31:50.66Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "UserHome.cshtml",
-              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\User\\UserHome.cshtml",
-              "RelativeDocumentMoniker": "MovieTicketBooking\\Views\\User\\UserHome.cshtml",
-              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\User\\UserHome.cshtml",
-              "RelativeToolTip": "MovieTicketBooking\\Views\\User\\UserHome.cshtml",
-              "ViewState": "AQIAABUAAAAAAAAAAAAgwDAAAAA0AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-03T14:29:20.587Z",
+              "DocumentIndex": 3,
+              "Title": "LoggingHelper.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\LoggingHelper.cs",
+              "RelativeDocumentMoniker": "MovieTicketBooking\\LoggingHelper.cs",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\LoggingHelper.cs",
+              "RelativeToolTip": "MovieTicketBooking\\LoggingHelper.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwBIAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T18:29:13.713Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "UserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Repositories\\UserRepository.cs",
-              "RelativeDocumentMoniker": "MovieTicketBooking\\Repositories\\UserRepository.cs",
-              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Repositories\\UserRepository.cs",
-              "RelativeToolTip": "MovieTicketBooking\\Repositories\\UserRepository.cs",
-              "ViewState": "AQIAAF8BAAAAAAAAAAAmwHEBAAAkAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-03T14:58:51.947Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "MovieTicketBooking\\Controllers\\UserController.cs",
               "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Controllers\\UserController.cs",
               "RelativeToolTip": "MovieTicketBooking\\Controllers\\UserController.cs",
-              "ViewState": "AQIAALoAAAAAAAAAAAAIwMYAAAA7AAAA",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAACYAAABAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-02T04:50:40.338Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ViewMovieDetailsUser.cshtml",
-              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\User\\ViewMovieDetailsUser.cshtml",
-              "RelativeDocumentMoniker": "MovieTicketBooking\\Views\\User\\ViewMovieDetailsUser.cshtml",
-              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\User\\ViewMovieDetailsUser.cshtml",
-              "RelativeToolTip": "MovieTicketBooking\\Views\\User\\ViewMovieDetailsUser.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAABNAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-09T10:22:58.695Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "MovieTicketBooking\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "MovieTicketBooking\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-05T16:15:26.821Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ContactUs.cs",
-              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Models\\ContactUs.cs",
-              "RelativeDocumentMoniker": "MovieTicketBooking\\Models\\ContactUs.cs",
-              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Models\\ContactUs.cs",
-              "RelativeToolTip": "MovieTicketBooking\\Models\\ContactUs.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABYAAAAdAAAA",
+              "DocumentIndex": 4,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "MovieTicketBooking\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "MovieTicketBooking\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAACwAAAAAAAAAAAAgwEEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-05T06:24:29.623Z",
+              "WhenOpened": "2024-09-02T09:35:33.999Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "UserLayout.cshtml",
-              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\Shared\\UserLayout.cshtml",
-              "RelativeDocumentMoniker": "MovieTicketBooking\\Views\\Shared\\UserLayout.cshtml",
-              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\Shared\\UserLayout.cshtml",
-              "RelativeToolTip": "MovieTicketBooking\\Views\\Shared\\UserLayout.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-08T14:55:24.857Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "AdminLayout.cshtml",
-              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\Shared\\AdminLayout.cshtml",
-              "RelativeDocumentMoniker": "MovieTicketBooking\\Views\\Shared\\AdminLayout.cshtml",
-              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\Shared\\AdminLayout.cshtml",
-              "RelativeToolTip": "MovieTicketBooking\\Views\\Shared\\AdminLayout.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-02T12:02:58.269Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "userHome.css",
-              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Content\\customcss\\userHome.css",
-              "RelativeDocumentMoniker": "MovieTicketBooking\\Content\\customcss\\userHome.css",
-              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Content\\customcss\\userHome.css",
-              "RelativeToolTip": "MovieTicketBooking\\Content\\customcss\\userHome.css",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-09-09T10:05:46.202Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "UpdatePasswordViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\ViewModels\\UpdatePasswordViewModel.cs",
-              "RelativeDocumentMoniker": "MovieTicketBooking\\ViewModels\\UpdatePasswordViewModel.cs",
-              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\ViewModels\\UpdatePasswordViewModel.cs",
-              "RelativeToolTip": "MovieTicketBooking\\ViewModels\\UpdatePasswordViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-04T16:38:32.347Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "updatePassword.css",
-              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Content\\customcss\\updatePassword.css",
-              "RelativeDocumentMoniker": "MovieTicketBooking\\Content\\customcss\\updatePassword.css",
-              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Content\\customcss\\updatePassword.css",
-              "RelativeToolTip": "MovieTicketBooking\\Content\\customcss\\updatePassword.css",
-              "ViewState": "AQIAACEAAAAAAAAAAAAAAEYAAAAPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-09-09T08:56:48.585Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\User\\Edit.cshtml",
-              "RelativeDocumentMoniker": "MovieTicketBooking\\Views\\User\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\User\\Edit.cshtml",
-              "RelativeToolTip": "MovieTicketBooking\\Views\\User\\Edit.cshtml",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAAAAcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-03T16:21:03.559Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Editprofile.css",
-              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Content\\customcss\\Editprofile.css",
-              "RelativeDocumentMoniker": "MovieTicketBooking\\Content\\customcss\\Editprofile.css",
-              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Content\\customcss\\Editprofile.css",
-              "RelativeToolTip": "MovieTicketBooking\\Content\\customcss\\Editprofile.css",
-              "ViewState": "AQIAAB8AAAAAAAAAAAAgwEAAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-09-08T14:18:43.296Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "viewSeatsAdmin.css",
-              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Content\\customcss\\viewSeatsAdmin.css",
-              "RelativeDocumentMoniker": "MovieTicketBooking\\Content\\customcss\\viewSeatsAdmin.css",
-              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Content\\customcss\\viewSeatsAdmin.css",
-              "RelativeToolTip": "MovieTicketBooking\\Content\\customcss\\viewSeatsAdmin.css",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABsAAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-09-09T08:26:22.113Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "ViewSeats.cshtml",
-              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\Admin\\ViewSeats.cshtml",
-              "RelativeDocumentMoniker": "MovieTicketBooking\\Views\\Admin\\ViewSeats.cshtml",
-              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\Admin\\ViewSeats.cshtml",
-              "RelativeToolTip": "MovieTicketBooking\\Views\\Admin\\ViewSeats.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-07T03:53:39.793Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "AdminController.cs",
-              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Controllers\\AdminController.cs",
-              "RelativeDocumentMoniker": "MovieTicketBooking\\Controllers\\AdminController.cs",
-              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Controllers\\AdminController.cs",
-              "RelativeToolTip": "MovieTicketBooking\\Controllers\\AdminController.cs",
-              "ViewState": "AQIAADQAAAAAAAAAAAAkwKwAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-02T11:56:17.045Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "viewMoviesAdmin.css",
-              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Content\\customcss\\viewMoviesAdmin.css",
-              "RelativeDocumentMoniker": "MovieTicketBooking\\Content\\customcss\\viewMoviesAdmin.css",
-              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Content\\customcss\\viewMoviesAdmin.css",
-              "RelativeToolTip": "MovieTicketBooking\\Content\\customcss\\viewMoviesAdmin.css",
-              "ViewState": "AQIAADEAAAAAAAAAAAAgwFYAAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-09-09T06:42:25.102Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "ViewAllMovies.cshtml",
-              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\Admin\\ViewAllMovies.cshtml",
-              "RelativeDocumentMoniker": "MovieTicketBooking\\Views\\Admin\\ViewAllMovies.cshtml",
-              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\Admin\\ViewAllMovies.cshtml",
-              "RelativeToolTip": "MovieTicketBooking\\Views\\Admin\\ViewAllMovies.cshtml",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAACQAAABDAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-06T05:36:24.31Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "viewShowtimesAdmin.css",
-              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Content\\customcss\\viewShowtimesAdmin.css",
-              "RelativeDocumentMoniker": "MovieTicketBooking\\Content\\customcss\\viewShowtimesAdmin.css",
-              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Content\\customcss\\viewShowtimesAdmin.css",
-              "RelativeToolTip": "MovieTicketBooking\\Content\\customcss\\viewShowtimesAdmin.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-09-09T07:02:01.607Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "ViewShowtimes.cshtml",
-              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\Admin\\ViewShowtimes.cshtml",
-              "RelativeDocumentMoniker": "MovieTicketBooking\\Views\\Admin\\ViewShowtimes.cshtml",
-              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\Admin\\ViewShowtimes.cshtml",
-              "RelativeToolTip": "MovieTicketBooking\\Views\\Admin\\ViewShowtimes.cshtml",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAgwBoAAABbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-06T08:29:52.561Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "EditShowtime.cshtml",
-              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\Admin\\EditShowtime.cshtml",
-              "RelativeDocumentMoniker": "MovieTicketBooking\\Views\\Admin\\EditShowtime.cshtml",
-              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\Admin\\EditShowtime.cshtml",
-              "RelativeToolTip": "MovieTicketBooking\\Views\\Admin\\EditShowtime.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACYAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-06T08:45:00.114Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "ShowTime.cs",
-              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Models\\ShowTime.cs",
-              "RelativeDocumentMoniker": "MovieTicketBooking\\Models\\ShowTime.cs",
-              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Models\\ShowTime.cs",
-              "RelativeToolTip": "MovieTicketBooking\\Models\\ShowTime.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-09T07:26:11.794Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "ViewLayout.cshtml",
-              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\Admin\\ViewLayout.cshtml",
-              "RelativeDocumentMoniker": "MovieTicketBooking\\Views\\Admin\\ViewLayout.cshtml",
-              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\Admin\\ViewLayout.cshtml",
-              "RelativeToolTip": "MovieTicketBooking\\Views\\Admin\\ViewLayout.cshtml",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAAADwAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-06T16:24:09.325Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "EditMovie.cshtml",
-              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\Admin\\EditMovie.cshtml",
-              "RelativeDocumentMoniker": "MovieTicketBooking\\Views\\Admin\\EditMovie.cshtml",
-              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\Admin\\EditMovie.cshtml",
-              "RelativeToolTip": "MovieTicketBooking\\Views\\Admin\\EditMovie.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-09T06:45:51.247Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "CreateShowtime.cshtml",
-              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\Admin\\CreateShowtime.cshtml",
-              "RelativeDocumentMoniker": "MovieTicketBooking\\Views\\Admin\\CreateShowtime.cshtml",
-              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\Admin\\CreateShowtime.cshtml",
-              "RelativeToolTip": "MovieTicketBooking\\Views\\Admin\\CreateShowtime.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-09T06:53:20.745Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "AddMovie.cshtml",
-              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\Admin\\AddMovie.cshtml",
-              "RelativeDocumentMoniker": "MovieTicketBooking\\Views\\Admin\\AddMovie.cshtml",
-              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\Admin\\AddMovie.cshtml",
-              "RelativeToolTip": "MovieTicketBooking\\Views\\Admin\\AddMovie.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-06T04:33:43.468Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "AdminHome.cshtml",
-              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\Admin\\AdminHome.cshtml",
-              "RelativeDocumentMoniker": "MovieTicketBooking\\Views\\Admin\\AdminHome.cshtml",
-              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\Admin\\AdminHome.cshtml",
-              "RelativeToolTip": "MovieTicketBooking\\Views\\Admin\\AdminHome.cshtml",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAwAAABCAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-06T03:48:31.531Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "aboutus.css",
-              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Content\\customcss\\aboutus.css",
-              "RelativeDocumentMoniker": "MovieTicketBooking\\Content\\customcss\\aboutus.css",
-              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Content\\customcss\\aboutus.css",
-              "RelativeToolTip": "MovieTicketBooking\\Content\\customcss\\aboutus.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-09-07T15:10:13.806Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "Addmovie.css",
-              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Content\\customcss\\Addmovie.css",
-              "RelativeDocumentMoniker": "MovieTicketBooking\\Content\\customcss\\Addmovie.css",
-              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Content\\customcss\\Addmovie.css",
-              "RelativeToolTip": "MovieTicketBooking\\Content\\customcss\\Addmovie.css",
-              "ViewState": "AQIAABAAAAAAAAAAAAAkwCAAAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-09-08T16:43:54.203Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "Adminhome.css",
-              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Content\\customcss\\Adminhome.css",
-              "RelativeDocumentMoniker": "MovieTicketBooking\\Content\\customcss\\Adminhome.css",
-              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Content\\customcss\\Adminhome.css",
-              "RelativeToolTip": "MovieTicketBooking\\Content\\customcss\\Adminhome.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-09-09T04:19:03.505Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "contact.css",
-              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Content\\customcss\\contact.css",
-              "RelativeDocumentMoniker": "MovieTicketBooking\\Content\\customcss\\contact.css",
-              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Content\\customcss\\contact.css",
-              "RelativeToolTip": "MovieTicketBooking\\Content\\customcss\\contact.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-09-09T06:31:55.444Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "createshowtimes.css",
-              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Content\\customcss\\createshowtimes.css",
-              "RelativeDocumentMoniker": "MovieTicketBooking\\Content\\customcss\\createshowtimes.css",
-              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Content\\customcss\\createshowtimes.css",
-              "RelativeToolTip": "MovieTicketBooking\\Content\\customcss\\createshowtimes.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-09-09T06:32:02.061Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "Editmovie.css",
-              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Content\\customcss\\Editmovie.css",
-              "RelativeDocumentMoniker": "MovieTicketBooking\\Content\\customcss\\Editmovie.css",
-              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Content\\customcss\\Editmovie.css",
-              "RelativeToolTip": "MovieTicketBooking\\Content\\customcss\\Editmovie.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-09-08T18:01:25.511Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "Editseat.css",
-              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Content\\customcss\\Editseat.css",
-              "RelativeDocumentMoniker": "MovieTicketBooking\\Content\\customcss\\Editseat.css",
-              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Content\\customcss\\Editseat.css",
-              "RelativeToolTip": "MovieTicketBooking\\Content\\customcss\\Editseat.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-09-09T03:13:07.441Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "Editshowtimes.css",
-              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Content\\customcss\\Editshowtimes.css",
-              "RelativeDocumentMoniker": "MovieTicketBooking\\Content\\customcss\\Editshowtimes.css",
-              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Content\\customcss\\Editshowtimes.css",
-              "RelativeToolTip": "MovieTicketBooking\\Content\\customcss\\Editshowtimes.css",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAcwCwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-09-08T19:39:13.781Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "index.css",
-              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Content\\customcss\\index.css",
-              "RelativeDocumentMoniker": "MovieTicketBooking\\Content\\customcss\\index.css",
-              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Content\\customcss\\index.css",
-              "RelativeToolTip": "MovieTicketBooking\\Content\\customcss\\index.css",
-              "ViewState": "AQIAABgAAAAAAAAAAAAAAAcAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-09-02T09:05:17.923Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "Login.css",
-              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Content\\customcss\\Login.css",
-              "RelativeDocumentMoniker": "MovieTicketBooking\\Content\\customcss\\Login.css",
-              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Content\\customcss\\Login.css",
-              "RelativeToolTip": "MovieTicketBooking\\Content\\customcss\\Login.css",
-              "ViewState": "AQIAAFEAAAAAAAAAAAAAAAkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-09-08T05:09:51.379Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "signup.css",
-              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Content\\customcss\\signup.css",
-              "RelativeDocumentMoniker": "MovieTicketBooking\\Content\\customcss\\signup.css",
-              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Content\\customcss\\signup.css",
-              "RelativeToolTip": "MovieTicketBooking\\Content\\customcss\\signup.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFoAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-09-08T06:38:46.508Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "UserLayout.css",
-              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Content\\customcss\\UserLayout.css",
-              "RelativeDocumentMoniker": "MovieTicketBooking\\Content\\customcss\\UserLayout.css",
-              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Content\\customcss\\UserLayout.css",
-              "RelativeToolTip": "MovieTicketBooking\\Content\\customcss\\UserLayout.css",
-              "ViewState": "AQIAADAAAAAAAAAAAAAAAE4AAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-09-05T19:42:54.28Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "signupvalidation.js",
-              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Scripts\\customjs\\signupvalidation.js",
-              "RelativeDocumentMoniker": "MovieTicketBooking\\Scripts\\customjs\\signupvalidation.js",
-              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Scripts\\customjs\\signupvalidation.js",
-              "RelativeToolTip": "MovieTicketBooking\\Scripts\\customjs\\signupvalidation.js",
-              "ViewState": "AQIAAAIBAAAAAAAAAAAcwCcBAABJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-09-08T07:29:23.19Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 42,
-              "Title": "Editshowtime.js",
-              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Scripts\\customjs\\Editshowtime.js",
-              "RelativeDocumentMoniker": "MovieTicketBooking\\Scripts\\customjs\\Editshowtime.js",
-              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Scripts\\customjs\\Editshowtime.js",
-              "RelativeToolTip": "MovieTicketBooking\\Scripts\\customjs\\Editshowtime.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABNAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-09-09T05:47:22.78Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 44,
-              "Title": "Editmovie.js",
-              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Scripts\\customjs\\Editmovie.js",
-              "RelativeDocumentMoniker": "MovieTicketBooking\\Scripts\\customjs\\Editmovie.js",
-              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Scripts\\customjs\\Editmovie.js",
-              "RelativeToolTip": "MovieTicketBooking\\Scripts\\customjs\\Editmovie.js",
-              "ViewState": "AQIAABMAAAAAAAAAAAAzwC4AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-09-08T18:07:38.892Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 45,
-              "Title": "Createshowtime.js",
-              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Scripts\\customjs\\Createshowtime.js",
-              "RelativeDocumentMoniker": "MovieTicketBooking\\Scripts\\customjs\\Createshowtime.js",
-              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Scripts\\customjs\\Createshowtime.js",
-              "RelativeToolTip": "MovieTicketBooking\\Scripts\\customjs\\Createshowtime.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAABdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-09-08T19:08:57.47Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 46,
-              "Title": "citydropdown.js",
-              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Scripts\\customjs\\citydropdown.js",
-              "RelativeDocumentMoniker": "MovieTicketBooking\\Scripts\\customjs\\citydropdown.js",
-              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Scripts\\customjs\\citydropdown.js",
-              "RelativeToolTip": "MovieTicketBooking\\Scripts\\customjs\\citydropdown.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAxAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-09-03T03:33:52.615Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 47,
-              "Title": "carousel.js",
-              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Scripts\\customjs\\carousel.js",
-              "RelativeDocumentMoniker": "MovieTicketBooking\\Scripts\\customjs\\carousel.js",
-              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Scripts\\customjs\\carousel.js",
-              "RelativeToolTip": "MovieTicketBooking\\Scripts\\customjs\\carousel.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-09-02T06:29:28.69Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "Editprofile.js",
-              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Scripts\\customjs\\Editprofile.js",
-              "RelativeDocumentMoniker": "MovieTicketBooking\\Scripts\\customjs\\Editprofile.js",
-              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Scripts\\customjs\\Editprofile.js",
-              "RelativeToolTip": "MovieTicketBooking\\Scripts\\customjs\\Editprofile.js",
-              "ViewState": "AQIAAGMAAAAAAAAAAAAowHUAAAAkAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-09-08T14:42:38.941Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 48,
-              "Title": "Addmovie.js",
-              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Scripts\\customjs\\Addmovie.js",
-              "RelativeDocumentMoniker": "MovieTicketBooking\\Scripts\\customjs\\Addmovie.js",
-              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Scripts\\customjs\\Addmovie.js",
-              "RelativeToolTip": "MovieTicketBooking\\Scripts\\customjs\\Addmovie.js",
-              "ViewState": "AQIAAE8AAAAAAAAAAAAkwAIAAAAwAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-09-08T16:33:31.372Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 49,
               "Title": "HomeRepository.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Repositories\\HomeRepository.cs",
               "RelativeDocumentMoniker": "MovieTicketBooking\\Repositories\\HomeRepository.cs",
@@ -972,85 +464,969 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
-              "Title": "AdminRepository.cs",
-              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Repositories\\AdminRepository.cs",
-              "RelativeDocumentMoniker": "MovieTicketBooking\\Repositories\\AdminRepository.cs",
-              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Repositories\\AdminRepository.cs",
-              "RelativeToolTip": "MovieTicketBooking\\Repositories\\AdminRepository.cs",
-              "ViewState": "AQIAAOYBAAAAAAAAAAAIwPcBAAAAAAAA",
+              "DocumentIndex": 5,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "MovieTicketBooking\\Repositories\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "MovieTicketBooking\\Repositories\\UserRepository.cs",
+              "ViewState": "AQIAAAMBAAAAAAAAAIAwwCEBAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-09T02:25:29.899Z",
+              "WhenOpened": "2024-09-03T14:58:51.947Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
-              "Title": "AccountRepository.cs",
-              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Repositories\\AccountRepository.cs",
-              "RelativeDocumentMoniker": "MovieTicketBooking\\Repositories\\AccountRepository.cs",
-              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Repositories\\AccountRepository.cs",
-              "RelativeToolTip": "MovieTicketBooking\\Repositories\\AccountRepository.cs",
-              "ViewState": "AQIAAN4AAAAAAAAAAAAowPkAAAANAAAA",
+              "DocumentIndex": 6,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Repositories\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "MovieTicketBooking\\Repositories\\IUserRepository.cs",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Repositories\\IUserRepository.cs",
+              "RelativeToolTip": "MovieTicketBooking\\Repositories\\IUserRepository.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAmwBMAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-02T14:19:14.74Z",
+              "WhenOpened": "2024-09-03T14:58:32.933Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 8,
               "Title": "AccountController.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "MovieTicketBooking\\Controllers\\AccountController.cs",
               "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Controllers\\AccountController.cs",
               "RelativeToolTip": "MovieTicketBooking\\Controllers\\AccountController.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAAAB8AAAAPAAAA",
+              "ViewState": "AQIAACcAAAAAAAAAAAAYwB4AAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-05T14:11:00.418Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "MovieTicketBooking\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "MovieTicketBooking\\Controllers\\HomeController.cs",
-              "ViewState": "AQIAADEAAAAAAAAAAAAkwFAAAABEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-02T09:35:33.999Z",
+              "DocumentIndex": 9,
+              "Title": "UserLayout.cshtml",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\Shared\\UserLayout.cshtml",
+              "RelativeDocumentMoniker": "MovieTicketBooking\\Views\\Shared\\UserLayout.cshtml",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\Shared\\UserLayout.cshtml",
+              "RelativeToolTip": "MovieTicketBooking\\Views\\Shared\\UserLayout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-08T14:55:24.857Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 14,
+              "Title": "AdminRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Repositories\\AdminRepository.cs",
+              "RelativeDocumentMoniker": "MovieTicketBooking\\Repositories\\AdminRepository.cs",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Repositories\\AdminRepository.cs",
+              "RelativeToolTip": "MovieTicketBooking\\Repositories\\AdminRepository.cs",
+              "ViewState": "AQIAAPkBAAAAAAAAAAAmwBUCAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T02:25:29.899Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "MovieTicketBooking\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "MovieTicketBooking\\Controllers\\AdminController.cs",
+              "ViewState": "AQIAAJkBAAAAAAAAAAAwwK8BAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-02T11:56:17.045Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UserHome.cshtml",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\User\\UserHome.cshtml",
+              "RelativeDocumentMoniker": "MovieTicketBooking\\Views\\User\\UserHome.cshtml",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\User\\UserHome.cshtml",
+              "RelativeToolTip": "MovieTicketBooking\\Views\\User\\UserHome.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGcAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-03T14:29:20.587Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AccountRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Repositories\\AccountRepository.cs",
+              "RelativeDocumentMoniker": "MovieTicketBooking\\Repositories\\AccountRepository.cs",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Repositories\\AccountRepository.cs",
+              "RelativeToolTip": "MovieTicketBooking\\Repositories\\AccountRepository.cs",
+              "ViewState": "AQIAANsAAAAAAAAAAAD4v/4AAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-02T14:19:14.74Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Createshowtime.js",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Scripts\\customjs\\Createshowtime.js",
+              "RelativeDocumentMoniker": "MovieTicketBooking\\Scripts\\customjs\\Createshowtime.js",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Scripts\\customjs\\Createshowtime.js",
+              "RelativeToolTip": "MovieTicketBooking\\Scripts\\customjs\\Createshowtime.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-09-08T19:08:57.47Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CreateShowtime.cshtml",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\Admin\\CreateShowtime.cshtml",
+              "RelativeDocumentMoniker": "MovieTicketBooking\\Views\\Admin\\CreateShowtime.cshtml",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\Admin\\CreateShowtime.cshtml",
+              "RelativeToolTip": "MovieTicketBooking\\Views\\Admin\\CreateShowtime.cshtml",
+              "ViewState": "AQIAABoAAAAAAAAAAAAQwE4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-09T06:53:20.745Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ViewShowtimes.cshtml",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\Admin\\ViewShowtimes.cshtml",
+              "RelativeDocumentMoniker": "MovieTicketBooking\\Views\\Admin\\ViewShowtimes.cshtml",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\Admin\\ViewShowtimes.cshtml",
+              "RelativeToolTip": "MovieTicketBooking\\Views\\Admin\\ViewShowtimes.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAACXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-06T08:29:52.561Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "MyBookings.cshtml",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\User\\MyBookings.cshtml",
+              "RelativeDocumentMoniker": "MovieTicketBooking\\Views\\User\\MyBookings.cshtml",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\User\\MyBookings.cshtml",
+              "RelativeToolTip": "MovieTicketBooking\\Views\\User\\MyBookings.cshtml",
+              "ViewState": "AQIAABQAAAAAAAAAAAAAACgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-12T08:49:43.914Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ViewBookings.cshtml",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\Admin\\ViewBookings.cshtml",
+              "RelativeDocumentMoniker": "MovieTicketBooking\\Views\\Admin\\ViewBookings.cshtml",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\Admin\\ViewBookings.cshtml",
+              "RelativeToolTip": "MovieTicketBooking\\Views\\Admin\\ViewBookings.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-12T12:20:51.13Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "myBookings.css",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Content\\customcss\\myBookings.css",
+              "RelativeDocumentMoniker": "MovieTicketBooking\\Content\\customcss\\myBookings.css",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Content\\customcss\\myBookings.css",
+              "RelativeToolTip": "MovieTicketBooking\\Content\\customcss\\myBookings.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-09-12T12:26:16.792Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "viewBookingsAdmin.css",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Content\\customcss\\viewBookingsAdmin.css",
+              "RelativeDocumentMoniker": "MovieTicketBooking\\Content\\customcss\\viewBookingsAdmin.css",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Content\\customcss\\viewBookingsAdmin.css",
+              "RelativeToolTip": "MovieTicketBooking\\Content\\customcss\\viewBookingsAdmin.css",
+              "ViewState": "AQIAABEAAAAAAAAAAAAQwEUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-09-12T12:27:08.75Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "BookingViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\ViewModels\\BookingViewModel.cs",
+              "RelativeDocumentMoniker": "MovieTicketBooking\\ViewModels\\BookingViewModel.cs",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\ViewModels\\BookingViewModel.cs",
+              "RelativeToolTip": "MovieTicketBooking\\ViewModels\\BookingViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T12:03:44.918Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "_MovieListPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\User\\_MovieListPartial.cshtml",
+              "RelativeDocumentMoniker": "MovieTicketBooking\\Views\\User\\_MovieListPartial.cshtml",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\User\\_MovieListPartial.cshtml",
+              "RelativeToolTip": "MovieTicketBooking\\Views\\User\\_MovieListPartial.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-12T03:18:47.069Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "UserBookings.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Models\\UserBookings.cs",
+              "RelativeDocumentMoniker": "MovieTicketBooking\\Models\\UserBookings.cs",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Models\\UserBookings.cs",
+              "RelativeToolTip": "MovieTicketBooking\\Models\\UserBookings.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T08:45:41.741Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "viewUserDetails.css",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Content\\customcss\\viewUserDetails.css",
+              "RelativeDocumentMoniker": "MovieTicketBooking\\Content\\customcss\\viewUserDetails.css",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Content\\customcss\\viewUserDetails.css",
+              "RelativeToolTip": "MovieTicketBooking\\Content\\customcss\\viewUserDetails.css",
+              "ViewState": "AQIAADwAAAAAAAAAAAAAAEsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-09-11T17:03:30.672Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "searchFilerUserHome.css",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Content\\customcss\\searchFilerUserHome.css",
+              "RelativeDocumentMoniker": "MovieTicketBooking\\Content\\customcss\\searchFilerUserHome.css",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Content\\customcss\\searchFilerUserHome.css",
+              "RelativeToolTip": "MovieTicketBooking\\Content\\customcss\\searchFilerUserHome.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-09-12T08:13:55.174Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "userHome.css",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Content\\customcss\\userHome.css",
+              "RelativeDocumentMoniker": "MovieTicketBooking\\Content\\customcss\\userHome.css",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Content\\customcss\\userHome.css",
+              "RelativeToolTip": "MovieTicketBooking\\Content\\customcss\\userHome.css",
+              "ViewState": "AQIAAFcAAAAAAAAAAAAAAGcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-09-09T10:05:46.202Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "AdminLayout.cshtml",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\Shared\\AdminLayout.cshtml",
+              "RelativeDocumentMoniker": "MovieTicketBooking\\Views\\Shared\\AdminLayout.cshtml",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\Shared\\AdminLayout.cshtml",
+              "RelativeToolTip": "MovieTicketBooking\\Views\\Shared\\AdminLayout.cshtml",
+              "ViewState": "AQIAAGAAAAAAAAAAAAAAAIMAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-02T12:02:58.269Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "ViewUserDetails.cshtml",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\Admin\\ViewUserDetails.cshtml",
+              "RelativeDocumentMoniker": "MovieTicketBooking\\Views\\Admin\\ViewUserDetails.cshtml",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\Admin\\ViewUserDetails.cshtml",
+              "RelativeToolTip": "MovieTicketBooking\\Views\\Admin\\ViewUserDetails.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-11T14:09:53.036Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "UserDetailsViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\ViewModels\\UserDetailsViewModel.cs",
+              "RelativeDocumentMoniker": "MovieTicketBooking\\ViewModels\\UserDetailsViewModel.cs",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\ViewModels\\UserDetailsViewModel.cs",
+              "RelativeToolTip": "MovieTicketBooking\\ViewModels\\UserDetailsViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-03T16:17:16.659Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "citydropdown.js",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Scripts\\customjs\\citydropdown.js",
+              "RelativeDocumentMoniker": "MovieTicketBooking\\Scripts\\customjs\\citydropdown.js",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Scripts\\customjs\\citydropdown.js",
+              "RelativeToolTip": "MovieTicketBooking\\Scripts\\customjs\\citydropdown.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-09-03T03:33:52.615Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "carousel.js",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Scripts\\customjs\\carousel.js",
+              "RelativeDocumentMoniker": "MovieTicketBooking\\Scripts\\customjs\\carousel.js",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Scripts\\customjs\\carousel.js",
+              "RelativeToolTip": "MovieTicketBooking\\Scripts\\customjs\\carousel.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-09-02T06:29:28.69Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Addmovie.js",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Scripts\\customjs\\Addmovie.js",
+              "RelativeDocumentMoniker": "MovieTicketBooking\\Scripts\\customjs\\Addmovie.js",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Scripts\\customjs\\Addmovie.js",
+              "RelativeToolTip": "MovieTicketBooking\\Scripts\\customjs\\Addmovie.js",
+              "ViewState": "AQIAABYAAAAAAAAAAAAQwAIAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-09-08T16:33:31.372Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "SelectSeats.cshtml",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\User\\SelectSeats.cshtml",
+              "RelativeDocumentMoniker": "MovieTicketBooking\\Views\\User\\SelectSeats.cshtml",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\User\\SelectSeats.cshtml",
+              "RelativeToolTip": "MovieTicketBooking\\Views\\User\\SelectSeats.cshtml",
+              "ViewState": "AQIAAIAAAAAAAAAAAAAAAIcAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-09T15:34:06.956Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "ViewLayout.cshtml",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\Admin\\ViewLayout.cshtml",
+              "RelativeDocumentMoniker": "MovieTicketBooking\\Views\\Admin\\ViewLayout.cshtml",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\Admin\\ViewLayout.cshtml",
+              "RelativeToolTip": "MovieTicketBooking\\Views\\Admin\\ViewLayout.cshtml",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAABMAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-06T16:24:09.325Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Editprofile.js",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Scripts\\customjs\\Editprofile.js",
+              "RelativeDocumentMoniker": "MovieTicketBooking\\Scripts\\customjs\\Editprofile.js",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Scripts\\customjs\\Editprofile.js",
+              "RelativeToolTip": "MovieTicketBooking\\Scripts\\customjs\\Editprofile.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFgAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-09-08T14:42:38.941Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\User\\Edit.cshtml",
+              "RelativeDocumentMoniker": "MovieTicketBooking\\Views\\User\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\User\\Edit.cshtml",
+              "RelativeToolTip": "MovieTicketBooking\\Views\\User\\Edit.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAEYAAABIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-03T16:21:03.559Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\ViewModels\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "MovieTicketBooking\\ViewModels\\LoginViewModel.cs",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\ViewModels\\LoginViewModel.cs",
+              "RelativeToolTip": "MovieTicketBooking\\ViewModels\\LoginViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T09:21:34.967Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Models\\User.cs",
+              "RelativeDocumentMoniker": "MovieTicketBooking\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Models\\User.cs",
+              "RelativeToolTip": "MovieTicketBooking\\Models\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-02T13:48:49.265Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "SeeShowtimes.cshtml",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\User\\SeeShowtimes.cshtml",
+              "RelativeDocumentMoniker": "MovieTicketBooking\\Views\\User\\SeeShowtimes.cshtml",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\User\\SeeShowtimes.cshtml",
+              "RelativeToolTip": "MovieTicketBooking\\Views\\User\\SeeShowtimes.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAB2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-07T16:49:42.037Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "BundleConfig.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\App_Start\\BundleConfig.cs",
+              "RelativeDocumentMoniker": "MovieTicketBooking\\App_Start\\BundleConfig.cs",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\App_Start\\BundleConfig.cs",
+              "RelativeToolTip": "MovieTicketBooking\\App_Start\\BundleConfig.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T06:24:49.296Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "AdminHome.cshtml",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\Admin\\AdminHome.cshtml",
+              "RelativeDocumentMoniker": "MovieTicketBooking\\Views\\Admin\\AdminHome.cshtml",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\Admin\\AdminHome.cshtml",
+              "RelativeToolTip": "MovieTicketBooking\\Views\\Admin\\AdminHome.cshtml",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABUAAABVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-06T03:48:31.531Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "ViewMovieDetailsUser.cshtml",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\User\\ViewMovieDetailsUser.cshtml",
+              "RelativeDocumentMoniker": "MovieTicketBooking\\Views\\User\\ViewMovieDetailsUser.cshtml",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\User\\ViewMovieDetailsUser.cshtml",
+              "RelativeToolTip": "MovieTicketBooking\\Views\\User\\ViewMovieDetailsUser.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACkAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-09T10:22:58.695Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "BookingConfirmation.cshtml",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\User\\BookingConfirmation.cshtml",
+              "RelativeDocumentMoniker": "MovieTicketBooking\\Views\\User\\BookingConfirmation.cshtml",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\User\\BookingConfirmation.cshtml",
+              "RelativeToolTip": "MovieTicketBooking\\Views\\User\\BookingConfirmation.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-10T14:44:55.897Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "BookingConfirmation.css",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Content\\customcss\\BookingConfirmation.css",
+              "RelativeDocumentMoniker": "MovieTicketBooking\\Content\\customcss\\BookingConfirmation.css",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Content\\customcss\\BookingConfirmation.css",
+              "RelativeToolTip": "MovieTicketBooking\\Content\\customcss\\BookingConfirmation.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-09-10T15:35:45.471Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "Booking.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Models\\Booking.cs",
+              "RelativeDocumentMoniker": "MovieTicketBooking\\Models\\Booking.cs",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Models\\Booking.cs",
+              "RelativeToolTip": "MovieTicketBooking\\Models\\Booking.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T14:24:27.362Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\Web.config",
+              "RelativeDocumentMoniker": "MovieTicketBooking\\Views\\Web.config",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\Web.config",
+              "RelativeToolTip": "MovieTicketBooking\\Views\\Web.config",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAAACIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-09-04T09:58:44.383Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
               "Title": "Signup.cshtml",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\Account\\Signup.cshtml",
               "RelativeDocumentMoniker": "MovieTicketBooking\\Views\\Account\\Signup.cshtml",
               "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\Account\\Signup.cshtml",
               "RelativeToolTip": "MovieTicketBooking\\Views\\Account\\Signup.cshtml",
-              "ViewState": "AQIAAD8AAAAAAAAAAAAAAAgAAAAAAAAA",
+              "ViewState": "AQIAAFEAAAAAAAAAAAAAAGIAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-09-05T15:26:02.22Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 47,
+              "Title": "SeatType.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Models\\SeatType.cs",
+              "RelativeDocumentMoniker": "MovieTicketBooking\\Models\\SeatType.cs",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Models\\SeatType.cs",
+              "RelativeToolTip": "MovieTicketBooking\\Models\\SeatType.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-06T11:37:33.163Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "About.cshtml",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\Home\\About.cshtml",
+              "RelativeDocumentMoniker": "MovieTicketBooking\\Views\\Home\\About.cshtml",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\Home\\About.cshtml",
+              "RelativeToolTip": "MovieTicketBooking\\Views\\Home\\About.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-02T07:55:25.544Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
               "Title": "Seat.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Models\\Seat.cs",
               "RelativeDocumentMoniker": "MovieTicketBooking\\Models\\Seat.cs",
               "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Models\\Seat.cs",
               "RelativeToolTip": "MovieTicketBooking\\Models\\Seat.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABQAAAAcAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-06T11:25:40.999Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "MovieTicketBooking\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "MovieTicketBooking\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAABJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-05T16:15:26.821Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "ContactUs.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Models\\ContactUs.cs",
+              "RelativeDocumentMoniker": "MovieTicketBooking\\Models\\ContactUs.cs",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Models\\ContactUs.cs",
+              "RelativeToolTip": "MovieTicketBooking\\Models\\ContactUs.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABYAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T06:24:29.623Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "UpdatePasswordViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\ViewModels\\UpdatePasswordViewModel.cs",
+              "RelativeDocumentMoniker": "MovieTicketBooking\\ViewModels\\UpdatePasswordViewModel.cs",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\ViewModels\\UpdatePasswordViewModel.cs",
+              "RelativeToolTip": "MovieTicketBooking\\ViewModels\\UpdatePasswordViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T16:38:32.347Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "updatePassword.css",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Content\\customcss\\updatePassword.css",
+              "RelativeDocumentMoniker": "MovieTicketBooking\\Content\\customcss\\updatePassword.css",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Content\\customcss\\updatePassword.css",
+              "RelativeToolTip": "MovieTicketBooking\\Content\\customcss\\updatePassword.css",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAAEYAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-09-09T08:56:48.585Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "Editprofile.css",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Content\\customcss\\Editprofile.css",
+              "RelativeDocumentMoniker": "MovieTicketBooking\\Content\\customcss\\Editprofile.css",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Content\\customcss\\Editprofile.css",
+              "RelativeToolTip": "MovieTicketBooking\\Content\\customcss\\Editprofile.css",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAgwEAAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-09-08T14:18:43.296Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "viewSeatsAdmin.css",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Content\\customcss\\viewSeatsAdmin.css",
+              "RelativeDocumentMoniker": "MovieTicketBooking\\Content\\customcss\\viewSeatsAdmin.css",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Content\\customcss\\viewSeatsAdmin.css",
+              "RelativeToolTip": "MovieTicketBooking\\Content\\customcss\\viewSeatsAdmin.css",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABsAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-09-09T08:26:22.113Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 57,
+              "Title": "ViewSeats.cshtml",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\Admin\\ViewSeats.cshtml",
+              "RelativeDocumentMoniker": "MovieTicketBooking\\Views\\Admin\\ViewSeats.cshtml",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\Admin\\ViewSeats.cshtml",
+              "RelativeToolTip": "MovieTicketBooking\\Views\\Admin\\ViewSeats.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-07T03:53:39.793Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "viewMoviesAdmin.css",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Content\\customcss\\viewMoviesAdmin.css",
+              "RelativeDocumentMoniker": "MovieTicketBooking\\Content\\customcss\\viewMoviesAdmin.css",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Content\\customcss\\viewMoviesAdmin.css",
+              "RelativeToolTip": "MovieTicketBooking\\Content\\customcss\\viewMoviesAdmin.css",
+              "ViewState": "AQIAADEAAAAAAAAAAAAgwFYAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-09-09T06:42:25.102Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "ViewAllMovies.cshtml",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\Admin\\ViewAllMovies.cshtml",
+              "RelativeDocumentMoniker": "MovieTicketBooking\\Views\\Admin\\ViewAllMovies.cshtml",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\Admin\\ViewAllMovies.cshtml",
+              "RelativeToolTip": "MovieTicketBooking\\Views\\Admin\\ViewAllMovies.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAACQAAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-06T05:36:24.31Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "viewShowtimesAdmin.css",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Content\\customcss\\viewShowtimesAdmin.css",
+              "RelativeDocumentMoniker": "MovieTicketBooking\\Content\\customcss\\viewShowtimesAdmin.css",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Content\\customcss\\viewShowtimesAdmin.css",
+              "RelativeToolTip": "MovieTicketBooking\\Content\\customcss\\viewShowtimesAdmin.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-09-09T07:02:01.607Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "EditShowtime.cshtml",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\Admin\\EditShowtime.cshtml",
+              "RelativeDocumentMoniker": "MovieTicketBooking\\Views\\Admin\\EditShowtime.cshtml",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\Admin\\EditShowtime.cshtml",
+              "RelativeToolTip": "MovieTicketBooking\\Views\\Admin\\EditShowtime.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACYAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-06T08:45:00.114Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "ShowTime.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Models\\ShowTime.cs",
+              "RelativeDocumentMoniker": "MovieTicketBooking\\Models\\ShowTime.cs",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Models\\ShowTime.cs",
+              "RelativeToolTip": "MovieTicketBooking\\Models\\ShowTime.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T07:26:11.794Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "EditMovie.cshtml",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\Admin\\EditMovie.cshtml",
+              "RelativeDocumentMoniker": "MovieTicketBooking\\Views\\Admin\\EditMovie.cshtml",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\Admin\\EditMovie.cshtml",
+              "RelativeToolTip": "MovieTicketBooking\\Views\\Admin\\EditMovie.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-09T06:45:51.247Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "AddMovie.cshtml",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\Admin\\AddMovie.cshtml",
+              "RelativeDocumentMoniker": "MovieTicketBooking\\Views\\Admin\\AddMovie.cshtml",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\Admin\\AddMovie.cshtml",
+              "RelativeToolTip": "MovieTicketBooking\\Views\\Admin\\AddMovie.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-06T04:33:43.468Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "aboutus.css",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Content\\customcss\\aboutus.css",
+              "RelativeDocumentMoniker": "MovieTicketBooking\\Content\\customcss\\aboutus.css",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Content\\customcss\\aboutus.css",
+              "RelativeToolTip": "MovieTicketBooking\\Content\\customcss\\aboutus.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-09-07T15:10:13.806Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "Addmovie.css",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Content\\customcss\\Addmovie.css",
+              "RelativeDocumentMoniker": "MovieTicketBooking\\Content\\customcss\\Addmovie.css",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Content\\customcss\\Addmovie.css",
+              "RelativeToolTip": "MovieTicketBooking\\Content\\customcss\\Addmovie.css",
+              "ViewState": "AQIAABAAAAAAAAAAAAAkwCAAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-09-08T16:43:54.203Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "Adminhome.css",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Content\\customcss\\Adminhome.css",
+              "RelativeDocumentMoniker": "MovieTicketBooking\\Content\\customcss\\Adminhome.css",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Content\\customcss\\Adminhome.css",
+              "RelativeToolTip": "MovieTicketBooking\\Content\\customcss\\Adminhome.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-09-09T04:19:03.505Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "contact.css",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Content\\customcss\\contact.css",
+              "RelativeDocumentMoniker": "MovieTicketBooking\\Content\\customcss\\contact.css",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Content\\customcss\\contact.css",
+              "RelativeToolTip": "MovieTicketBooking\\Content\\customcss\\contact.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-09-09T06:31:55.444Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "createshowtimes.css",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Content\\customcss\\createshowtimes.css",
+              "RelativeDocumentMoniker": "MovieTicketBooking\\Content\\customcss\\createshowtimes.css",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Content\\customcss\\createshowtimes.css",
+              "RelativeToolTip": "MovieTicketBooking\\Content\\customcss\\createshowtimes.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-09-09T06:32:02.061Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
+              "Title": "Editmovie.css",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Content\\customcss\\Editmovie.css",
+              "RelativeDocumentMoniker": "MovieTicketBooking\\Content\\customcss\\Editmovie.css",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Content\\customcss\\Editmovie.css",
+              "RelativeToolTip": "MovieTicketBooking\\Content\\customcss\\Editmovie.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-09-08T18:01:25.511Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 71,
+              "Title": "Editseat.css",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Content\\customcss\\Editseat.css",
+              "RelativeDocumentMoniker": "MovieTicketBooking\\Content\\customcss\\Editseat.css",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Content\\customcss\\Editseat.css",
+              "RelativeToolTip": "MovieTicketBooking\\Content\\customcss\\Editseat.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-09-09T03:13:07.441Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 72,
+              "Title": "Editshowtimes.css",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Content\\customcss\\Editshowtimes.css",
+              "RelativeDocumentMoniker": "MovieTicketBooking\\Content\\customcss\\Editshowtimes.css",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Content\\customcss\\Editshowtimes.css",
+              "RelativeToolTip": "MovieTicketBooking\\Content\\customcss\\Editshowtimes.css",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAcwCwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-09-08T19:39:13.781Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 73,
+              "Title": "index.css",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Content\\customcss\\index.css",
+              "RelativeDocumentMoniker": "MovieTicketBooking\\Content\\customcss\\index.css",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Content\\customcss\\index.css",
+              "RelativeToolTip": "MovieTicketBooking\\Content\\customcss\\index.css",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAAAcAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-09-02T09:05:17.923Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 74,
+              "Title": "Login.css",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Content\\customcss\\Login.css",
+              "RelativeDocumentMoniker": "MovieTicketBooking\\Content\\customcss\\Login.css",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Content\\customcss\\Login.css",
+              "RelativeToolTip": "MovieTicketBooking\\Content\\customcss\\Login.css",
+              "ViewState": "AQIAAFEAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-09-08T05:09:51.379Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 75,
+              "Title": "signup.css",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Content\\customcss\\signup.css",
+              "RelativeDocumentMoniker": "MovieTicketBooking\\Content\\customcss\\signup.css",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Content\\customcss\\signup.css",
+              "RelativeToolTip": "MovieTicketBooking\\Content\\customcss\\signup.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFoAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-09-08T06:38:46.508Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 76,
+              "Title": "UserLayout.css",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Content\\customcss\\UserLayout.css",
+              "RelativeDocumentMoniker": "MovieTicketBooking\\Content\\customcss\\UserLayout.css",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Content\\customcss\\UserLayout.css",
+              "RelativeToolTip": "MovieTicketBooking\\Content\\customcss\\UserLayout.css",
+              "ViewState": "AQIAADAAAAAAAAAAAAAAAE4AAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-09-05T19:42:54.28Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 77,
+              "Title": "signupvalidation.js",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Scripts\\customjs\\signupvalidation.js",
+              "RelativeDocumentMoniker": "MovieTicketBooking\\Scripts\\customjs\\signupvalidation.js",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Scripts\\customjs\\signupvalidation.js",
+              "RelativeToolTip": "MovieTicketBooking\\Scripts\\customjs\\signupvalidation.js",
+              "ViewState": "AQIAAAIBAAAAAAAAAAAcwCcBAABJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-09-08T07:29:23.19Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 78,
+              "Title": "Editshowtime.js",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Scripts\\customjs\\Editshowtime.js",
+              "RelativeDocumentMoniker": "MovieTicketBooking\\Scripts\\customjs\\Editshowtime.js",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Scripts\\customjs\\Editshowtime.js",
+              "RelativeToolTip": "MovieTicketBooking\\Scripts\\customjs\\Editshowtime.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABNAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-09-09T05:47:22.78Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 79,
+              "Title": "Editmovie.js",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Scripts\\customjs\\Editmovie.js",
+              "RelativeDocumentMoniker": "MovieTicketBooking\\Scripts\\customjs\\Editmovie.js",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Scripts\\customjs\\Editmovie.js",
+              "RelativeToolTip": "MovieTicketBooking\\Scripts\\customjs\\Editmovie.js",
+              "ViewState": "AQIAABMAAAAAAAAAAAAzwC4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-09-08T18:07:38.892Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 81,
               "Title": "Movie.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Models\\Movie.cs",
               "RelativeDocumentMoniker": "MovieTicketBooking\\Models\\Movie.cs",
@@ -1063,20 +1439,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
-              "Title": "SeatType.cs",
-              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Models\\SeatType.cs",
-              "RelativeDocumentMoniker": "MovieTicketBooking\\Models\\SeatType.cs",
-              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Models\\SeatType.cs",
-              "RelativeToolTip": "MovieTicketBooking\\Models\\SeatType.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-06T11:37:33.163Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 80,
               "Title": "SeatViewModel.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\ViewModels\\SeatViewModel.cs",
               "RelativeDocumentMoniker": "MovieTicketBooking\\ViewModels\\SeatViewModel.cs",
@@ -1089,19 +1452,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Models\\User.cs",
-              "RelativeDocumentMoniker": "MovieTicketBooking\\Models\\User.cs",
-              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Models\\User.cs",
-              "RelativeToolTip": "MovieTicketBooking\\Models\\User.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAswA4AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-02T13:48:49.265Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 82,
               "Title": "UserDetails.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Models\\UserDetails.cs",
               "RelativeDocumentMoniker": "MovieTicketBooking\\Models\\UserDetails.cs",
@@ -1109,35 +1460,12 @@
               "RelativeToolTip": "MovieTicketBooking\\Models\\UserDetails.cs",
               "ViewState": "AQIAABIAAAAAAAAAAAAYwCEAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-02T13:50:25.41Z"
+              "WhenOpened": "2024-09-02T13:50:25.41Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\Account\\Login.cshtml",
-              "RelativeDocumentMoniker": "MovieTicketBooking\\Views\\Account\\Login.cshtml",
-              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\Account\\Login.cshtml",
-              "RelativeToolTip": "MovieTicketBooking\\Views\\Account\\Login.cshtml",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAACgAAAAmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-03T05:15:09.276Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 62,
-              "Title": "UserDetailsViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\ViewModels\\UserDetailsViewModel.cs",
-              "RelativeDocumentMoniker": "MovieTicketBooking\\ViewModels\\UserDetailsViewModel.cs",
-              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\ViewModels\\UserDetailsViewModel.cs",
-              "RelativeToolTip": "MovieTicketBooking\\ViewModels\\UserDetailsViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAzAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-03T16:17:16.659Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 83,
               "Title": "RegisterViewModel.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\ViewModels\\RegisterViewModel.cs",
               "RelativeDocumentMoniker": "MovieTicketBooking\\ViewModels\\RegisterViewModel.cs",
@@ -1145,11 +1473,12 @@
               "RelativeToolTip": "MovieTicketBooking\\ViewModels\\RegisterViewModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-05T12:04:00.088Z"
+              "WhenOpened": "2024-09-05T12:04:00.088Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 84,
               "Title": "Site.css",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Content\\Site.css",
               "RelativeDocumentMoniker": "MovieTicketBooking\\Content\\Site.css",
@@ -1157,11 +1486,12 @@
               "RelativeToolTip": "MovieTicketBooking\\Content\\Site.css",
               "ViewState": "AQIAAC0AAAAAAAAAAAAAAG8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-09-05T11:35:22.538Z"
+              "WhenOpened": "2024-09-05T11:35:22.538Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 66,
+              "DocumentIndex": 86,
               "Title": "ContactUs.cshtml",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\Home\\ContactUs.cshtml",
               "RelativeDocumentMoniker": "MovieTicketBooking\\Views\\Home\\ContactUs.cshtml",
@@ -1169,11 +1499,12 @@
               "RelativeToolTip": "MovieTicketBooking\\Views\\Home\\ContactUs.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAABAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-05T16:13:45.343Z"
+              "WhenOpened": "2024-09-05T16:13:45.343Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 65,
+              "DocumentIndex": 85,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "MovieTicketBooking\\Views\\Home\\Index.cshtml",
@@ -1181,35 +1512,12 @@
               "RelativeToolTip": "MovieTicketBooking\\Views\\Home\\Index.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-02T06:21:42.031Z"
+              "WhenOpened": "2024-09-02T06:21:42.031Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 67,
-              "Title": "About.cshtml",
-              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\Home\\About.cshtml",
-              "RelativeDocumentMoniker": "MovieTicketBooking\\Views\\Home\\About.cshtml",
-              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\Home\\About.cshtml",
-              "RelativeToolTip": "MovieTicketBooking\\Views\\Home\\About.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAABAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-02T07:55:25.544Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 69,
-              "Title": "SeeShowtimes.cshtml",
-              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\User\\SeeShowtimes.cshtml",
-              "RelativeDocumentMoniker": "MovieTicketBooking\\Views\\User\\SeeShowtimes.cshtml",
-              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\User\\SeeShowtimes.cshtml",
-              "RelativeToolTip": "MovieTicketBooking\\Views\\User\\SeeShowtimes.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAArAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-07T16:49:42.037Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 68,
+              "DocumentIndex": 87,
               "Title": "RouteConfig.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\App_Start\\RouteConfig.cs",
               "RelativeDocumentMoniker": "MovieTicketBooking\\App_Start\\RouteConfig.cs",
@@ -1217,11 +1525,12 @@
               "RelativeToolTip": "MovieTicketBooking\\App_Start\\RouteConfig.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-07T16:53:21.39Z"
+              "WhenOpened": "2024-09-07T16:53:21.39Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 70,
+              "DocumentIndex": 88,
               "Title": "FeedbackSuccess.cshtml",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\Home\\FeedbackSuccess.cshtml",
               "RelativeDocumentMoniker": "MovieTicketBooking\\Views\\Home\\FeedbackSuccess.cshtml",
@@ -1229,11 +1538,12 @@
               "RelativeToolTip": "MovieTicketBooking\\Views\\Home\\FeedbackSuccess.cshtml",
               "ViewState": "AQIAAAIAAAAAAAAAAAAswB8AAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-05T16:13:32.589Z"
+              "WhenOpened": "2024-09-05T16:13:32.589Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 71,
+              "DocumentIndex": 89,
               "Title": "ThankYou.cshtml",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\Home\\ThankYou.cshtml",
               "RelativeDocumentMoniker": "MovieTicketBooking\\Views\\Home\\ThankYou.cshtml",
@@ -1241,11 +1551,12 @@
               "RelativeToolTip": "MovieTicketBooking\\Views\\Home\\ThankYou.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-05T07:02:11.432Z"
+              "WhenOpened": "2024-09-05T07:02:11.432Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 72,
+              "DocumentIndex": 90,
               "Title": "City.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Models\\City.cs",
               "RelativeDocumentMoniker": "MovieTicketBooking\\Models\\City.cs",
@@ -1253,48 +1564,23 @@
               "RelativeToolTip": "MovieTicketBooking\\Models\\City.cs",
               "ViewState": "AQIAAAEAAAAAAAAAAAAgwA8AAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-02T13:52:03.593Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 74,
-              "Title": "Web.config",
-              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\Web.config",
-              "RelativeDocumentMoniker": "MovieTicketBooking\\Views\\Web.config",
-              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Views\\Web.config",
-              "RelativeToolTip": "MovieTicketBooking\\Views\\Web.config",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAAACIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-09-04T09:58:44.383Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 73,
-              "Title": "Web.config",
-              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Web.config",
-              "RelativeDocumentMoniker": "MovieTicketBooking\\Web.config",
-              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Web.config",
-              "RelativeToolTip": "MovieTicketBooking\\Web.config",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABEAAAAUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-09-04T10:12:49.051Z",
+              "WhenOpened": "2024-09-02T13:52:03.593Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 75,
+              "DocumentIndex": 91,
               "Title": "AccountController.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\AppData\\Local\\Temp\\.vsdbgsrc\\6e7adcdcf2a0e47ac8c10b0a2828bfb989914162e8bf8efc61ba25bcc2ce08dc\\AccountController.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\6e7adcdcf2a0e47ac8c10b0a2828bfb989914162e8bf8efc61ba25bcc2ce08dc\\AccountController.cs",
               "ToolTip": "C:\\Users\\ACER\\AppData\\Local\\Temp\\.vsdbgsrc\\6e7adcdcf2a0e47ac8c10b0a2828bfb989914162e8bf8efc61ba25bcc2ce08dc\\AccountController.cs",
               "RelativeToolTip": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\6e7adcdcf2a0e47ac8c10b0a2828bfb989914162e8bf8efc61ba25bcc2ce08dc\\AccountController.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAuwCMAAAA3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-03T10:02:51.025Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 76,
+              "DocumentIndex": 92,
               "Title": "State.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MovieTicketBooking\\MovieTicketBooking\\Models\\State.cs",
               "RelativeDocumentMoniker": "MovieTicketBooking\\Models\\State.cs",
@@ -1302,7 +1588,8 @@
               "RelativeToolTip": "MovieTicketBooking\\Models\\State.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-02T13:51:34.229Z"
+              "WhenOpened": "2024-09-02T13:51:34.229Z",
+              "EditorCaption": ""
             }
           ]
         }

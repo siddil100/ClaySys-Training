@@ -22,9 +22,10 @@ namespace MovieTicketBooking.Models
         public int ColumnNumber { get; set; }
 
         public int SeatTypeId { get; set; }
-
       
         public int ScreenNumber { get; set; }
+
+        public bool IsBooked { get; set; } //for check avail seats
 
 
     }

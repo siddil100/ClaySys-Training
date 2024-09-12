@@ -11,7 +11,6 @@ using System.Data;
 using MovieTicketBooking.Models;
 using System.Threading.Tasks;
 using System.Diagnostics;
-
 namespace MovieTicketBooking.Controllers
 {
     
@@ -34,9 +33,19 @@ namespace MovieTicketBooking.Controllers
         /*[Authorize]*/
         public async Task<ActionResult> UserHome()
         {
-            
-            var movies = await _userRepository.GetMoviesAsync();
-            return View(movies);
+            try
+            {
+
+                LoggingHelper.LogInfo("My UserHome started execution");
+
+                var movies = await _userRepository.GetMoviesAsync();
+                return View(movies);
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine($"Error: {ex.Message}");
+                return View("Error");
+            }
         }
 
         /// <summary>
@@ -47,8 +56,16 @@ namespace MovieTicketBooking.Controllers
         [HttpGet]
         public JsonResult GetCities_Ajax(int stateId)
         {
-            var cities = _userRepository.GetCities_Ajax(stateId);
-            return Json(cities, JsonRequestBehavior.AllowGet);
+            try
+            {
+                var cities = _userRepository.GetCities_Ajax(stateId);
+                return Json(cities, JsonRequestBehavior.AllowGet);
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex.Message);
+                return Json(new { success = false, message = "An error occurred while fetching cities." }, JsonRequestBehavior.AllowGet);
+            }
         }
 
         /// <summary>
@@ -59,31 +76,40 @@ namespace MovieTicketBooking.Controllers
         [Authorize]
         public ActionResult Edit(int id)
         {
-            var userDetails = _userRepository.GetUserDetailsById(id);
-
-            if (userDetails == null)
+            try
             {
-                return HttpNotFound();
+                var userDetails = _userRepository.GetUserDetailsById(id);
+
+                if (userDetails == null)
+                {
+                    return HttpNotFound();
+                }
+
+                var model = new UserDetailsViewModel
+                {
+                    UserId = userDetails.UserId,
+                    FirstName = userDetails.FirstName,
+                    LastName = userDetails.LastName,
+                    Address = userDetails.Address,
+                    StateId = userDetails.StateId,
+                    CityId = userDetails.CityId,
+                    DateOfBirth = userDetails.Dob,
+                    Gender = userDetails.Gender,
+                    PhoneNumber = userDetails.PhoneNumber
+                };
+
+                ViewBag.States = _userRepository.GetStates();
+                ViewBag.Cities = _userRepository.GetCities(model.StateId);
+
+                return View(model);
             }
-
-            var model = new UserDetailsViewModel
+            catch (Exception ex)
             {
-                UserId = userDetails.UserId,
-                FirstName = userDetails.FirstName,
-                LastName = userDetails.LastName,
-                Address = userDetails.Address,
-                StateId = userDetails.StateId,
-                CityId = userDetails.CityId,
-                DateOfBirth = userDetails.Dob, 
-                Gender = userDetails.Gender, 
-                PhoneNumber = userDetails.PhoneNumber 
-            };
-
-            ViewBag.States = _userRepository.GetStates();
-            ViewBag.Cities = _userRepository.GetCities(model.StateId);
-
-            return View(model);
+                Debug.WriteLine(ex.Message);
+                return View("Error");
+            }
         }
+
         /// <summary>
         /// Used to edit the profile info of user
         /// </summary>
@@ -161,7 +187,8 @@ namespace MovieTicketBooking.Controllers
         }
         catch (Exception ex)
         {
-            // Handle other exceptions
+            System.Diagnostics.Debug.WriteLine(ex.Message);
+          
             ViewBag.ErrorMessage = "an error occure try again later.";
         }
     }
@@ -193,17 +220,117 @@ namespace MovieTicketBooking.Controllers
         /// For viewing movies information in detail
         /// </summary>
         /// <param name="movieId"></param>
-        /// <returns></returns>
+        /// <returns>Details of the movie</returns>
         public ActionResult ViewMovieDetailsUser(int movieId)
         {
             var movie = _userRepository.GetMovieDetailsById(movieId);
             if (movie == null)
             {
-                return HttpNotFound();  // If the movie is not found, return 404
+                return HttpNotFound();  
             }
 
-            return View(movie);  // Pass the movie details to the view
+            return View(movie);  
         }
+
+        /// <summary>
+        /// Allows users to select seats for a specific showtime
+        /// </summary>
+        /// <param name="showtimeId"></param>
+        /// <returns></returns>
+        public ActionResult SelectSeats(int showtimeId)
+        {
+            Session["ShowtimeId"] = showtimeId;
+            var seats = _userRepository.GetAllSeatsByShowtimeId(showtimeId);
+            return View(seats);
+        }
+        /// <summary>
+        /// Used to fetch prices for seats
+        /// </summary>
+        /// <returns></returns>
+        public JsonResult GetSeatPrices()
+        {
+            var seatPrices = _userRepository.GetSeatPrices(); 
+            return Json(seatPrices, JsonRequestBehavior.AllowGet);
+        }
+        /// <summary>
+        /// Used to insert booking details
+        /// </summary>
+        /// <param name="form"></param>
+        /// <returns></returns>
+        [HttpPost]
+        public ActionResult ConfirmBooking(FormCollection form)
+        {
+            // Extract form data
+            var userId = GetLoggedInUserId();
+            var showtimeId = int.Parse(form["showtimeId"]);
+            var totalAmount = decimal.Parse(form["totalAmount"].Replace("₹", "")); 
+            var seatIds = string.Join(",", form.GetValues("selectedSeats")); // Comma-separated seat IDs
+            _userRepository.InsertBooking(userId, showtimeId, totalAmount, seatIds);
+            return RedirectToAction("BookingConfirmation");
+        }
+        /// <summary>
+        /// Used to show booking confirmation
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet]
+        public ActionResult BookingConfirmation()
+        {
+            // Retrieve user-specific data (e.g., user ID, booking details)
+            var userId = GetLoggedInUserId(); // Assuming you have a method to get the logged-in user's ID
+
+            // Call repository to fetch booking details for the logged-in user
+            var bookingDetails = _userRepository.GetLatestBookingForUser(userId);
+
+            if (bookingDetails == null)
+            {
+                
+                ViewBag.ErrorMessage = "No recent bookings found.";
+                return View("Error"); 
+            }
+
+            
+            return View(bookingDetails);
+        }
+
+
+
+        public async Task<ActionResult> SearchMovies(string searchTerm)
+        {
+            var movies = await _userRepository.GetMoviesAsync();  // Fetch the movie list from the database
+
+            if (!string.IsNullOrEmpty(searchTerm))
+            {
+                // Filter the movie list based on the search term (case-insensitive)
+                movies = movies.Where(m => m.MovieName.ToLower().Contains(searchTerm.ToLower())).ToList();
+            }
+
+            // Return the filtered list as a partial view
+            return PartialView("_MovieListPartial", movies);
+        }
+
+
+        public async Task<ActionResult> FilterMovies(string language, string genre)
+        {
+            var movies = await _userRepository.GetFilteredMoviesAsync(language, genre);
+            return PartialView("_MovieListPartial", movies);
+        }
+
+
+
+        public ActionResult MyBookings()
+        {
+            int userId = Convert.ToInt32(Session["UserId"]); 
+
+            var bookings = _userRepository.GetUserBookings(userId);
+
+            return View(bookings);
+        }
+
+
+
+
+
+
 
 
     }

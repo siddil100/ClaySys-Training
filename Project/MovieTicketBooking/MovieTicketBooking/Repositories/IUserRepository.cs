@@ -20,6 +20,17 @@ namespace MovieTicketBooking.Repositories
         Task<List<Movie>> GetMoviesAsync();
         List<ShowTime> GetShowtimesByMovieId(int movieId);
         Movie GetMovieDetailsById(int movieId);
+        List<Seat> GetAllSeatsByShowtimeId(int showtimeId);
+
+        List<SeatType> GetSeatPrices();  //for fetching prices
+        void InsertBooking(int userId, int showtimeId, decimal totalAmount, string seatIds);
+        Booking GetLatestBookingForUser(int userId);
+       Task<List<Movie>> GetFilteredMoviesAsync(string language, string genre);
+
+        IEnumerable<UserBookings> GetUserBookings(int userId);
+
+
+
     }
 
 }

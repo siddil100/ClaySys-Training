@@ -6,7 +6,7 @@
 
 <h2 class="text-center">Seats Layout</h2>
 
-<!-- Embedded CSS for styling -->
+
 <style>
     /* Container for the seat grid */
     .seat-grid {
@@ -45,15 +45,15 @@
 
         /* Seat type colors */
         .seatbutton.silver {
-            background-color: #6c757d; /* Dark gray for Silver */
+            background-color: #6c757d; 
         }
 
         .seatbutton.gold {
-            background-color: #ffd700; /* Yellow for Gold */
+            background-color: #ffd700; 
         }
 
         .seatbutton.platinum {
-            background-color: #add8e6; /* Light blue for Platinum */
+            background-color: #add8e6; 
         }
 
         /* Seat when hovered over */
@@ -61,7 +61,7 @@
             background-color: #19ff26;
         }
 
-    /* Styling for screen indicator */
+    
     .screen {
         background-color: #343a40;
         color: white;
@@ -82,10 +82,10 @@
 <!-- Container for the seat grid -->
 <div class="seat-grid">
     @* Render each row of seats *@
-    @for (char row = 'A'; row <= 'H'; row++) // Adjust rows as needed
+    @for (char row = 'A'; row <= 'H'; row++) 
     {
         <div class="myrow">
-            @foreach (var seat in Model.Where(s => s.RowNumber == row.ToString())) // Render seats by row
+            @foreach (var seat in Model.Where(s => s.RowNumber == row.ToString())) 
             {
                 string seatTypeClass = "";
 
