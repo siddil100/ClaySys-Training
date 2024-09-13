@@ -5,7 +5,7 @@ namespace MovieTicketBooking
 {
     public static class LoggingHelper
     {
-        // Create an NLog logger instance
+        // NLog logger instance
         private static readonly Logger logger = LogManager.GetCurrentClassLogger();
 
         // Log Information

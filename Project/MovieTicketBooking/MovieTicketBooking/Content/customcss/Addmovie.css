@@ -8,7 +8,7 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Add margin to form groups for spacing */
+/*Margin to form groups for spacing */
 .form-group {
     margin-bottom: 15px;
 }
@@ -22,12 +22,12 @@
     border: 1px solid #ccc;
 }
 
-/* Style the file input */
+/*The file input */
 .form-control-file {
     font-size: 16px;
 }
 
-/* Style the submit button */
+/*The submit button */
 .btn-primary {
     background-color: #007bff;
     color: white;
@@ -41,7 +41,6 @@
     .btn-primary:hover {
         background-color: #0056b3;
     }
-
 
 .error-message {
     color: red;

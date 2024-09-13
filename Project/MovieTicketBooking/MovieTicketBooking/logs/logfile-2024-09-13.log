@@ -3,3 +3,60 @@
 2024-09-13 00:21:36.9003 INFO Starting SomeMethod 
 2024-09-13 00:26:19.5705 INFO My UserHome started execution 
 2024-09-13 00:27:36.6081 INFO My UserHome started execution 
+2024-09-13 07:07:36.5870 INFO My UserHome started execution 
+2024-09-13 07:09:58.1498 INFO My UserHome started execution 
+2024-09-13 07:09:58.3110 ERROR An error occurred in UserHome. System.Data.SqlClient.SqlException (0x80131904): Could not find stored procedure 'SPSi_GetMoviesUser'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at System.Data.SqlClient.SqlCommand.InternalEndExecuteReader(IAsyncResult asyncResult, String endMethod, Boolean isInternal)
+   at System.Data.SqlClient.SqlCommand.EndExecuteReaderInternal(IAsyncResult asyncResult)
+   at System.Data.SqlClient.SqlCommand.EndExecuteReaderAsync(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at MovieTicketBooking.Repositories.UserRepository.<GetMoviesAsync>d__9.MoveNext() in C:\Users\ACER\source\repos\MovieTicketBooking\MovieTicketBooking\Repositories\UserRepository.cs:line 295
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at MovieTicketBooking.Controllers.UserController.<UserHome>d__2.MoveNext() in C:\Users\ACER\source\repos\MovieTicketBooking\MovieTicketBooking\Controllers\UserController.cs:line 41
+ClientConnectionId:60a2dd2b-a5b1-4832-9d5b-51da8ff03b5c
+Error Number:2812,State:62,Class:16
+2024-09-13 07:49:27.4088 INFO My UserHome started execution 
+2024-09-13 07:50:01.5437 ERROR An error occurred. System.IndexOutOfRangeException: city_id
+   at System.Data.ProviderBase.FieldNameLookup.GetOrdinal(String fieldName)
+   at System.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at System.Data.SqlClient.SqlDataReader.get_Item(String name)
+   at MovieTicketBooking.Repositories.UserRepository.GetCities(Int32 stateId) in C:\Users\ACER\source\repos\MovieTicketBooking\MovieTicketBooking\Repositories\UserRepository.cs:line 344
+   at MovieTicketBooking.Controllers.UserController.Edit(Int32 id) in C:\Users\ACER\source\repos\MovieTicketBooking\MovieTicketBooking\Controllers\UserController.cs:line 103
+2024-09-13 07:55:45.2814 INFO My UserHome started execution 
+2024-09-13 07:58:08.1481 INFO My UserHome started execution 
+2024-09-13 07:58:37.9398 INFO My UserHome started execution 
+2024-09-13 07:58:47.3872 INFO My UserHome started execution 
+2024-09-13 07:59:09.8615 INFO My UserHome started execution 
+2024-09-13 07:59:29.4350 INFO My UserHome started execution 
+2024-09-13 08:02:16.7510 INFO My UserHome started execution 
+2024-09-13 08:02:30.1376 INFO My UserHome started execution 
+2024-09-13 08:04:30.0189 INFO My UserHome started execution 
+2024-09-13 08:04:37.7034 INFO My UserHome started execution 
+2024-09-13 10:12:38.7747 INFO My UserHome started execution 
+2024-09-13 14:09:26.8921 INFO My UserHome started execution 
+2024-09-13 14:16:12.9143 INFO My UserHome started execution 
+2024-09-13 14:16:33.5880 INFO My UserHome started execution 
+2024-09-13 14:27:52.5925 INFO My UserHome started execution 
+2024-09-13 14:35:56.2363 INFO My UserHome started execution 
+2024-09-13 14:36:59.7428 INFO My UserHome started execution 
+2024-09-13 15:14:14.9980 INFO My UserHome started execution 
+2024-09-13 15:24:44.2023 INFO My UserHome started execution 
+2024-09-13 15:25:03.0751 INFO My UserHome started execution 
+2024-09-13 15:26:02.4583 INFO My UserHome started execution 
+2024-09-13 15:39:35.3634 INFO My UserHome started execution 
+2024-09-13 15:39:53.3170 INFO My UserHome started execution 
+2024-09-13 15:40:23.1777 INFO My UserHome started execution 

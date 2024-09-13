@@ -38,7 +38,7 @@ namespace MovieTicketBooking.Controllers
             }
             catch (Exception ex)
             {
-                
+                LoggingHelper.LogError("An error occurred.", ex);
                 System.Diagnostics.Debug.WriteLine(ex.Message);
                 ViewBag.ErrorMessage = "An error occurred while loading the states.";
                 return View("Error");
@@ -47,7 +47,6 @@ namespace MovieTicketBooking.Controllers
             return View();
         }
 
-        
         /// <summary>
         /// To get cities based on state on sign up form
         /// </summary>
@@ -63,7 +62,7 @@ namespace MovieTicketBooking.Controllers
             }
             catch (Exception ex)
             {
-                
+                LoggingHelper.LogError("An error occurred.", ex);
                 System.Diagnostics.Debug.WriteLine(ex.Message);
                 return Json(new { success = false, message = "Error loading cities." }, JsonRequestBehavior.AllowGet);
             }
@@ -83,7 +82,7 @@ namespace MovieTicketBooking.Controllers
             }
             catch (Exception ex)
             {
-                // Log error
+                LoggingHelper.LogError("An error occurred.", ex);
                 System.Diagnostics.Debug.WriteLine(ex.Message);
                 return Json(new { success = false, message = "Error checking email." }, JsonRequestBehavior.AllowGet);
             }
@@ -108,7 +107,7 @@ namespace MovieTicketBooking.Controllers
                 }
                 catch (Exception ex)
                 {
-                    // Log error
+                    LoggingHelper.LogError("An error occurred.", ex);
                     System.Diagnostics.Debug.WriteLine(ex.Message);
                     ViewBag.ErrorMessage = "An error occurred during registration.";
                     return View("Signup", model);
@@ -174,6 +173,7 @@ namespace MovieTicketBooking.Controllers
                 }
                 catch (Exception ex)
                 {
+                    LoggingHelper.LogError("An error occurred.", ex);
                     System.Diagnostics.Debug.WriteLine(ex.Message);
                     ViewBag.ErrorMessage = "An error occurred during login.";
                 }
@@ -181,7 +181,6 @@ namespace MovieTicketBooking.Controllers
 
             return View(model); 
         }
-
 
         /// <summary>
         /// Used for logging out user
@@ -201,14 +200,11 @@ namespace MovieTicketBooking.Controllers
             }
             catch (Exception ex)
             {
-                // Log error
+                LoggingHelper.LogError("An error occurred.", ex);
                 System.Diagnostics.Debug.WriteLine(ex.Message);
             }
 
             return RedirectToAction("Login", "Account");
         }
-
-
-
     }
 }

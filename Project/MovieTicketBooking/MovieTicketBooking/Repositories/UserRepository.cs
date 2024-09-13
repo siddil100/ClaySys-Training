@@ -10,8 +10,6 @@ using System.Web;
 using BCrypt.Net;
 using System.Diagnostics;
 using System.Threading.Tasks;
-
-
 namespace MovieTicketBooking.Repositories
 {
     public class UserRepository : IUserRepository
@@ -32,33 +30,42 @@ namespace MovieTicketBooking.Repositories
         /// <exception cref="Exception"></exception>
         public void UpdateUserDetails(UserDetails userDetails)
         {
+            SqlConnection conn = null;
+            SqlCommand cmd = null;
+
             try
             {
-                using (SqlConnection conn = new SqlConnection(_connectionString))
-                {
-                    using (SqlCommand cmd = new SqlCommand("SPU_UserDetails", conn))
-                    {
-                        cmd.CommandType = CommandType.StoredProcedure;
+                conn = new SqlConnection(_connectionString);
+                cmd = new SqlCommand("SPU_UserDetails", conn);
+                cmd.CommandType = CommandType.StoredProcedure;
 
-                        cmd.Parameters.AddWithValue("@userId", userDetails.UserId);
-                        cmd.Parameters.AddWithValue("@firstName", userDetails.FirstName);
-                        cmd.Parameters.AddWithValue("@lastName", userDetails.LastName);
-                        cmd.Parameters.AddWithValue("@Address", userDetails.Address);
-                        cmd.Parameters.AddWithValue("@stateId", userDetails.StateId);
-                        cmd.Parameters.AddWithValue("@cityId", userDetails.CityId);
-                        cmd.Parameters.AddWithValue("@Dob", userDetails.Dob);
-                        cmd.Parameters.AddWithValue("@Gender", userDetails.Gender);
-                        cmd.Parameters.AddWithValue("@phoneNumber", userDetails.PhoneNumber);
-                        conn.Open();
-                        cmd.ExecuteNonQuery();
-                    }
+                cmd.Parameters.AddWithValue("@userId", userDetails.UserId);
+                cmd.Parameters.AddWithValue("@firstName", userDetails.FirstName);
+                cmd.Parameters.AddWithValue("@lastName", userDetails.LastName);
+                cmd.Parameters.AddWithValue("@Address", userDetails.Address);
+                cmd.Parameters.AddWithValue("@stateId", userDetails.StateId);
+                cmd.Parameters.AddWithValue("@cityId", userDetails.CityId);
+                cmd.Parameters.AddWithValue("@Dob", userDetails.Dob);
+                cmd.Parameters.AddWithValue("@Gender", userDetails.Gender);
+                cmd.Parameters.AddWithValue("@phoneNumber", userDetails.PhoneNumber);
+
+                conn.Open();
+                cmd.ExecuteNonQuery();
+            }
+            finally
+            {
+                if (cmd != null)
+                {
+                    cmd.Dispose();
+                }
+                if (conn != null)
+                {
+                    conn.Close();
+                    conn.Dispose();
                 }
             }
-            catch (Exception ex)
-            {
-                throw new Exception("Error updating user details", ex);
-            }
         }
+
         /// <summary>
         /// Used to get userdetails by specific id
         /// </summary>
@@ -67,39 +74,58 @@ namespace MovieTicketBooking.Repositories
         public UserDetails GetUserDetailsById(int userId)
         {
             UserDetails userDetails = null;
+            SqlConnection conn = null;
+            SqlCommand cmd = null;
+            SqlDataReader reader = null;
 
-            using (SqlConnection conn = new SqlConnection(_connectionString))
+            try
             {
-                using (SqlCommand cmd = new SqlCommand("SPS_UserDetailsById", conn))
+                conn = new SqlConnection(_connectionString);
+                cmd = new SqlCommand("SPS_UserDetailsById", conn)
                 {
-                    cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.Parameters.AddWithValue("@UserId", userId);
+                    CommandType = CommandType.StoredProcedure
+                };
+                cmd.Parameters.AddWithValue("@UserId", userId);
 
-                    conn.Open();
-                    using (SqlDataReader reader = cmd.ExecuteReader())
+                conn.Open();
+                reader = cmd.ExecuteReader();
+
+                if (reader.Read())
+                {
+                    userDetails = new UserDetails
                     {
-                        if (reader.Read())
-                        {
-                            userDetails = new UserDetails
-                            {
-                                UserId = (int)reader["user_id"],
-                                FirstName = reader["first_name"].ToString(),
-                                LastName = reader["last_name"].ToString(),
-                                Dob = reader["dob"] != DBNull.Value ? (DateTime?)reader["dob"] : null,
-                                Gender = reader["gender"].ToString(),
-                                PhoneNumber = reader["phone_number"].ToString(),
-                                Address = reader["address"].ToString(),
-                                StateId = (int)reader["state_id"],
-                                CityId = (int)reader["city_id"]
-                            };
-                        }
-                    }
+                        UserId = (int)reader["user_id"],
+                        FirstName = reader["first_name"].ToString(),
+                        LastName = reader["last_name"].ToString(),
+                        Dob = reader["dob"] != DBNull.Value ? (DateTime?)reader["dob"] : null,
+                        Gender = reader["gender"].ToString(),
+                        PhoneNumber = reader["phone_number"].ToString(),
+                        Address = reader["address"].ToString(),
+                        StateId = (int)reader["state_id"],
+                        CityId = (int)reader["city_id"]
+                    };
+                }
+            }
+            finally
+            {
+                if (reader != null)
+                {
+                    reader.Close();
+                    reader.Dispose();
+                }
+                if (cmd != null)
+                {
+                    cmd.Dispose();
+                }
+                if (conn != null)
+                {
+                    conn.Close();
+                    conn.Dispose();
                 }
             }
 
             return userDetails;
         }
-
 
         /// <summary>
         /// Used to load cities based on states
@@ -135,8 +161,6 @@ namespace MovieTicketBooking.Repositories
             return cities;
         }
 
-
-
         /// <summary>
         /// Used to update password of a user
         /// </summary>
@@ -150,7 +174,6 @@ namespace MovieTicketBooking.Repositories
             try
             {
                 Debug.WriteLine($"Starting UpdatePassword for UserId: {userId}");
-
                 using (SqlConnection conn = new SqlConnection(_connectionString))
                 {
                     Debug.WriteLine("Opening SQL connection...");
@@ -158,41 +181,31 @@ namespace MovieTicketBooking.Repositories
                     {
                         cmd.CommandType = CommandType.StoredProcedure;
                         cmd.Parameters.AddWithValue("@UserId", userId);
-
                         conn.Open();
-
                         Debug.WriteLine("Fetching existing hashed password from the database...");
                         string existingHashedPassword = cmd.ExecuteScalar()?.ToString();
-
                         if (string.IsNullOrEmpty(existingHashedPassword))
                         {
                             Debug.WriteLine("User not found.");
                             throw new Exception("User not found.");
                         }
-
                         Debug.WriteLine($"Existing Hashed Password: {existingHashedPassword}");
-
                         Debug.WriteLine("Verifying the old password...");
                         if (!BCrypt.Net.BCrypt.Verify(oldPassword, existingHashedPassword))
                         {
                             Debug.WriteLine("The old password is incorrect.");
                             throw new UnauthorizedAccessException("The old password is incorrect.");
                         }
-
                         Debug.WriteLine("Hashing the new password...");
                         string hashedNewPassword = BCrypt.Net.BCrypt.HashPassword(newPassword);
-
                         Debug.WriteLine($"Newly Hashed Password: {hashedNewPassword}");
-
                         Debug.WriteLine("Updating the password in the database...");
                         cmd.CommandText = "SPU_UpdatePassword";
                         cmd.Parameters.Clear();
                         cmd.Parameters.AddWithValue("@UserId", userId);
                         cmd.Parameters.AddWithValue("@NewPassword", hashedNewPassword);
-
                         int rowsAffected = cmd.ExecuteNonQuery();
                         Debug.WriteLine($"Rows affected: {rowsAffected}");
-
                         return rowsAffected > 0;
                     }
                 }
@@ -239,8 +252,6 @@ namespace MovieTicketBooking.Repositories
 
             return states;
         }
-
-
         /// <summary>
         /// To get cities when loading the edit form initially
         /// </summary>
@@ -274,8 +285,6 @@ namespace MovieTicketBooking.Repositories
 
             return cities;
         }
-
-
 
         /// <summary>
         /// Asynchronous method to load movies to userhome 
@@ -474,7 +483,6 @@ namespace MovieTicketBooking.Repositories
                 command.Parameters.AddWithValue("@PaymentStatus", "Paid");
                 command.Parameters.AddWithValue("@CancellationStatus", 0);
                 command.Parameters.AddWithValue("@SeatIds", seatIds);
-
                 command.ExecuteNonQuery();
             }
         }
@@ -535,7 +543,12 @@ namespace MovieTicketBooking.Repositories
             }
         }
 
-
+        /// <summary>
+        /// Used to apply filter for movies by language and genre
+        /// </summary>
+        /// <param name="language"></param>
+        /// <param name="genre"></param>
+        /// <returns></returns>
         public async Task<List<Movie>> GetFilteredMoviesAsync(string language, string genre)
         {
             var movies = new List<Movie>();
@@ -572,7 +585,11 @@ namespace MovieTicketBooking.Repositories
             return movies;
         }
 
-
+        /// <summary>
+        /// Used to get user bookings
+        /// </summary>
+        /// <param name="userId"></param>
+        /// <returns>List of booked movies</returns>
         public IEnumerable<UserBookings> GetUserBookings(int userId)
         {
             var bookings = new List<UserBookings>();
@@ -606,12 +623,6 @@ namespace MovieTicketBooking.Repositories
 
             return bookings;
         }
-
-
-
-
-
-
 
     }
 }

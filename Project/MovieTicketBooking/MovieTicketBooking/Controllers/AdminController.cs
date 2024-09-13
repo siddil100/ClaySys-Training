@@ -32,8 +32,18 @@ namespace MovieTicketBooking.Controllers
         [HttpGet]
         public ActionResult AdminHome()
         {
-            return View();
+            try
+            {
+                return View();
+            }
+            catch (Exception ex)
+            {
+                LoggingHelper.LogError("An error occurred while accessing AdminHome.", ex);
+
+                return View("Error"); 
+            }
         }
+
         /// <summary>
         /// Used to load add movie form
         /// </summary>
@@ -41,7 +51,16 @@ namespace MovieTicketBooking.Controllers
         [HttpGet]
         public ActionResult AddMovie()
         {
-            return View();
+            try
+            {
+                return View();
+            }
+            catch(Exception ex)
+            {
+                LoggingHelper.LogError("Error occured loading add movies page", ex);
+                return View("Error");
+            }
+
         }
 
         /// <summary>
@@ -52,43 +71,51 @@ namespace MovieTicketBooking.Controllers
         [HttpPost]
         public ActionResult AddMovie(Movie model)
         {
-            if (ModelState.IsValid)
+            try
             {
-                // Converting image to base64 string
-                string moviePosterBase64 = null;
-                if (Request.Files["MoviePoster"] != null && Request.Files["MoviePoster"].ContentLength > 0)
+                if (ModelState.IsValid)
                 {
-                    var moviePosterFile = Request.Files["MoviePoster"];
-                    using (var binaryReader = new BinaryReader(moviePosterFile.InputStream))
+                    // Converting image to base64 string
+                    string moviePosterBase64 = null;
+                    if (Request.Files["MoviePoster"] != null && Request.Files["MoviePoster"].ContentLength > 0)
                     {
-                        byte[] imageBytes = binaryReader.ReadBytes(moviePosterFile.ContentLength);
-                        moviePosterBase64 = Convert.ToBase64String(imageBytes);
+                        var moviePosterFile = Request.Files["MoviePoster"];
+                        using (var binaryReader = new BinaryReader(moviePosterFile.InputStream))
+                        {
+                            byte[] imageBytes = binaryReader.ReadBytes(moviePosterFile.ContentLength);
+                            moviePosterBase64 = Convert.ToBase64String(imageBytes);
+                        }
                     }
+
+                    // Create a movie object 
+                    var movieToAdd = new Movie
+                    {
+                        MovieName = model.MovieName,
+                        Description = model.Description,
+                        Duration = model.Duration,
+                        Genre = model.Genre,
+                        ReleaseDate = model.ReleaseDate,
+                        Language = model.Language,
+                        MoviePoster = moviePosterBase64,
+                        Actor = model.Actor,
+                        Actress = model.Actress,
+                        Director = model.Director
+                    };
+
+                    _adminRepository.AddMovie(movieToAdd);
+
+                    return RedirectToAction("ViewAllMovies");
                 }
-
-                // Create a movie object 
-                var movieToAdd = new Movie
-                {
-                    MovieName = model.MovieName,
-                    Description = model.Description,
-                    Duration = model.Duration,
-                    Genre = model.Genre,
-                    ReleaseDate = model.ReleaseDate,
-                    Language = model.Language,
-                    MoviePoster = moviePosterBase64,
-                    Actor = model.Actor,
-                    Actress = model.Actress,
-                    Director = model.Director
-                };
-
-                _adminRepository.AddMovie(movieToAdd);
-
-               
-                return RedirectToAction("ViewAllMovies"); 
+            }
+            catch (Exception ex)
+            {
+                LoggingHelper.LogError("An error occurred while adding the movie.", ex);
+                ModelState.AddModelError("", "An error occurred while adding the movie. Please try again.");
             }
 
             return View(model);
         }
+
         /// <summary>
         /// To load a page with list of added movies
         /// </summary>
@@ -96,11 +123,17 @@ namespace MovieTicketBooking.Controllers
         [HttpGet]
         public ActionResult ViewAllMovies()
         {
-            
-            List<Movie> movies = _adminRepository.GetAllMovies();
-            return View(movies);
+            try
+            {
+                List<Movie> movies = _adminRepository.GetAllMovies();
+                return View(movies);
+            }
+            catch (Exception ex)
+            {
+                LoggingHelper.LogError("An error occurred while retrieving the list of movies.", ex);
+                return View("Error");
+            }
         }
-
 
         /// <summary>
         /// To load edit movie form
@@ -110,12 +143,20 @@ namespace MovieTicketBooking.Controllers
         [HttpGet]
         public ActionResult EditMovie(int id)
         {
-            var movie = _adminRepository.GetMovieById(id);
-            if (movie == null)
+            try
             {
-                return HttpNotFound();
+                var movie = _adminRepository.GetMovieById(id);
+                if (movie == null)
+                {
+                    return HttpNotFound();
+                }
+                return View(movie);
             }
-            return View(movie);
+            catch (Exception ex)
+            {
+                LoggingHelper.LogError("An error occurred while retrieving the movie details.", ex);
+                return View("Error"); 
+            }
         }
 
         /// <summary>
@@ -126,33 +167,39 @@ namespace MovieTicketBooking.Controllers
         [HttpPost]
         public ActionResult EditMovie(Movie model)
         {
-            if (ModelState.IsValid)
+            try
             {
-                var existingMovie = _adminRepository.GetMovieById(model.MovieId);
-
-                // Use the existing poster if no new file is uploaded
-                string moviePosterBase64 = existingMovie.MoviePoster;
-
-                if (Request.Files["MoviePoster"] != null && Request.Files["MoviePoster"].ContentLength > 0)
+                if (ModelState.IsValid)
                 {
-                    var moviePosterFile = Request.Files["MoviePoster"];
-                    using (var binaryReader = new BinaryReader(moviePosterFile.InputStream))
+                    var existingMovie = _adminRepository.GetMovieById(model.MovieId);
+
+                    // Use the existing poster if no new file is uploaded
+                    string moviePosterBase64 = existingMovie.MoviePoster;
+
+                    if (Request.Files["MoviePoster"] != null && Request.Files["MoviePoster"].ContentLength > 0)
                     {
-                        byte[] imageBytes = binaryReader.ReadBytes(moviePosterFile.ContentLength);
-                        moviePosterBase64 = Convert.ToBase64String(imageBytes);
+                        var moviePosterFile = Request.Files["MoviePoster"];
+                        using (var binaryReader = new BinaryReader(moviePosterFile.InputStream))
+                        {
+                            byte[] imageBytes = binaryReader.ReadBytes(moviePosterFile.ContentLength);
+                            moviePosterBase64 = Convert.ToBase64String(imageBytes);
+                        }
                     }
+
+                    model.MoviePoster = moviePosterBase64;
+
+                    _adminRepository.UpdateMovie(model);
+
+                    return RedirectToAction("ViewAllMovies");
                 }
-
-                model.MoviePoster = moviePosterBase64;
-
-                _adminRepository.UpdateMovie(model);
-
-                return RedirectToAction("ViewAllMovies"); 
+            }
+            catch (Exception ex)
+            {
+                LoggingHelper.LogError("An error occurred while editing the movie.", ex);
             }
 
             return View(model);
         }
-
 
         /// <summary>
         /// Used to delete a movie
@@ -170,13 +217,10 @@ namespace MovieTicketBooking.Controllers
             }
             catch (Exception ex)
             {
-                System.Diagnostics.Debug.WriteLine(ex.Message);
-                // Handle the error (log it, show an error message, etc.)
-                ViewBag.ErrorMessage = "An error occurred while trying to delete the movie.";
+                LoggingHelper.LogError("An error occurred while deleting the movie.", ex);
                 return View("Error");
             }
         }
-
 
         /// <summary>
         /// Used to load create showtime form
@@ -185,8 +229,16 @@ namespace MovieTicketBooking.Controllers
         [HttpGet]
         public ActionResult CreateShowtime()
         {
-            ViewBag.Movies = new SelectList(_adminRepository.GetAllMovies(), "MovieId", "MovieName"); // Dropdown for selecting movie.
-            return View();
+            try
+            {
+                ViewBag.Movies = new SelectList(_adminRepository.GetAllMovies(), "MovieId", "MovieName");
+                return View();
+            }
+            catch (Exception ex)
+            {
+                LoggingHelper.LogError("An error occurred while creating showtime.", ex);
+                return View("Error"); 
+            }
         }
 
         /// <summary>
@@ -198,11 +250,18 @@ namespace MovieTicketBooking.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult CreateShowtime(ShowTime model)
         {
-            if (ModelState.IsValid)
+            try
             {
-                model.ScreenNumber = 1; // Set screen number to 1 as it's a single screen theater
-                _adminRepository.InsertShowtime(model);
-                return RedirectToAction("ViewShowtimes");
+                if (ModelState.IsValid)
+                {
+                    model.ScreenNumber = 1; // Set screen number to 1 as it's a single screen theater
+                    _adminRepository.InsertShowtime(model);
+                    return RedirectToAction("ViewShowtimes");
+                }
+            }
+            catch (Exception ex)
+            {
+                LoggingHelper.LogError("An error occurred while creating the showtime.", ex);
             }
 
             ViewBag.Movies = new SelectList(_adminRepository.GetAllMovies(), "MovieId", "MovieName");
@@ -215,8 +274,16 @@ namespace MovieTicketBooking.Controllers
         /// <returns></returns>
         public ActionResult ViewShowtimes()
         {
-            var showtimes = _adminRepository.GetAllShowtimes();
-            return View(showtimes);
+            try
+            {
+                var showtimes = _adminRepository.GetAllShowtimes();
+                return View(showtimes);
+            }
+            catch (Exception ex)
+            {
+                LoggingHelper.LogError("An error occurred while retrieving the list of showtimes.", ex);
+                return View("Error");
+            }
         }
 
         /// <summary>
@@ -226,10 +293,19 @@ namespace MovieTicketBooking.Controllers
         /// <returns>To view showtimes if successfull</returns>
         public ActionResult EditShowtime(int id)
         {
-            var showtime = _adminRepository.GetShowtimeById(id);
-            ViewBag.Movies = new SelectList(_adminRepository.GetAllMovies(), "MovieId", "MovieName", showtime.MovieId);
-            return View(showtime);
+            try
+            {
+                var showtime = _adminRepository.GetShowtimeById(id);
+                ViewBag.Movies = new SelectList(_adminRepository.GetAllMovies(), "MovieId", "MovieName", showtime.MovieId);
+                return View(showtime);
+            }
+            catch (Exception ex)
+            {
+                LoggingHelper.LogError("An error occurred while editing the showtime.", ex);
+                return View("Error"); 
+            }
         }
+
         /// <summary>
         /// Used to edit the show time model with new changes
         /// </summary>
@@ -239,15 +315,24 @@ namespace MovieTicketBooking.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult EditShowtime(ShowTime model)
         {
-            if (ModelState.IsValid)
+            try
             {
-                _adminRepository.UpdateShowtime(model);
-                return RedirectToAction("ViewShowtimes");
+                if (ModelState.IsValid)
+                {
+                    _adminRepository.UpdateShowtime(model);
+                    return RedirectToAction("ViewShowtimes");
+                }
+            }
+            catch (Exception ex)
+            {
+                LoggingHelper.LogError("An error occurred while updating the showtime.", ex);
+                return View("Error"); 
             }
 
             ViewBag.Movies = new SelectList(_adminRepository.GetAllMovies(), "MovieId", "MovieName", model.MovieId);
             return View(model);
         }
+
         /// <summary>
         /// Used to delete a showtime
         /// </summary>
@@ -257,17 +342,25 @@ namespace MovieTicketBooking.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteShowtime(int id)
         {
-            bool isDeleted = _adminRepository.DeleteShowtime(id);
-
-            if (isDeleted)
+            try
             {
-                return RedirectToAction("ViewShowtimes"); 
+                bool isDeleted = _adminRepository.DeleteShowtime(id);
+
+                if (isDeleted)
+                {
+                    return RedirectToAction("ViewShowtimes");
+                }
+
+                ModelState.AddModelError("", "Failed to delete showtime. Please try again.");
+                return RedirectToAction("ViewShowtimes");
             }
-
-            ModelState.AddModelError("", "Failed to delete showtime. Please try again.");
-            return RedirectToAction("ViewShowtimes"); 
+            catch (Exception ex)
+            {
+                LoggingHelper.LogError("An error occurred while deleting the showtime.", ex);
+                ModelState.AddModelError("", "An error occurred while deleting the showtime. Please try again later.");
+                return RedirectToAction("ViewShowtimes");
+            }
         }
-
 
         /// <summary>
         /// Used to load create seat form
@@ -275,14 +368,21 @@ namespace MovieTicketBooking.Controllers
         /// <returns></returns>
         public ActionResult CreateSeat()
         {
-            var model = new SeatViewModel
+            try
             {
-                SeatTypes = _adminRepository.GetSeatTypes() // Fetch seat types
-            };
-            return View(model);
+                var model = new SeatViewModel
+                {
+                    SeatTypes = _adminRepository.GetSeatTypes() // Fetch seat types
+                };
+                return View(model);
+            }
+            catch (Exception ex)
+            {
+                LoggingHelper.LogError("An error occurred while creating the seat.", ex);
+                return View("Error"); 
+            }
         }
 
-        
         /// <summary>
         /// Used to create a seat
         /// </summary>
@@ -292,13 +392,20 @@ namespace MovieTicketBooking.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult CreateSeat(SeatViewModel model)
         {
-            if (ModelState.IsValid)
+            try
             {
-                _adminRepository.AddSeat(model.Seat);
-                return RedirectToAction("ViewSeats");
+                if (ModelState.IsValid)
+                {
+                    _adminRepository.AddSeat(model.Seat);
+                    return RedirectToAction("ViewSeats");
+                }
+            }
+            catch (Exception ex)
+            {
+                LoggingHelper.LogError("An error occurred while creating the seat.", ex);
+                return View("Error"); 
             }
 
-           
             var errors = ModelState.Values.SelectMany(v => v.Errors);
             foreach (var error in errors)
             {
@@ -316,8 +423,16 @@ namespace MovieTicketBooking.Controllers
         /// <returns>The total Seats in theatre</returns>
         public ActionResult ViewLayout()
         {
-            var seats = _adminRepository.GetSeats();
-            return View(seats);
+            try
+            {
+                var seats = _adminRepository.GetSeats();
+                return View(seats);
+            }
+            catch (Exception ex)
+            {
+                LoggingHelper.LogError("An error occurred while retrieving the layout.", ex);
+                return View("Error"); 
+            }
         }
 
         /// <summary>
@@ -326,41 +441,64 @@ namespace MovieTicketBooking.Controllers
         /// <returns></returns>
         public ActionResult ViewSeats()
         {
-            var seats = _adminRepository.GetSeats();
-            return View(seats);
+            try
+            {
+                var seats = _adminRepository.GetSeats();
+                return View(seats);
+            }
+            catch (Exception ex)
+            {
+                LoggingHelper.LogError("An error occurred while retrieving the seats.", ex);
+                return View("Error"); 
+            }
         }
 
-
-
-       /// <summary>
-       /// Used to load editseat form
-       /// </summary>
-       /// <param name="id"></param>
-       /// <returns></returns>
+        /// <summary>
+        /// Used to load editseat form
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         public ActionResult EditSeat(int id)
         {
-            var seat = _adminRepository.GetSeatById(id); 
-            if (seat == null)
+            try
             {
-                return HttpNotFound();
+                var seat = _adminRepository.GetSeatById(id);
+                if (seat == null)
+                {
+                    return HttpNotFound();
+                }
+                return View(seat);
             }
-            return View(seat); 
+            catch (Exception ex)
+            {
+                LoggingHelper.LogError("An error occurred while retrieving the seat for editing.", ex);
+                return View("Error");
+            }
         }
 
-       /// <summary>
-       /// Used to make changes to existing seats by editing
-       /// </summary>
-       /// <param name="updatedSeat"></param>
-       /// <returns>To view seats if successfull</returns>
+        /// <summary>
+        /// Used to make changes to existing seats by editing
+        /// </summary>
+        /// <param name="updatedSeat"></param>
+        /// <returns>To view seats if successfull</returns>
         [HttpPost]
         public ActionResult EditSeat(Seat updatedSeat)
         {
-            if (ModelState.IsValid)
+            try
             {
-                _adminRepository.UpdateSeat(updatedSeat); 
-                return RedirectToAction("ViewSeats"); 
+                if (ModelState.IsValid)
+                {
+                    _adminRepository.UpdateSeat(updatedSeat);
+                    return RedirectToAction("ViewSeats");
+                }
             }
-            return View(updatedSeat); 
+            catch (Exception ex)
+            {
+                LoggingHelper.LogError("An error occurred while updating the seat.", ex);
+                return View("Error"); 
+            }
+
+            return View(updatedSeat);
         }
 
         /// <summary>
@@ -372,18 +510,25 @@ namespace MovieTicketBooking.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteSeat(int id)
         {
-    
-            bool isDeleted = _adminRepository.DeleteSeat(id);
-
-            if (isDeleted)
+            try
             {
-                return RedirectToAction("ViewSeats"); 
+                bool isDeleted = _adminRepository.DeleteSeat(id);
+
+                if (isDeleted)
+                {
+                    return RedirectToAction("ViewSeats");
+                }
+
+                ModelState.AddModelError("", "Failed to delete seat. Please try again.");
+                return RedirectToAction("ViewSeats");
             }
-
-            ModelState.AddModelError("", "Failed to delete seat. Please try again.");
-            return RedirectToAction("ViewSeats"); 
+            catch (Exception ex)
+            {
+                LoggingHelper.LogError("An error occurred while deleting the seat.", ex);
+                ModelState.AddModelError("", "An error occurred while deleting the seat. Please try again later.");
+                return RedirectToAction("ViewSeats");
+            }
         }
-
 
         /// <summary>
         /// Used to check whether seat exists
@@ -393,51 +538,121 @@ namespace MovieTicketBooking.Controllers
         /// <returns>True or false</returns>
         public JsonResult CheckSeatExists(string rowNumber, int columnNumber)
         {
-            bool seatExists = _adminRepository.CheckSeatExists(rowNumber, columnNumber);
-            return Json(new { exists = seatExists }, JsonRequestBehavior.AllowGet);
+            try
+            {
+                bool seatExists = _adminRepository.CheckSeatExists(rowNumber, columnNumber);
+                return Json(new { exists = seatExists }, JsonRequestBehavior.AllowGet);
+            }
+            catch (Exception ex)
+            {
+                LoggingHelper.LogError("An error occurred while checking if the seat exists.", ex);
+                return Json(new { exists = false }, JsonRequestBehavior.AllowGet);
+            }
         }
-
-
+        /// <summary>
+        /// Used to list the users for managing
+        /// </summary>
+        /// <returns></returns>
         public ActionResult ListUsers()
         {
-            var users = _adminRepository.GetUsers();
-            return View(users);
+            try
+            {
+                var users = _adminRepository.GetUsers();
+                return View(users);
+            }
+            catch (Exception ex)
+            {
+                LoggingHelper.LogError("An error occurred while retrieving the list of users.", ex);
+                return View("Error"); 
+            }
         }
 
-
+        /// <summary>
+        /// Used for soft deletion of users
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         public ActionResult ToggleUserStatus(int id)
         {
-            bool isToggled = _adminRepository.ToggleUserStatus(id);
+            try
+            {
+                bool isToggled = _adminRepository.ToggleUserStatus(id);
+
+                if (!isToggled)
+                {
+                    ModelState.AddModelError("", "Failed to toggle user status. Please try again.");
+                }
+            }
+            catch (Exception ex)
+            {
+                LoggingHelper.LogError("An error occurred while toggling the user status.", ex);
+            }
 
             return RedirectToAction("ListUsers");
         }
 
+        /// <summary>
+        /// Used to view details of a user
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         public ActionResult ViewUserDetails(int id)
         {
-            UserDetailsViewModel user = _adminRepository.GetUserDetails(id);
-            if (user == null)
+            try
             {
-                return HttpNotFound(); 
+                UserDetailsViewModel user = _adminRepository.GetUserDetails(id);
+                if (user == null)
+                {
+                    return HttpNotFound();
+                }
+                return View(user);
             }
-            return View(user);
+            catch (Exception ex)
+            {
+                LoggingHelper.LogError("An error occurred while retrieving user details.", ex);
+                return View("Error"); 
+            }
         }
 
+        /// <summary>
+        /// Used to retrive bookings from admin
+        /// </summary>
+        /// <param name="showtimeId"></param>
+        /// <returns></returns>
         public ActionResult ViewBookings(int showtimeId)
         {
-            var bookings = _adminRepository.GetBookingsByShowtime(showtimeId);
-            return View(bookings);
+            try
+            {
+                var bookings = _adminRepository.GetBookingsByShowtime(showtimeId);
+                return View(bookings);
+            }
+            catch (Exception ex)
+            {
+                LoggingHelper.LogError("An error occurred while retrieving bookings.", ex);
+                return View("Error"); 
+            }
         }
 
-
+        /// <summary>
+        /// Used to check whether the same showtime already exists for the same date
+        /// </summary>
+        /// <param name="showDate"></param>
+        /// <param name="startTime"></param>
+        /// <returns></returns>
         [HttpPost]
         public JsonResult CheckShowtimeExists(DateTime showDate, TimeSpan startTime)
         {
-            var showtimeExists = _adminRepository.CheckShowtimeExists(showDate, startTime);
-            return Json(new { isAvailable = !showtimeExists });  // Return false if the showtime exists, meaning it's not available
+            try
+            {
+                var showtimeExists = _adminRepository.CheckShowtimeExists(showDate, startTime);
+                return Json(new { isAvailable = !showtimeExists }, JsonRequestBehavior.AllowGet); // Return false if the showtime exists, meaning it's not available
+            }
+            catch (Exception ex)
+            {
+                LoggingHelper.LogError("An error occurred while checking if the showtime exists.", ex);
+                return new JsonResult(); 
+            }
         }
-
-
-
     }
 
 }

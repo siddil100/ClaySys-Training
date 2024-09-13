@@ -2,15 +2,14 @@
 using System.Data;
 using System.Data.SqlClient;
 using System.Web.Mvc;
-using MovieTicketBooking.Models; // Ensure you have the correct namespace for your models
-using System.Configuration; // For ConfigurationManager
+using MovieTicketBooking.Models; 
+using System.Configuration; 
 using MovieTicketBooking.Repositories;
-
 namespace MovieTicketBooking.Controllers
 {
     public class HomeController : Controller
     {
-        // Get the connection string from the configuration file
+        
         private readonly string _connectionString = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
         private readonly HomeRepository _homeRepository;
 
@@ -34,7 +33,7 @@ namespace MovieTicketBooking.Controllers
         [HttpGet]
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "About us.";
             return View();
         }
 
@@ -69,7 +68,7 @@ namespace MovieTicketBooking.Controllers
                 }
                 catch (Exception ex)
                 {
-                    
+                    LoggingHelper.LogError("An error occurred.", ex);
                     System.Diagnostics.Debug.WriteLine(ex.Message);
                     ModelState.AddModelError("", "An error occurred while submitting your enquiry.");
                 }
@@ -86,6 +85,5 @@ namespace MovieTicketBooking.Controllers
             ViewBag.Title = "Feedback Success";
             return View();
         }
-
     }
 }

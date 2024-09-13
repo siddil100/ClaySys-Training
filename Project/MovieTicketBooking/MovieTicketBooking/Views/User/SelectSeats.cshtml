@@ -30,51 +30,51 @@
 
     /* Style for individual seat buttons */
     .seatbutton {
-        width: 40px; 
-        height: 40px; 
-        font-size: 12px; 
+        width: 40px;
+        height: 40px;
+        font-size: 12px;
         display: flex;
-        justify-content: center; 
-        align-items: center; 
-        border: 2px solid #6c757d; 
-        border-radius: 5px; 
-        color: #000; 
-        user-select: none; 
-        cursor: pointer; 
-        transition: background-color 0.3s ease; 
+        justify-content: center;
+        align-items: center;
+        border: 2px solid #6c757d;
+        border-radius: 5px;
+        color: #000;
+        user-select: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
     }
 
         /* Seat that is unavailable */
         .seatbutton.unavailable {
-            background-color: #dee2e6; 
-            border-color: #adb5bd; 
-            color: #6c757d; 
-            cursor: not-allowed; 
+            background-color: #dee2e6;
+            border-color: #adb5bd;
+            color: #6c757d;
+            cursor: not-allowed;
         }
 
         /* Seat type colors */
         .seatbutton.silver {
-            background-color: #6c757d; 
+            background-color: #6c757d;
         }
 
         .seatbutton.gold {
-            background-color: #ffd700; 
+            background-color: #ffd700;
         }
 
         .seatbutton.platinum {
-            background-color: #add8e6; 
+            background-color: #add8e6;
         }
 
         /* Seat when selected (turn green) */
         .seatbutton.selected {
-            background-color: #28a745; 
-            border-color: #28a745; 
-            color: white; 
+            background-color: #28a745;
+            border-color: #28a745;
+            color: white;
         }
 
         /*when hovered over */
         .seatbutton:hover {
-            background-color: #e9ecef; 
+            background-color: #e9ecef;
         }
 
     /* Styling for screen indicator */
@@ -90,6 +90,46 @@
         letter-spacing: 1px;
         font-weight: bold;
     }
+
+
+    /* Default (enabled) button styling */
+    .submit-button {
+        background-color: #007bff;
+        border-color: #007bff;
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+        /* Button hover effect when enabled */
+        .submit-button:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+
+        /* Disabled button styling */
+        .submit-button:disabled {
+            background-color: gray;
+            border-color: gray;
+            color: white;
+            cursor: not-allowed;
+        }
+
+
+
+    .total-amount {
+        font-size: 24px; /* Larger font size */
+        font-weight: bold; /* Make the text bold */
+        color: #28a745; /* Green color for the total */
+        text-align: right; /* Align text to the right */
+        padding: 10px; /* Add some padding around the text */
+        border: 2px solid #28a745; /* Add a green border */
+        border-radius: 5px; /* Rounded corners */
+        background-color: #f8f9fa; /* Light background color */
+        width: fit-content; /* Fit the content */
+        margin: 10px 0; /* Add margin for spacing */
+    }
+
 </style>
 
 <!-- Screen display -->
@@ -104,14 +144,14 @@
 
     <!-- Container for the seat grid -->
     <div class="seat-grid">
-        @for (char row = 'A'; row <= 'H'; row++) 
+        @for (char row = 'A'; row <= 'H'; row++)
         {
             <div class="myrow">
                 @foreach (var seat in Model.Where(s => s.RowNumber == row.ToString())) // seats by row
                 {
                     string seatTypeClass = "";
 
-                    
+
                     switch (seat.SeatTypeId)
                     {
                         case 1:
@@ -140,10 +180,13 @@
 
     <!-- Submit button -->
     <div class="text-center mt-3">
-        <button type="submit" class="btn btn-primary">Confirm Selection</button>
+        <button type="submit" class="btn btn-primary submit-button">Confirm Selection</button>
     </div>
+
 }
-<div id="totalAmount">Total: ₹ 0.00</div>
+
+
+<div id="totalAmount" class="total-amount">Total: ₹ 0.00</div>
 @section Scripts {
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
@@ -154,7 +197,7 @@
         type: 'GET',
         success: function(data) {
             window.seatPrices = data;
-            console.log(window.seatPrices); 
+            console.log(window.seatPrices);
         },
         error: function() {
             alert('Failed to load seat prices.');
@@ -215,7 +258,7 @@
                 seatButton.classList.remove('selected');
             }
 
-            
+
             updateSelectedSeats();
         });
     });

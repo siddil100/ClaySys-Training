@@ -43,6 +43,7 @@ namespace MovieTicketBooking.Controllers
             }
             catch (Exception ex)
             {
+                LoggingHelper.LogError("An error occurred in UserHome.", ex);
                 Debug.WriteLine($"Error: {ex.Message}");
                 return View("Error");
             }
@@ -105,6 +106,7 @@ namespace MovieTicketBooking.Controllers
             }
             catch (Exception ex)
             {
+                LoggingHelper.LogError("An error occurred.", ex);
                 Debug.WriteLine(ex.Message);
                 return View("Error");
             }
@@ -119,29 +121,40 @@ namespace MovieTicketBooking.Controllers
         [HttpPost]
         public ActionResult Edit(UserDetailsViewModel model)
         {
-            if (ModelState.IsValid)
+            try
             {
-                _userRepository.UpdateUserDetails(new UserDetails
+                if (ModelState.IsValid)
                 {
-                    UserId = model.UserId,
-                    FirstName = model.FirstName,
-                    LastName = model.LastName,
-                    Address = model.Address,
-                    StateId = model.StateId,
-                    CityId = model.CityId,
-                    Dob = model.DateOfBirth,          
-                    Gender = model.Gender,            
-                    PhoneNumber = model.PhoneNumber   
-                });
+                    _userRepository.UpdateUserDetails(new UserDetails
+                    {
+                        UserId = model.UserId,
+                        FirstName = model.FirstName,
+                        LastName = model.LastName,
+                        Address = model.Address,
+                        StateId = model.StateId,
+                        CityId = model.CityId,
+                        Dob = model.DateOfBirth,
+                        Gender = model.Gender,
+                        PhoneNumber = model.PhoneNumber
+                    });
 
-                return RedirectToAction("UserHome", "User");
+                    return RedirectToAction("UserHome", "User");
+                }
+
+                ViewBag.States = _userRepository.GetStates();
+                ViewBag.Cities = _userRepository.GetCities(model.StateId);
+
+                return View(model);
             }
+            catch (Exception ex)
+            {
+                
+                LoggingHelper.LogError("An error occurred in Edit action.", ex);
 
-            ViewBag.States = _userRepository.GetStates();
-            ViewBag.Cities = _userRepository.GetCities(model.StateId);
-
-            return View(model);
+                return View("Error");
+            }
         }
+
 
 
         /// <summary>
@@ -187,7 +200,7 @@ namespace MovieTicketBooking.Controllers
         }
         catch (Exception ex)
         {
-            System.Diagnostics.Debug.WriteLine(ex.Message);
+            LoggingHelper.LogError("An error occured.", ex);
           
             ViewBag.ErrorMessage = "an error occure try again later.";
         }
@@ -196,7 +209,10 @@ namespace MovieTicketBooking.Controllers
     return View(model);
 }
 
-
+        /// <summary>
+        /// Used to get userid from session
+        /// </summary>
+        /// <returns></returns>
         private int GetLoggedInUserId()
         {   
             return Convert.ToInt32(Session["UserId"]);
@@ -209,12 +225,18 @@ namespace MovieTicketBooking.Controllers
         /// <returns></returns>
         public ActionResult SeeShowtimes(int movieId)
         {
-            Debug.WriteLine("hello showtime");
-            Debug.WriteLine($"Received movieId: {movieId}");
-            var showtimes = _userRepository.GetShowtimesByMovieId(movieId); // Fetch showtimes using a SP
-            return View(showtimes); 
+            try
+            {
+                Debug.WriteLine($"Received movieId: {movieId}");
+                var showtimes = _userRepository.GetShowtimesByMovieId(movieId);
+                return View(showtimes);
+            }
+            catch (Exception ex)
+            {
+                LoggingHelper.LogError($"An error occurred while fetching showtimes for movieId: {movieId}.", ex);
+                return View("Error");
+            }
         }
-
 
         /// <summary>
         /// For viewing movies information in detail
@@ -223,13 +245,21 @@ namespace MovieTicketBooking.Controllers
         /// <returns>Details of the movie</returns>
         public ActionResult ViewMovieDetailsUser(int movieId)
         {
-            var movie = _userRepository.GetMovieDetailsById(movieId);
-            if (movie == null)
+            try
             {
-                return HttpNotFound();  
+                var movie = _userRepository.GetMovieDetailsById(movieId);
+                if (movie == null)
+                {
+                    LoggingHelper.LogWarning($"Movie with ID {movieId} not found.");
+                    return HttpNotFound();
+                }
+                return View(movie);
             }
-
-            return View(movie);  
+            catch (Exception ex)
+            {
+                LoggingHelper.LogError($"An error occurred while fetching movie details for movieId: {movieId}.", ex);
+                return View("Error");
+            }
         }
 
         /// <summary>
@@ -239,9 +269,17 @@ namespace MovieTicketBooking.Controllers
         /// <returns></returns>
         public ActionResult SelectSeats(int showtimeId)
         {
-            Session["ShowtimeId"] = showtimeId;
-            var seats = _userRepository.GetAllSeatsByShowtimeId(showtimeId);
-            return View(seats);
+            try
+            {
+                Session["ShowtimeId"] = showtimeId;
+                var seats = _userRepository.GetAllSeatsByShowtimeId(showtimeId);
+                return View(seats);
+            }
+            catch (Exception ex)
+            {
+                LoggingHelper.LogError($"An error occurred while selecting seats for showtimeId: {showtimeId}.", ex);
+                return View("Error");
+            }
         }
         /// <summary>
         /// Used to fetch prices for seats
@@ -260,14 +298,23 @@ namespace MovieTicketBooking.Controllers
         [HttpPost]
         public ActionResult ConfirmBooking(FormCollection form)
         {
-            // Extract form data
-            var userId = GetLoggedInUserId();
-            var showtimeId = int.Parse(form["showtimeId"]);
-            var totalAmount = decimal.Parse(form["totalAmount"].Replace("₹", "")); 
-            var seatIds = string.Join(",", form.GetValues("selectedSeats")); // Comma-separated seat IDs
-            _userRepository.InsertBooking(userId, showtimeId, totalAmount, seatIds);
-            return RedirectToAction("BookingConfirmation");
+            try
+            {
+                var userId = GetLoggedInUserId();
+                var showtimeId = int.Parse(form["showtimeId"]);
+                var totalAmount = decimal.Parse(form["totalAmount"].Replace("₹", ""));
+                var seatIds = string.Join(",", form.GetValues("selectedSeats")); // Comma-separated seat IDs
+
+                _userRepository.InsertBooking(userId, showtimeId, totalAmount, seatIds);
+                return RedirectToAction("BookingConfirmation");
+            }
+            catch (Exception ex)
+            {
+                LoggingHelper.LogError("An error occurred while confirming the booking.", ex);
+                return View("Error");
+            }
         }
+
         /// <summary>
         /// Used to show booking confirmation
         /// </summary>
@@ -275,63 +322,91 @@ namespace MovieTicketBooking.Controllers
         [HttpGet]
         public ActionResult BookingConfirmation()
         {
-            // Retrieve user-specific data (e.g., user ID, booking details)
-            var userId = GetLoggedInUserId(); // Assuming you have a method to get the logged-in user's ID
-
-            // Call repository to fetch booking details for the logged-in user
-            var bookingDetails = _userRepository.GetLatestBookingForUser(userId);
-
-            if (bookingDetails == null)
+            try
             {
-                
-                ViewBag.ErrorMessage = "No recent bookings found.";
-                return View("Error"); 
+                var userId = GetLoggedInUserId();
+                var bookingDetails = _userRepository.GetLatestBookingForUser(userId);
+
+                if (bookingDetails == null)
+                {
+                    ViewBag.ErrorMessage = "No recent bookings found.";
+                    return View("Error");
+                }
+
+                return View(bookingDetails);
             }
-
-            
-            return View(bookingDetails);
+            catch (Exception ex)
+            {
+                LoggingHelper.LogError("An error occurred while retrieving the booking confirmation.", ex);
+                return View("Error");
+            }
         }
-
-
-
+        /// <summary>
+        /// Used to search specific movies
+        /// </summary>
+        /// <param name="searchTerm"></param>
+        /// <returns></returns>
         public async Task<ActionResult> SearchMovies(string searchTerm)
         {
-            var movies = await _userRepository.GetMoviesAsync();  // Fetch the movie list from the database
-
-            if (!string.IsNullOrEmpty(searchTerm))
+            try
             {
-                // Filter the movie list based on the search term (case-insensitive)
-                movies = movies.Where(m => m.MovieName.ToLower().Contains(searchTerm.ToLower())).ToList();
-            }
+                var movies = await _userRepository.GetMoviesAsync();
 
-            // Return the filtered list as a partial view
-            return PartialView("_MovieListPartial", movies);
+                if (!string.IsNullOrEmpty(searchTerm))
+                {
+                    // Filter the movie list based on the search term (case-insensitive)
+                    movies = movies.Where(m => m.MovieName.ToLower().Contains(searchTerm.ToLower())).ToList();
+                }
+
+                // Return the filtered list as a partial view
+                return PartialView("_MovieListPartial", movies);
+            }
+            catch (Exception ex)
+            {
+                LoggingHelper.LogError($"An error occurred while searching for movies with the term: {searchTerm}.", ex);
+                return PartialView("Error");
+            }
         }
 
-
+        /// <summary>
+        /// Used to filter movies with language and genre
+        /// </summary>
+        /// <param name="language"></param>
+        /// <param name="genre"></param>
+        /// <returns>list of filtered movies</returns>
         public async Task<ActionResult> FilterMovies(string language, string genre)
         {
-            var movies = await _userRepository.GetFilteredMoviesAsync(language, genre);
-            return PartialView("_MovieListPartial", movies);
+            try
+            {
+                var movies = await _userRepository.GetFilteredMoviesAsync(language, genre);
+                return PartialView("_MovieListPartial", movies);
+            }
+            catch (Exception ex)
+            {
+                LoggingHelper.LogError($"An error occurred while filtering movies with language: {language} and genre: {genre}.", ex);
+                return PartialView("Error");
+            }
         }
 
-
-
+        /// <summary>
+        /// Used to list my bookings
+        /// </summary>
+        /// <returns>list of filtered movies</returns>
         public ActionResult MyBookings()
         {
-            int userId = Convert.ToInt32(Session["UserId"]); 
+            try
+            {
+                int userId = Convert.ToInt32(Session["UserId"]);
+                var bookings = _userRepository.GetUserBookings(userId);
 
-            var bookings = _userRepository.GetUserBookings(userId);
-
-            return View(bookings);
+                return View(bookings);
+            }
+            catch (Exception ex)
+            {
+                LoggingHelper.LogError("An error occurred while retrieving user bookings.", ex);
+                return View("Error");
+            }
         }
-
-
-
-
-
-
-
 
     }
 }

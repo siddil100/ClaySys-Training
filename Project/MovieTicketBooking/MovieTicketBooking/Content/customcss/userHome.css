@@ -1,7 +1,7 @@
 ﻿
 .movie-list ul {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 cards per row */
+    grid-template-columns: repeat(4, 1fr); 
     gap: 15px;
     padding: 0;
     list-style: none;
@@ -15,7 +15,7 @@
     transition: transform 0.3s ease;
     display: flex;
     flex-direction: column;
-    height: 450px; /* Ensure the card has enough height */
+    height: 450px; 
     width: 220px;
     margin: 0 auto;
 }
@@ -48,7 +48,7 @@
     padding: 8px;
     text-align: center;
     font-size: 14px;
-    flex: 1; /* Allow the body to expand as needed */
+    flex: 1; 
     display: flex;
     flex-direction: column;
     justify-content: center; /* Center content vertically */
@@ -95,7 +95,7 @@
         background-color: #565e64;
     }
 
-/* Hover Effect: Zoom the entire card */
+/* Zoom the entire card */
 .movie-card:hover {
     transform: scale(1.05);
 }

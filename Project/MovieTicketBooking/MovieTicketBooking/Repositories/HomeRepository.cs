@@ -3,7 +3,6 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Configuration;
 using MovieTicketBooking.Models;
-
 namespace MovieTicketBooking.Repositories
 {
     public class HomeRepository
@@ -28,12 +27,10 @@ namespace MovieTicketBooking.Repositories
                     using (SqlCommand command = new SqlCommand("SPI_Enquiry", connection))
                     {
                         command.CommandType = CommandType.StoredProcedure;
-
                         command.Parameters.AddWithValue("@firstName", contactUs.FirstName);
                         command.Parameters.AddWithValue("@lastName", contactUs.LastName);
                         command.Parameters.AddWithValue("@Email", contactUs.Email);
                         command.Parameters.AddWithValue("@Message", contactUs.Message);
-
                         connection.Open();
                         command.ExecuteNonQuery();
                     }
@@ -41,7 +38,6 @@ namespace MovieTicketBooking.Repositories
             }
             catch (Exception ex)
             {
-                // Log error or handle exception
                 System.Diagnostics.Debug.WriteLine(ex.Message);
                 throw new Exception("An error occurred while submitting the enquiry.", ex);
             }

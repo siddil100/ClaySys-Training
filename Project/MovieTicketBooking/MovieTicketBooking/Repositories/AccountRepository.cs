@@ -8,7 +8,6 @@ using MovieTicketBooking.Models;
 using System.Configuration;
 using System.Data;
 using BCrypt.Net;
-
 namespace MovieTicketBooking.Repositories
 {
     public class AccountRepository
@@ -112,7 +111,7 @@ namespace MovieTicketBooking.Repositories
                                 // Close the first reader before running the next query
                                 reader.Close();
 
-                                // Fetch first_name and last_name using the stored procedure SPS_UserDetails_Session
+                                // Fetch firstname and lastname
                                 using (SqlCommand cmdDetails = new SqlCommand("SPS_UserDetails_Session", conn))
                                 {
                                     cmdDetails.CommandType = CommandType.StoredProcedure;
@@ -131,7 +130,6 @@ namespace MovieTicketBooking.Repositories
                                         }
                                     }
                                 }
-
                                 return new User
                                 {
                                     UserId = userId,
@@ -146,9 +144,6 @@ namespace MovieTicketBooking.Repositories
             }
             return null;
         }
-
-
-
         /// <summary>
         /// Used to get cities in edit profile
         /// </summary>
@@ -187,11 +182,8 @@ namespace MovieTicketBooking.Repositories
             
             System.Diagnostics.Debug.WriteLine(ex.Message);
         }
-
         return cities;
     }
-
-
         /// <summary>
         /// Used to check whether email is already registered
         /// </summary>
@@ -222,11 +214,8 @@ namespace MovieTicketBooking.Repositories
                 System.Diagnostics.Debug.WriteLine(ex.Message);
                 throw new Exception("An error occurred while checking the email.", ex);
             }
-
             return emailExists;
         }
-
-
         /// <summary>
         /// Used to get states when signing up
         /// </summary>
@@ -261,11 +250,7 @@ namespace MovieTicketBooking.Repositories
             {
                 System.Diagnostics.Debug.WriteLine(ex.Message);
             }
-
             return states;
         }
-
-
     }
-
 }

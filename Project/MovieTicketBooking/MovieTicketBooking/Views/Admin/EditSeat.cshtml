@@ -3,7 +3,7 @@
     ViewBag.Title = "Edit seat";
     Layout = "~/Views/Shared/AdminLayout.cshtml";
 
-   
+
     var seatTypes = new List<SelectListItem>
 {
         new SelectListItem { Value = "1", Text = "Silver" },
@@ -42,65 +42,80 @@
 @section Scripts {
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
-    $(document).ready(function () {
+$(document).ready(function () {
+    // Store initial values
+    var initialRowNumber = $('#RowNumber').val();
+    var initialColumnNumber = $('#ColumnNumber').val();
 
-        function checkSeatExists(callback) {
-            var rowNumber = $('#RowNumber').val();
-            var columnNumber = $('#ColumnNumber').val();
-            var $submitButton = $('#submitButton');
+    function checkSeatExists(callback) {
+        var rowNumber = $('#RowNumber').val();
+        var columnNumber = $('#ColumnNumber').val();
+        var $submitButton = $('#submitButton');
 
-            if (rowNumber && columnNumber) {
-                $.ajax({
-                    url: '@Url.Action("CheckSeatExists", "Admin")',
-                    type: 'GET',
-                    data: { rowNumber: rowNumber, columnNumber: columnNumber },
-                    success: function (response) {
-                        if (response.exists) {
-                            $('#seatCheckResult').text('Seat already exists!').css('color', 'red');
-                            $submitButton.prop('disabled', true); // Disable submit button
-                            if (callback) callback(false); // Pass false to callback to prevent submission
-                        } else {
-                            $('#seatCheckResult').text('Seat is available.').css('color', 'green');
-                            $submitButton.prop('disabled', false); // Enable submit button
-                            if (callback) callback(true); // Pass true to callback to allow submission
-                        }
-                    },
-                    error: function () {
-                        $('#seatCheckResult').text('Error checking seat availability.').css('color', 'red');
+        if (rowNumber && columnNumber) {
+            $.ajax({
+                url: '@Url.Action("CheckSeatExists", "Admin")',
+                type: 'GET',
+                data: { rowNumber: rowNumber, columnNumber: columnNumber },
+                success: function (response) {
+                    if (response.exists) {
+                        $('#seatCheckResult').text('Seat already exists!').css('color', 'red');
                         $submitButton.prop('disabled', true); // Disable submit button
                         if (callback) callback(false); // Pass false to callback to prevent submission
+                    } else {
+                        $('#seatCheckResult').text('Seat is available.').css('color', 'green');
+                        $submitButton.prop('disabled', false); // Enable submit button
+                        if (callback) callback(true); // Pass true to callback to allow submission
                     }
-                });
-            } else {
-                $('#seatCheckResult').text('Please select both row and column.').css('color', 'red');
-                $submitButton.prop('disabled', true); // Disable submit button
-                if (callback) callback(false); // Pass false to callback to prevent submission
-            }
-        }
-
-        $('#RowNumber, #ColumnNumber').on('change', function () {
-            checkSeatExists();
-        });
-
-        $('<span id="seatCheckResult" class="error-message"></span>').insertAfter('#ColumnNumber');
-
-        // Disable submit button initially
-        $('#submitButton').prop('disabled', true);
-
-        // Form submit event handler
-        $('form').on('submit', function (e) {
-           
-            e.preventDefault();
-
-            
-            checkSeatExists(function (canSubmit) {
-                if (canSubmit) {
-                    $('form').off('submit').submit(); // Unbind the submit event handler and submit 
+                },
+                error: function () {
+                    $('#seatCheckResult').text('Error checking seat availability.').css('color', 'red');
+                    $submitButton.prop('disabled', true); // Disable submit button
+                    if (callback) callback(false); // Pass false to callback to prevent submission
                 }
             });
-        });
+        } else {
+            $('#seatCheckResult').text('Please select both row and column.').css('color', 'red');
+            $submitButton.prop('disabled', true); // Disable submit button
+            if (callback) callback(false); // Pass false to callback to prevent submission
+        }
+    }
 
+    $('#RowNumber, #ColumnNumber').on('change', function () {
+        var currentRowNumber = $('#RowNumber').val();
+        var currentColumnNumber = $('#ColumnNumber').val();
+
+        // Only trigger checkSeatExists if either row or column has changed
+        if (currentRowNumber !== initialRowNumber || currentColumnNumber !== initialColumnNumber) {
+            checkSeatExists();
+        }
     });
+
+    $('<span id="seatCheckResult" class="error-message"></span>').insertAfter('#ColumnNumber');
+
+    // Disable submit button initially
+    $('#submitButton').prop('disabled', true);
+
+    // Form submit event handler
+    $('form').on('submit', function (e) {
+        var currentRowNumber = $('#RowNumber').val();
+        var currentColumnNumber = $('#ColumnNumber').val();
+
+        // Check if row/column have changed compared to initial values
+        if (currentRowNumber === initialRowNumber && currentColumnNumber === initialColumnNumber) {
+            // No change, allow form submission without checking seat availability
+            return true;
+        }
+        e.preventDefault();
+
+        checkSeatExists(function (canSubmit) {
+            if (canSubmit) {
+                $('form').off('submit').submit(); // Unbind the submit event handler and submit
+            }
+        });
+    });
+});
     </script>
+
 
 }

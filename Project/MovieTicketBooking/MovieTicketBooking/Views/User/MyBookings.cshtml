@@ -3,19 +3,19 @@
     ViewBag.Title = "MyBookings";
     Layout = "~/Views/Shared/UserLayout.cshtml";
 }
-
-<h2>MyBookings</h2>
+<link href="~/Content/customcss/myBookings.css" rel="stylesheet" />
+<h2>My bookings</h2>
 
 @if (Model != null && Model.Any())
 {
     <table class="table">
         <thead>
             <tr>
-                <th>Movie Name</th>
-                <th>Show Date</th>
-                <th>Start Time</th>
+                <th>Movie name</th>
+                <th>Show date</th>
+                <th>Start time</th>
                 <th>Seat(s)</th>
-                <th>Total Amount</th>
+                <th>Total amount</th>
             </tr>
         </thead>
         <tbody>
@@ -23,8 +23,8 @@
             {
                 <tr>
                     <td>@booking.MovieName</td>
-                    <td>@booking.ShowDate.ToString("dd-MM-yyyy")</td> <!-- Date in dd-MM-yyyy format -->
-                    <td>@(new DateTime(booking.StartTime.Ticks).ToString("hh:mm tt"))</td> <!-- Convert TimeSpan to DateTime for AM/PM format -->
+                    <td>@booking.ShowDate.ToString("dd-MM-yyyy")</td> 
+                    <td>@(new DateTime(booking.StartTime.Ticks).ToString("hh:mm tt"))</td> 
                     <td>@booking.SeatNames</td>
                     <td>@booking.TotalAmount.ToString("C")</td>
                 </tr>

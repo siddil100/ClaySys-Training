@@ -24,6 +24,7 @@
 
 
                 <a href="@Url.Action("Edit", "User", new { id = (int)Session["UserId"] })">Edit Profile</a>
+                <a href="@Url.Action("MyBookings", "User", new { id = (int)Session["UserId"] })">Bookings</a>
                 @if (Session["FirstName"] != null)
                 {
                     <span id="name-span">Welcome, @Session["Firstname"]</span>

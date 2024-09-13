@@ -36,13 +36,11 @@ namespace MovieTicketBooking
                     command.Parameters.AddWithValue("@actor", movie.Actor);
                     command.Parameters.AddWithValue("@actress", movie.Actress);
                     command.Parameters.AddWithValue("@director", movie.Director);
-
                     connection.Open();
                     command.ExecuteNonQuery();
                 }
             }
         }
-
 
         /// <summary>
         /// Used to list added movies
@@ -81,11 +79,8 @@ namespace MovieTicketBooking
                     }
                 }
             }
-
             return movies;
         }
-
-
 
         /// <summary>
         /// Used to get a movie by id
@@ -126,7 +121,6 @@ namespace MovieTicketBooking
                     }
                 }
             }
-
             return movie;
         }
         /// <summary>
@@ -152,13 +146,11 @@ namespace MovieTicketBooking
                     command.Parameters.AddWithValue("@actor", movie.Actor);
                     command.Parameters.AddWithValue("@actress", movie.Actress);
                     command.Parameters.AddWithValue("@director", movie.Director);
-
                     connection.Open();
                     command.ExecuteNonQuery();
                 }
             }
         }
-
 
         /// <summary>
         /// Used to delete a movie
@@ -229,10 +221,8 @@ namespace MovieTicketBooking
                     }
                 }
             }
-
             return showtimes;
         }
-
 
         /// <summary>
         /// Used to get a showtime by id
@@ -265,7 +255,6 @@ namespace MovieTicketBooking
                     }
                 }
             }
-
             return showtime;
         }
         /// <summary>
@@ -334,7 +323,6 @@ namespace MovieTicketBooking
             }
         }
 
-
         /// <summary>
         /// Used to get seat types for creation of seats
         /// </summary>
@@ -364,10 +352,8 @@ namespace MovieTicketBooking
                     }
                 }
             }
-
             return seatTypes;
         }
-
 
         /// <summary>
         /// Used to get seats to view the layouts for seats
@@ -400,10 +386,8 @@ namespace MovieTicketBooking
                     }
                 }
             }
-
             return seats;
         }
-
 
         /// <summary>
         /// For getting seat info by id for editing purpose
@@ -438,7 +422,6 @@ namespace MovieTicketBooking
                     }
                 }
             }
-
             return seat;
         }
 
@@ -525,7 +508,6 @@ namespace MovieTicketBooking
             }
         }
 
-
         /// <summary>
         /// Used to check whether showtime exists
         /// </summary>
@@ -548,9 +530,10 @@ namespace MovieTicketBooking
                 return Convert.ToInt32(result) == 1;  // Return true if exists, false otherwise
             }
         }
-
-
-
+        /// <summary>
+        /// Used to list users
+        /// </summary>
+        /// <returns></returns>
         public List<UserDetailsViewModel> GetUsers()
         {
             var users = new List<UserDetailsViewModel>();
@@ -581,7 +564,11 @@ namespace MovieTicketBooking
 
             return users;
         }
-
+        /// <summary>
+        /// Used to toggle user status 
+        /// </summary>
+        /// <param name="userId"></param>
+        /// <returns></returns>
         public bool ToggleUserStatus(int userId)
         {
             using (var connection = new SqlConnection(_connectionString))
@@ -595,7 +582,11 @@ namespace MovieTicketBooking
                 }
             }
         }
-
+        /// <summary>
+        /// Used to see information about users in detail
+        /// </summary>
+        /// <param name="userId"></param>
+        /// <returns></returns>
         public UserDetailsViewModel GetUserDetails(int userId)
         {
             UserDetailsViewModel user = null;
@@ -624,11 +615,13 @@ namespace MovieTicketBooking
                 }
                 con.Close();
             }
-
             return user;
         }
-
-
+        /// <summary>
+        /// See booking for a showtime
+        /// </summary>
+        /// <param name="showtimeId"></param>
+        /// <returns></returns>
         public List<BookingViewModel> GetBookingsByShowtime(int showtimeId)
         {
             List<BookingViewModel> bookings = new List<BookingViewModel>();
@@ -658,13 +651,7 @@ namespace MovieTicketBooking
                     }
                 }
             }
-
             return bookings;
         }
-
-
-
-
-
     }
 }
